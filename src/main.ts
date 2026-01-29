@@ -15,8 +15,8 @@ import 'aos/dist/aos.css';
 import Antd from 'ant-design-vue'
 // import 'ant-design-vue/es/style/index.css'
 
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap';
 import '/src/assets/styles/css/main.css'
 
 const app = createApp(App)

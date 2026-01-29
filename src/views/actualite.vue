@@ -51,8 +51,7 @@
               <img src="/src/assets/images/use/2.jpg" class="img-fluid" alt="" />
             </div>
             <h4 class="my-5 text-primary title text-justify actu-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum explicabo nobis fugit
-              suscipit atque inventore deleniti unde illum!
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </h4>
 
             <p class="p text-justify">
@@ -155,8 +154,7 @@
         <div class="row">
           <div class="col-md-8">
             <h4 class="my-5 text-primary title text-justify actu-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum explicabo nobis fugit
-              suscipit atque inventore deleniti unde illum!
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </h4>
 
             <p class="p text-justify">

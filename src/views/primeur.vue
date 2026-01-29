@@ -6,12 +6,12 @@
 
   <section data-aos="fade-up" class="top container">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-12">
         <iframe
           class="img"
           data-aos="zoom-in-up"
           width="100%"
-          style="height: 550px !important"
+          style="height: 750px !important"
           src="https://www.youtube.com/embed/7oZaOgkXKhs?si=zmPu0hgVtn-ZPhMy"
           title="YouTube video player"
           frameborder="0"
@@ -85,28 +85,28 @@
           </div> -->
         </div>
       </div>
-      <div class="col-md-1"></div>
-      <div class="col-md-5">
-        <div class="extra">
-          <img
-            src="/src/assets/images/use/p1.jpg"
-            class="img img-fluid"
-            data-aos="zoom-in-up"
-            alt=""
-          />
-          <div class="brd"></div>
-        </div>
+<!--      <div class="col-md-1"></div>-->
+<!--      <div class="col-md-5">-->
+<!--        <div class="extra">-->
+<!--          <img-->
+<!--            src="/src/assets/images/use/p1.jpg"-->
+<!--            class="img img-fluid"-->
+<!--            data-aos="zoom-in-up"-->
+<!--            alt=""-->
+<!--          />-->
+<!--          <div class="brd"></div>-->
+<!--        </div>-->
 
-        <div class="extra2">
-          <img
-            src="/src/assets/images/use/p2.jpg"
-            class="img img-fluid"
-            data-aos="zoom-in-up"
-            alt=""
-          />
-          <div class="brd"></div>
-        </div>
-      </div>
+<!--        <div class="extra2">-->
+<!--          <img-->
+<!--            src="/src/assets/images/use/p2.jpg"-->
+<!--            class="img img-fluid"-->
+<!--            data-aos="zoom-in-up"-->
+<!--            alt=""-->
+<!--          />-->
+<!--          <div class="brd"></div>-->
+<!--        </div>-->
+<!--      </div>-->
     </div>
 
     <div class="bg-light a container p-4 mt-5">

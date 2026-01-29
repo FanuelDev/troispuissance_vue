@@ -95,7 +95,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 offset-md-3">
-          <h1 class="title text-primary text-center">
+          <h1 class="text-primary">
             Cliquez pour chercher tous les gagnants; Rechercher les resultats par médaille:
           </h1>
 

@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "test:unit": "vitest",
@@ -22,7 +22,7 @@
     "element-plus": "^2.8.4",
     "pinia": "^2.1.7",
     "sass": "^1.79.4",
-    "swiper": "^11.1.14",
+    "swiper": "^11.2.10",
     "vue": "^3.4.29",
     "vue-router": "^4.4.5",
     "vue3-carousel": "^0.3.4"
@@ -30,6 +30,7 @@
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.8.0",
     "@tsconfig/node20": "^20.1.4",
+    "@types/aos": "^3.0.7",
     "@types/jsdom": "^21.1.7",
     "@types/node": "^20.14.5",
     "@vitejs/plugin-vue": "^5.0.5",

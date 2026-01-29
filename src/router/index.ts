@@ -1,17 +1,18 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import MainLayout from '../layouts/mainLayout.vue';
 import Home from '@/views/home.vue';
-import Primeur from '@/views/primeur.vue';
-import Notes from '@/views/notes.vue';
 import TopAfrique from '@/views/topAfrique.vue';
-import Explore from '@/views/explore.vue';
-import Degustation from '@/views/degustation.vue';
 import Club from '@/views/club.vue';
-import Boutique from '@/views/boutique.vue';
-import Actualite from '@/views/actualite.vue';
 import Login from '@/views/auth/login.vue';
 import AuthLayout from '@/layouts/authLayout.vue';
-import Register from '../views/auth/register.vue';
+import About from '@/views/about.vue'
+import Primeur from '@/views/primeur.vue'
+import Notes from '@/views/notes.vue'
+import Degustation from '@/views/degustation.vue'
+import Boutique from '@/views/boutique.vue'
+import Explore from '@/views/explore.vue'
+import Actualite from '@/views/actualite.vue'
+import Register from '@/views/auth/register.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -64,6 +65,11 @@ const router = createRouter({
           path: 'actualite',
           name: 'actualite',
           component: Actualite
+        },
+        {
+          path: 'about',
+          name: 'about',
+          component: About
         },
       ]
     },

@@ -1,8 +1,8 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css");
+/*@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css");*/
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css");
 @font-face {
   font-family: "Time New Roman";
-  src: url("/src/assets/font/tnr/times.ttf");
+  src: url("/src/assets/font/tnr/times.ttf") !important;
 }
 body {
   background-color: #fff !important;
@@ -20,7 +20,7 @@ body {
 }
 
 .title {
-  font-family: "Time New Roman", serif;
+  font-family: "Time New Roman", serif !important;
 }
 
 .h1 {
@@ -38,6 +38,13 @@ body {
 .img-logo {
   width: 250px;
   margin-top: -15px;
+}
+
+@media (max-width: 991px) {
+  .img-logo {
+    width: 200px;
+    margin-top: -15px;
+  }
 }
 
 .img-logo1 {
@@ -112,7 +119,7 @@ body {
   padding-bottom: 5px;
   padding-left: 30px !important;
   padding-right: 30px !important;
-  font-family: "Time New Roman", serif;
+  font-family: "Time New Roman", serif !important;
 }
 .btn.btn-tran {
   width: 40px !important;
@@ -266,6 +273,14 @@ body {
 .head {
   font-weight: 100;
   font-size: 65px;
+}
+
+@media (max-width: 991px) {
+  .head {
+    font-weight: 100;
+    font-size: 35px;
+  }
+
 }
 
 .top {

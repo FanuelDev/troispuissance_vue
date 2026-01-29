@@ -1,44 +1,124 @@
 <template>
-  <div class="d-flex justify-content-between align-items-center container mt-4" id="top">
-    <router-link to="/">
-      <img src="/src/assets/images/logo/logo.png" class="img-logo" alt="" />
-    </router-link>
-    <div>
-      <ul class="ul-header">
-        <li><router-link to="" class="title mx-4">Magazine</router-link></li>
-        <li><router-link to="actualite" class="title mx-4">Actualité</router-link></li>
-        <li><router-link to="" class="title mx-4">Qui sommes-nous?</router-link></li>
-        <li><router-link to="" class="btn btn-primary btn-tran">EN</router-link></li>
-      </ul>
-    </div>
-  </div>
-  <div class="bg-primary">
-    <div class="container d-flex justify-content-between align-items-center">
-      <ul class="ul-menu">
-        <li><router-link to="primeur" class="title">Primeurs</router-link></li>
-        <li><router-link to="notes" class="title">Notes</router-link></li>
-        <li><router-link to="topafrique" class="title">Top Afrique</router-link></li>
-        <li><router-link to="explore" class="title">Explorez l'Art du vin</router-link></li>
-<!--        <li><router-link to="degustation" class="title">Dégustation</router-link></li>-->
-        <li><router-link to="club" class="title">Club VIP</router-link></li>
-<!--        <li><router-link to="boutique" class="title">Boutique</router-link></li>-->
-      </ul>
+  <!-- HEADER TOP -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white mt-3">
+    <div class="container">
+      <router-link to="/" class="navbar-brand">
+        <img src="/src/assets/images/logo/logo.png" class="img-logo" alt="Logo" />
+      </router-link>
 
-      <ul class="ul-menu align-item-center">
-        <li class="input-group">
-          <span class="input-group-text">
-            <img src="/src/assets/icons/s1.png" alt="Icon" style="width: 20px; height: 20px" />
-          </span>
-          <input type="text" placeholder="Recherche ..." class="forn-control input-search" />
-        </li>
-        <li>
-          <router-link to="auth/login">
-            <img src="/src/assets/images/logo/icon.png" class="img-fluid img-user" alt="" />
-          </router-link>
-        </li>
-      </ul>
+      <!-- Toggle mobile -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#topNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="topNavbar">
+        <ul class="navbar-nav ms-auto align-items-lg-center menu1">
+          <li class="nav-item">
+            <router-link class="nav-link title" to="">Magazine</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link title" to="actualite">Actualité</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link title" to="about">Qui sommes-nous ?</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="btn btn-primary btn-tran ms-lg-3" to="">EN</router-link>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
+  </nav>
+
+  <!-- MENU PRINCIPAL -->
+  <nav class="py-4 navbar navbar-expand-lg navbar-dark bg-primary menu2">
+    <div class="container">
+<!--      <button-->
+<!--        class="navbar-toggler"-->
+<!--        type="button"-->
+<!--        data-bs-toggle="collapse"-->
+<!--        data-bs-target="#mainNavbar"-->
+<!--      >-->
+<!--        <span class="navbar-toggler-icon"></span>-->
+<!--      </button>-->
+
+      <div class="collapse navbar-collapse" id="topNavbar">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><router-link class="nav-link title" to="primeur">Primeurs</router-link></li>
+          <li class="nav-item"><router-link class="nav-link title" to="notes">Notes</router-link></li>
+          <li class="nav-item"><router-link class="nav-link title" to="topafrique">Top Afrique</router-link></li>
+          <li class="nav-item"><router-link class="nav-link title" to="explore">Explorez l’art du vin</router-link></li>
+          <li class="nav-item"><router-link class="nav-link title" to="club">Club VIP</router-link></li>
+        </ul>
+
+        <!-- Search + User -->
+        <div class="d-flex align-items-center gap-3">
+          <div class="input-group d-none d-lg-flex">
+            <span class="input-group-text">
+              <img src="/src/assets/icons/s1.png" style="width:15px " />
+            </span>
+            <input type="text" class="form-control input-search" placeholder="Recherche..." />
+          </div>
+
+          <router-link to="auth/login">
+            <img src="/src/assets/images/logo/icon.png" class="img-user" />
+          </router-link>
+        </div>
+      </div>
+    </div>
+  </nav>
 </template>
 
 <script></script>
+
+<style>
+.menu2 .nav-link {
+  font-size: 18px;
+  color: #fff !important;
+}
+
+.menu1 .nav-link {
+  font-size: 18px;
+  color: #000 !important;
+}
+
+
+.img-logo {
+  height: auto !important;
+}
+
+.img-user {
+  height: 35px;
+}
+
+.title {
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.input-search {
+  min-width: 200px;
+}
+
+/* Mobile */
+@media (max-width: 991px) {
+  .img-logo {
+    width: 120px;
+    height: 40px;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px 0;
+  }
+
+  .input-search {
+    width: 100%;
+  }
+}
+
+</style>

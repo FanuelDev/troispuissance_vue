@@ -30,6 +30,13 @@ body {
   font-size: 30px;
 }
 
+
+@media (max-width: 991px) {
+  .h1 {
+    font-size: 20px !important;
+  }
+}
+
 .h11 {
   font-size: 45px !important;
 }

@@ -5,7 +5,7 @@
         <div class="row align-items-end py-5">
           <div class="col-md-7 px-5">
             <div class="mt-5">
-              <h2 class="text-white title">News Letters</h2>
+<!--              <h2 class="text-white title">News Letters</h2>-->
             </div>
             <div class="">
               <p class="text-white" style="font-size: 20px !important">
