@@ -13,7 +13,7 @@
     </div>
   </section>
 
-  <section class="container col-md-8 mx-auto text-center" data-aos="fade-up" >
+  <section class="container col-md-8 mx-auto text-center" data-aos="fade-up">
     <p>
       Depuis ses débuts, Trois Puissance s’est donné une mission claire : offrir aux domaines, maisons et négociants une passerelle privilégiée vers les marchés africains, là où la culture du vin gagne chaque année en raffinement et en exigence.
     </p>
@@ -24,7 +24,7 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-4">
-          <img src="/src/assets/images/2.jpg" class="img-fluid ">
+          <img src="/src/assets/images/2.jpg" class="img-fluid">
         </div>
         <div class="col-md-1"></div>
         <div class="col-md-7">
