@@ -28,7 +28,7 @@ COPY . .
 
 RUN npm install --force
 
-RUN npm run build
+RUN npm run build-only
 
 # Stage 2
 FROM nginx:1.21.6-alpine
