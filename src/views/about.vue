@@ -5,7 +5,7 @@
   </div>
   <section class="section hero mt-5" data-aos="fade-up" >
     <div class="container text-center">
-      <img src="/src/assets/images/1.jpg" class="mb-5">
+      <img alt="" src="/src/assets/images/1.jpg" class="mb-5">
       <h1 class="title head fw-bold" style="text-transform: uppercase">Trois Puissances</h1>
       <p class="fs-5 col-md-8 mx-auto">
         L’Art de Valoriser les Grands Vins sur les Marchés Africains
@@ -24,7 +24,7 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-4">
-          <img src="/src/assets/images/2.jpg" class="img-fluid">
+          <img alt="" src="/src/assets/images/2.jpg" class="img-fluid">
         </div>
         <div class="col-md-1"></div>
         <div class="col-md-7">
@@ -47,7 +47,7 @@
         </div>
         <div class="col-md-1"></div>
         <div class="col-md-4">
-          <img src="/src/assets/images/3.jpg" class="img-fluid">
+          <img alt="" src="/src/assets/images/3.jpg" class="img-fluid">
         </div>
       </div>
     </div>
@@ -62,17 +62,17 @@
       <div class="row g-4">
         <div class="col-md-3"><div class="card card-premium p-4 h-100 text-center">
           <div class="d-flex justify-content-center">
-            <img src="/src/assets/images/Analyse.png" class="img-fluid w-25"></div>
+            <img alt="" src="/src/assets/images/analyse.png" class="img-fluid w-25"></div>
           <h4 class="fw-bold title text-primary mt-4">Analyses de marché <br> pointues</h4>
           <span class="mt-2 text-justify">Comprendre les dynamiques locales, anticiper la demande, identifier les marchés à fort potentiel : nous vous apportons une vision claire, guidée par l’observation des tendances premium qui dominent aujourd’hui en Afrique.</span></div></div>
         <div class="col-md-3"><div class="card card-premium p-4 h-100 text-center"><div class="d-flex justify-content-center">
-          <img src="/src/assets/images/Importation.png" class="img-fluid w-25"></div>
+          <img alt="" src="/src/assets/images/Importation.png" class="img-fluid w-25"></div>
           <h4 class="fw-bold title text-primary mt-4">Positionnement & image <br> de marque</h4><span class="text-justify">Comme pour une cuvée que l’on élève et affine, nous travaillons votre identité pour qu’elle trouve un écho naturel auprès des amateurs africains : élégance, cohérence, précision.</span></div></div>
         <div class="col-md-3"><div class="card card-premium p-4 h-100 text-center"><div class="d-flex justify-content-center">
-          <img src="/src/assets/images/Distribution & importation.png" class="img-fluid w-25"></div>
+          <img alt="" src="/src/assets/images/Distribution & importation.png" class="img-fluid w-25"></div>
           <h4 class="fw-bold title text-primary mt-4">Réseaux d’importation <br> & distribution</h4><span class="text-justify">Nous vous ouvrons les portes des réseaux les plus sérieux, du Nigéria à la Côte d’Ivoire, du Ghana au Kenya : des partenaires fiables, engagés, à la recherche de vins ayant une histoire, un style, une signature.</span></div></div>
         <div class="col-md-3"><div class="card card-premium p-4 h-100 text-center"><div class="d-flex justify-content-center">
-          <img src="/src/assets/images/Event.png" class="img-fluid w-25"></div>
+          <img alt="" src="/src/assets/images/Event.png" class="img-fluid w-25"></div>
           <h4 class="fw-bold title text-primary mt-4">
           Événements & expériences <br> exclusives
         </h4><span class="text-justify" >Dégustations confidentielles, présentations privées à des acheteurs triés sur le volet, événements œnologiques de prestige : nous créons des moments où votre vin s’exprime pleinement, dans des environnements propices à la décision.</span></div></div>
@@ -124,7 +124,7 @@
           </ul>
         </div>
         <div class="col-md-6">
-          <img src="/src/assets/images/banner/banner3.jpg" class="img-fluid ">
+          <img alt="" src="/src/assets/images/banner/banner3.jpg" class="img-fluid ">
         </div>
       </div>
     </div>
@@ -135,10 +135,10 @@
     <div class="container text-center">
       <h2 class="fw-bold">Nous Donnons Vie au Vin</h2>
       <div class="row grid-4 g-4 mt-4">
-        <div class="col-md-3"><img src="/src/assets/images/banner/banner3.jpg" class="img-fluid"></div>
-        <div class="col-md-3"><img src="/src/assets/images/banner/banner3.jpg" class="img-fluid"></div>
-        <div class="col-md-3"><img src="/src/assets/images/banner/banner3.jpg" class="img-fluid"></div>
-        <div class="col-md-3"><img src="/src/assets/images/banner/banner3.jpg" class="img-fluid"></div>
+        <div class="col-md-3"><img alt="" src="/src/assets/images/banner/banner3.jpg" class="img-fluid"></div>
+        <div class="col-md-3"><img alt="" src="/src/assets/images/banner/banner3.jpg" class="img-fluid"></div>
+        <div class="col-md-3"><img alt="" src="/src/assets/images/banner/banner3.jpg" class="img-fluid"></div>
+        <div class="col-md-3"><img alt="" src="/src/assets/images/banner/banner3.jpg" class="img-fluid"></div>
       </div>
     </div>
   </section>
