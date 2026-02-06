@@ -36,7 +36,7 @@
   </nav>
 
   <!-- MENU PRINCIPAL -->
-  <nav class="py-4 navbar navbar-expand-lg navbar-dark bg-primary menu2">
+  <nav class="py-2 navbar navbar-expand-lg navbar-dark bg-primary menu2">
     <div class="container">
 <!--      <button-->
 <!--        class="navbar-toggler"-->
