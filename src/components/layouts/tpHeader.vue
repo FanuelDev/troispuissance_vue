@@ -74,7 +74,7 @@
   </nav>
 </template>
 
-<script></script>
+<script lang="ts" setup></script>
 
 <style>
 .menu2 .nav-link {

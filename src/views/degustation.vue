@@ -87,4 +87,4 @@
   </section>
 </template>
 
-<script></script>
+<script setup lang="ts"></script>

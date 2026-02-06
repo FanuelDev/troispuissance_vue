@@ -5,14 +5,14 @@ import TopAfrique from '@/views/topAfrique.vue';
 import Club from '@/views/club.vue';
 import Login from '@/views/auth/login.vue';
 import AuthLayout from '@/layouts/authLayout.vue';
-import About from '@/views/about.vue'
 import Primeur from '@/views/primeur.vue'
 import Notes from '@/views/notes.vue'
+import Explore from '@/views/explore.vue'
 import Degustation from '@/views/degustation.vue'
 import Boutique from '@/views/boutique.vue'
-import Explore from '@/views/explore.vue'
-import Actualite from '@/views/actualite.vue'
+import About from '@/views/about.vue'
 import Register from '@/views/auth/register.vue'
+import Actualite from '@/views/actualite.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
