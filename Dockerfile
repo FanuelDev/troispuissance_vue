@@ -11,7 +11,7 @@
 
 # Bikor dorkerfile
 
-FROM node:20.14.0-alpine as builder
+FROM node:20-alpine AS builder
 
 # ARG API_BASE_URL
 
