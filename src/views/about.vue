@@ -114,14 +114,16 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6">
-          <h2 class="fw-bold">L’Art des Instants d’Exception</h2>
-          <p>Master classes, dégustations privées, lieux de prestige.</p>
-          <ul>
-            <li>Cuvées d’exception</li>
-            <li>Accords mets-vins</li>
-            <li>Public premium</li>
-            <li>Expériences mémorables</li>
-          </ul>
+          <h2 class="fw-bold mb-4">L’Art des Instants d’Exception</h2>
+          <p>Chez Trois Puissance, chaque événement est conçu comme une œuvre éphémère : une rencontre rare entre grands vins, haute gastronomie et lieux d’exception.</p>
+          <p>Nos Master Classes ne se contentent pas de présenter des cuvées ; elles en révèlent la profondeur, la personnalité, l’histoire.</p>
+          <p>Un moment suspendu, pensé pour un public averti et exigeant.</p>
+<!--          <ul>-->
+<!--            <li>Cuvées d’exception</li>-->
+<!--            <li>Accords mets-vins</li>-->
+<!--            <li>Public premium</li>-->
+<!--            <li>Expériences mémorables</li>-->
+<!--          </ul>-->
         </div>
         <div class="col-md-6">
           <img alt="" src="/src/assets/images/banner/banner3.jpg" class="img-fluid ">
@@ -133,12 +135,59 @@
   <!-- GRID -->
   <section class="section soft" data-aos="fade-up" >
     <div class="container text-center">
-      <h2 class="fw-bold">Nous Donnons Vie au Vin</h2>
-      <div class="row grid-4 g-4 mt-4">
-        <div class="col-md-3"><img alt="" src="/src/assets/images/banner/banner3.jpg" class="img-fluid"></div>
-        <div class="col-md-3"><img alt="" src="/src/assets/images/banner/banner3.jpg" class="img-fluid"></div>
-        <div class="col-md-3"><img alt="" src="/src/assets/images/banner/banner3.jpg" class="img-fluid"></div>
-        <div class="col-md-3"><img alt="" src="/src/assets/images/banner/banner3.jpg" class="img-fluid"></div>
+      <h2 class="fw-bold">Nos Signatures</h2>
+      <div class="row grid-4 g-5 mt-4">
+        <div class="col-md-4">
+          <div class="card border-0">
+            <img alt="" src="/src/assets/images/banner/banner3.jpg" class="img-fluid">
+            <div class="card-body">
+              <h5>
+                Cuvées d’exception,
+                sélectionnées avec exigence
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0">
+            <img alt="" src="/src/assets/images/banner/banner3.jpg" class="img-fluid">
+            <div class="card-body">
+              <h5>
+                Experts du vin dédiés à votre événement
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0">
+            <img alt="" src="/src/assets/images/banner/banner3.jpg" class="img-fluid">
+            <div class="card-body">
+              <h5>
+                Dégustations privées, élégantes et immersives
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0">
+            <img alt="" src="/src/assets/images/banner/banner3.jpg" class="img-fluid">
+            <div class="card-body">
+              <h5>
+                Accords mets-vins sur mesure, inspirés par de grands chefs
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0">
+            <img alt="" src="/src/assets/images/banner/banner3.jpg" class="img-fluid">
+            <div class="card-body">
+              <h5>
+                Lieux de prestige, soigneusement choisis pour sublimer l’expérience
+              </h5>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -152,6 +201,24 @@
 <!--      <button class="btn btn-outline-light">S'inscrire</button>-->
 <!--    </div>-->
 <!--  </section>-->
+
+  <section class="section bg-light mt-5" data-aos="fade-up" >
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img alt="" src="/src/assets/images/banner/banner3.jpg" class="img-fluid ">
+        </div>
+        <div class="col-md-6">
+<!--          <h2 class="fw-bold mb-4">L’Art des Instants d’Exception</h2>-->
+          <p>
+            Chaque rendez-vous associe la précision d’une sélection œnologique à la créativité culinaire, pour donner naissance à une expérience où chaque détail a son importance : la lumière, le rythme, les arômes, l’histoire du vin, la délicatesse du service.
+          </p>
+          <p>De dîners confidentiels à de grandes rencontres œnologiques, nos événements offrent aux maisons et producteurs une scène parfaitement maîtrisée pour dialoguer avec un public privilégié, sensible à l’excellence et à la distinction.</p>
+          <p>Une signature Trois Puissance : élégance, discrétion, profondeur.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
 </template>
 
