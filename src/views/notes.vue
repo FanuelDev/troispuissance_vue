@@ -154,16 +154,16 @@
   <section class="section-banner-note2">
     <div class="banner-note2">
       <div class="text-center top" data-aos="fade-up">
-        <h1 class="hh1 text-white fw-bold text-uppercase">Résultats officiels 2024</h1>
+        <h1 class="hh1 text-primary fw-bold text-uppercase">Résultats officiels 2024</h1>
       </div>
       <div class="py-4" data-aos="fade-up">
-        <p class="text-center ppp text-white">
+        <p class="text-center ppp">
           Accédez à la liste complète des vins récompensés par notre jury d’experts internationaux
         </p>
       </div>
 
       <div class="py-2 text-center" data-aos="fade-up">
-        <button class="btn btn-light">VOIR TOUS LES RÉSULTATS</button>
+        <button class="btn btn-primary">VOIR TOUS LES RÉSULTATS</button>
       </div>
     </div>
   </section>
@@ -230,25 +230,18 @@
 }
 
 .section-banner-note2 {
-  background-image: url("/src/assets/images/use/5.jpg");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
-  position: relative;
   margin-top: 0;
+  padding-top: 40px;
+  padding-bottom: 50px;
 }
 
 .banner-note2 {
   width: 100%;
   height: 100%;
-  position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(141, 78, 86, 0.10) 5%,
-    rgba(141, 78, 86, 0.95)
-  );
 }
 
 .radius {
