@@ -168,9 +168,6 @@
     </div>
   </section>
 
-
-
-
 <!--  <section data-aos="fade-up" class="top">-->
 <!--    <div class="container">-->
 <!--      <div class="row">-->

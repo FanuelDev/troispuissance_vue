@@ -66,7 +66,7 @@
           </div>
 
           <router-link to="auth/login">
-            <img src="/src/assets/images/logo/icon.png" class="img-user" />
+            <img src="/src/assets/images/1/Connexion-01.png" class="img-user" />
           </router-link>
         </div>
       </div>
@@ -93,7 +93,8 @@
 }
 
 .img-user {
-  height: 35px;
+  width: 30px;
+  height: 30px;
 }
 
 .title {

@@ -84,9 +84,13 @@
   <section class="section" data-aos="fade-up" >
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-md-12 text-center">
-          <h2 class="title fw-bold">Pourquoi choisir Trois Puissance ?</h2></div>
-        <div class="col-md-7 mt-5">
+        <div class="col-md-12 mt-5 text-center">
+          <h2 class="title fw-bold">Pourquoi choisir Trois Puissance ?</h2>
+        </div>
+        <div class="col-md-6">
+          <img alt="" src="/src/assets/images/1/Pourquoi choisir Trois Puissance.jpg.jpeg" class="img-fluid ">
+        </div>
+        <div class="col-md-6 my-5">
           <ul>
             <li>Une lecture fine des attentes d’un marché en pleine montée en gamme</li>
             <li>Un accès direct à des réseaux d’importateurs exigeants et fidèles</li>
@@ -126,7 +130,7 @@
 <!--          </ul>-->
         </div>
         <div class="col-md-6">
-          <img alt="" src="/src/assets/images/banner/banner3.jpg" class="img-fluid ">
+          <img alt="" src="/src/assets/images/1/L’Art%20des%20Instants%20d’Exception.jpg.jpeg" class="img-fluid ">
         </div>
       </div>
     </div>
@@ -139,7 +143,7 @@
       <div class="row grid-4 g-5 mt-4">
         <div class="col-md-4">
           <div class="card border-0">
-            <img alt="" src="/src/assets/images/banner/banner3.jpg" class="img-fluid">
+            <img alt="" src="/src/assets/images/1/Cuvées%20d’exception,%20sélectionnées%20avec%20exigences.jpg.jpeg" class="img-fluid">
             <div class="card-body">
               <h5>
                 Cuvées d’exception,
@@ -150,7 +154,7 @@
         </div>
         <div class="col-md-4">
           <div class="card border-0">
-            <img alt="" src="/src/assets/images/banner/banner3.jpg" class="img-fluid">
+            <img alt="" src="/src/assets/images/1/Experts du vin dédiés à votre événement.jpg.jpeg" class="img-fluid">
             <div class="card-body">
               <h5>
                 Experts du vin dédiés à votre événement
@@ -160,7 +164,7 @@
         </div>
         <div class="col-md-4">
           <div class="card border-0">
-            <img alt="" src="/src/assets/images/banner/banner3.jpg" class="img-fluid">
+            <img alt="" src="/src/assets/images/1/Dégustations privées, élégantes et immersives.jpg.jpeg" class="img-fluid">
             <div class="card-body">
               <h5>
                 Dégustations privées, élégantes et immersives
@@ -170,7 +174,7 @@
         </div>
         <div class="col-md-4">
           <div class="card border-0">
-            <img alt="" src="/src/assets/images/banner/banner3.jpg" class="img-fluid">
+            <img alt="" src="/src/assets/images/1/Accords%20mets-vins%20sur%20mesure,%20inspirés%20par%20de%20grands%20chefs.jpg.jpeg" class="img-fluid">
             <div class="card-body">
               <h5>
                 Accords mets-vins sur mesure, inspirés par de grands chefs
@@ -180,7 +184,7 @@
         </div>
         <div class="col-md-4">
           <div class="card border-0">
-            <img alt="" src="/src/assets/images/banner/banner3.jpg" class="img-fluid">
+            <img alt="" src="/src/assets/images/1/Lieux de prestige, soigneusement choisis pour sublimer l’expérience.jpg.jpeg" class="img-fluid">
             <div class="card-body">
               <h5>
                 Lieux de prestige, soigneusement choisis pour sublimer l’expérience
@@ -206,7 +210,7 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6">
-          <img alt="" src="/src/assets/images/banner/banner3.jpg" class="img-fluid ">
+          <img alt="" src="/src/assets/images/1/Chaque rendez-vous associe la précision d’une sélection œnologique à la créativité culinaire.jpg.jpeg" class="img-fluid ">
         </div>
         <div class="col-md-6">
 <!--          <h2 class="fw-bold mb-4">L’Art des Instants d’Exception</h2>-->
