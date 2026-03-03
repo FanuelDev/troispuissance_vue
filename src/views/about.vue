@@ -1,64 +1,73 @@
 <template>
   <div class="banner1"></div>
-  <div class="bg-light p-4">
-    <h2 class="text-center text-primary title fw-bold" data-aos="zoom-in">QUI SOMMES-NOUS?</h2>
-  </div>
+<!--  <div class="bg-light p-4">-->
+<!--    <h2 class="text-center text-primary title fw-bold" data-aos="zoom-in">QUI SOMMES-NOUS?</h2>-->
+<!--  </div>-->
   <section class="section hero mt-5" data-aos="fade-up" >
     <div class="container text-center">
       <img alt="" src="/src/assets/images/1.jpg" class="mb-5">
-      <h1 class="title head fw-bold" style="text-transform: uppercase">Trois Puissances</h1>
-      <p class="fs-5 col-md-8 mx-auto">
-        L’Art de Valoriser les Grands Vins sur les Marchés Africains
-      </p>
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <div class="card bg-primary" style="position: relative; margin-top: -130px">
+            <h1 class="title text-white head fw-bold" style="text-transform: uppercase">Trois Puissances</h1>
+            <p class="col-md-8 mx-auto text-white">
+              L’Art de Valoriser les Grands Vins sur les Marchés Africains
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="container col-md-8 mx-auto text-center" data-aos="fade-up">
+  <section class="container col-md-12 mt-5 mx-auto text-center" data-aos="fade-up">
     <p>
       Depuis ses débuts, Trois Puissance s’est donné une mission claire : offrir aux domaines, maisons et négociants une passerelle privilégiée vers les marchés africains, là où la culture du vin gagne chaque année en raffinement et en exigence.
     </p>
   </section>
 
   <!-- STORY -->
-  <section class="section bg-light mt-5" data-aos="fade-up" >
+  <section class="section my-5" data-aos="fade-up" >
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-4">
-          <img alt="" src="/src/assets/images/2.jpg" class="img-fluid">
-        </div>
+      <div class="row">
         <div class="col-md-1"></div>
-        <div class="col-md-7">
-          <h2 class="title fw-bold">Notre approche</h2>
-          <p>
-          Inspirée des plus belles maisons de distribution, conjugue expertise stratégique, sens du détail et mise en valeur des terroirs.
-        </p>
+        <div class="col-md-4">
+          <div class="card border-0">
+            <img alt="" src="/src/assets/images/2.jpg" class="img-fluid img-cardy">
+            <div class="card-body1 px-4 bg-primary text-center">
+              <div>
+                <h2 class="title fw-bold text-white">Notre approche</h2>
+                <span class="text-light">
+                Inspirée des plus belles maisons de distribution, conjugue expertise stratégique, sens du détail et mise en valeur des terroirs.
+              </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+          <div class="card border-0">
+            <img alt="" src="/src/assets/images/3.jpg" class="img-fluid img-cardy">
+            <div class="card-body1 px-4 bg-primary text-center">
+              <div>
+                <h2 class="title fw-bold text-white">Notre rôle</h2>
+                <span class="text-light">
+                Révéler votre singularité, sublimer votre image, structurer votre présence.
+              </span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SPLIT 1 -->
-  <section class="section" data-aos="fade-up" >
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-7">
-          <h2 class="title fw-bold">Notre rôle</h2>
-          <p>Révéler votre singularité, sublimer votre image, structurer votre présence.</p>
-        </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-4">
-          <img alt="" src="/src/assets/images/3.jpg" class="img-fluid">
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- EXPERTISES -->
-  <section class="section soft bg-light" data-aos="fade-up" >
+  <section class="section soft bg-light py-5" data-aos="fade-up" >
     <div class="container">
-      <div class="text-center mb-5">
-        <h2 class="fw-bold">Nos Expertises</h2>
-      </div>
+<!--      <div class="text-center mb-5">-->
+<!--        <h2 class="fw-bold">Nos Expertises</h2>-->
+<!--      </div>-->
       <div class="row g-4">
         <div class="col-md-3"><div class="card card-premium p-4 h-100 text-center">
           <div class="d-flex justify-content-center">
@@ -114,7 +123,7 @@
   </section>
 
   <!-- EVENT -->
-  <section class="section bg-light mt-5" data-aos="fade-up" >
+  <section class="section bg-light mt-5 py-4" data-aos="fade-up" >
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6">
@@ -142,7 +151,7 @@
       <h2 class="fw-bold">Nos Signatures</h2>
       <div class="row grid-4 g-5 mt-4">
         <div class="col-md-4">
-          <div class="card border-0">
+          <div class="card bg-light1 border-0">
             <img alt="" src="/src/assets/images/1/Cuvées%20d’exception,%20sélectionnées%20avec%20exigences.jpg.jpeg" class="img-fluid">
             <div class="card-body">
               <h5>
@@ -153,7 +162,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card border-0">
+          <div class="card bg-light1 border-0">
             <img alt="" src="/src/assets/images/1/Experts du vin dédiés à votre événement.jpg.jpeg" class="img-fluid">
             <div class="card-body">
               <h5>
@@ -163,7 +172,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card border-0">
+          <div class="card bg-light1 border-0">
             <img alt="" src="/src/assets/images/1/Dégustations privées, élégantes et immersives.jpg.jpeg" class="img-fluid">
             <div class="card-body">
               <h5>
@@ -173,7 +182,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card border-0">
+          <div class="card bg-light1 border-0">
             <img alt="" src="/src/assets/images/1/Accords%20mets-vins%20sur%20mesure,%20inspirés%20par%20de%20grands%20chefs.jpg.jpeg" class="img-fluid">
             <div class="card-body">
               <h5>
@@ -183,7 +192,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card border-0">
+          <div class="card bg-light1 border-0">
             <img alt="" src="/src/assets/images/1/Lieux de prestige, soigneusement choisis pour sublimer l’expérience.jpg.jpeg" class="img-fluid">
             <div class="card-body">
               <h5>
@@ -210,7 +219,7 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6">
-          <img alt="" src="/src/assets/images/1/Chaque rendez-vous associe la précision d’une sélection œnologique à la créativité culinaire.jpg.jpeg" class="img-fluid ">
+          <img alt="" src="/src/assets/images/1/Chaque rendez-vous associe la précision d’une sélection œnologique à la créativité culinaire.jpg.jpeg" class="img-fluid img-fin">
         </div>
         <div class="col-md-6">
 <!--          <h2 class="fw-bold mb-4">L’Art des Instants d’Exception</h2>-->
@@ -218,7 +227,7 @@
             Chaque rendez-vous associe la précision d’une sélection œnologique à la créativité culinaire, pour donner naissance à une expérience où chaque détail a son importance : la lumière, le rythme, les arômes, l’histoire du vin, la délicatesse du service.
           </p>
           <p>De dîners confidentiels à de grandes rencontres œnologiques, nos événements offrent aux maisons et producteurs une scène parfaitement maîtrisée pour dialoguer avec un public privilégié, sensible à l’excellence et à la distinction.</p>
-          <p>Une signature Trois Puissance : élégance, discrétion, profondeur.</p>
+          <h3 class="text-primary fw-bold">Une signature Trois Puissance : élégance, discrétion, profondeur.</h3>
         </div>
       </div>
     </div>
@@ -355,4 +364,20 @@ ul li{
   .section{padding:70px 0}
 }
 
+.img-cardy {
+  width: 100%;
+  height: 500px !important;
+  object-fit: cover;
+}
+
+.card-body1 {
+  height: 200px !important;
+  display: flex;
+  align-items: center;
+}
+
+.bg-light1 {
+  background-color: #E4E4E4 !important;
+  height: 330px !important;
+}
 </style>
