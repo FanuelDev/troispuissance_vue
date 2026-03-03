@@ -87,7 +87,6 @@
   color: #000 !important;
 }
 
-
 .img-logo {
   height: auto !important;
 }

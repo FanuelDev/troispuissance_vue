@@ -54,7 +54,7 @@
                   <p class="text-white" data-aos="fade-up">
                     Dis-mois qui tu est et je te dirai quel vin il te faut
                   </p>
-                  <button class="btn btn-outline-light" data-aos="fade-up">Traiter</button>
+                  <button class="btn btn-outline-light" style="border-radius: 0" data-aos="fade-up">Traiter</button>
                 </div>
                 <div class="col-md-6">
                   <form action="#">
@@ -242,7 +242,7 @@
 }
 
 .radius {
-  border-radius: 10px !important;
+  border-radius: 0 !important;
 }
 
 .medail-img {
@@ -253,7 +253,7 @@
 
 /* ===== CARD STYLE ===== */
 .award-card {
-  border-radius: 14px;
+  border-radius: 0;
   padding: 40px 25px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.08);
   transition: transform 0.3s ease;
@@ -323,6 +323,7 @@ p {
   background: transparent;
   color: #8A6041;
   border: 1px solid #8A6041;
+  border-radius: 0;
 }
 
 .btn-gold:hover {
@@ -334,6 +335,7 @@ p {
   background: transparent;
   color: #3E3030;
   border: 1px solid #3E3030;
+  border-radius: 0;
 }
 
 .btn-silver:hover {
@@ -345,6 +347,7 @@ p {
   background: transparent;
   color: #392D28;
   border: 1px solid #392D28;
+  border-radius: 0;
 }
 
 .btn-bronze:hover {
