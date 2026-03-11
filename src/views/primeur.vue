@@ -223,7 +223,7 @@ const products = ref([
   },
   {
     note: 96,
-    img: '/src/assets/images/product/4.jpeg',
+    img: 'src/assets/images/product/4.jpeg',
     name: 'BROADLEAF',
     vintage: 'CABERNET SAUVIGNON 2024',
     format: 'La Bouteille par 6 bouteilles',
