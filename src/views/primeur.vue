@@ -80,7 +80,7 @@
             <span class="badge-pts">pts</span>
           </div>
           <div class="product-img-wrap">
-            <img :src="product.img" :alt="product.name" class="product-img"/>
+            <img :src="product.img ?? '/src/assets/images/product/3.png'" :alt="product.name" class="product-img"/>
           </div>
           <div class="product-name">{{ product.name }}</div>
           <div class="product-vintage">{{ product.vintage }}</div>
@@ -223,7 +223,7 @@ const products = ref([
   },
   {
     note: 96,
-    img: 'src/assets/images/product/4.jpeg',
+    img: '/src/assets/images/product/4.jpeg',
     name: 'BROADLEAF',
     vintage: 'CABERNET SAUVIGNON 2024',
     format: 'La Bouteille par 6 bouteilles',
