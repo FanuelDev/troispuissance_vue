@@ -9,12 +9,7 @@
           </div>
           <div class="py-4 border-pri" data-aos="fade-up">
             <p class="text-center">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque eum accusamus aliquid
-              voluptates? Sint ab deserunt autem omnis, tenetur accusantium animi labore, enim quidem
-              unde fugit ipsum fugiat voluptatum iure! Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Aut, placeat? Dolorum est id eum totam. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Eum qui vitae nobis! Quasi exercitationem laboriosam eum,
-              qui ipsam aliquam rem vel nam culpa maiores ipsum.
+              Déguster un vin, c’est s’immerger dans un monde de sensations. Chaque bouteille raconte une histoire, une alchimie de terroir, de cépages et de savoir-faire. Pour apprécier pleinement cette expérience, il est essentiel de se familiariser avec les notes de dégustation. Elles sont votre boussole, vous guidant à travers les nuances et les subtilités de chaque vin, afin que vous puissiez faire des choix éclairés et savourer chaque gorgée.
             </p>
           </div>
           <div class="text-center">

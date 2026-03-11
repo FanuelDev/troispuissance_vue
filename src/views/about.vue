@@ -93,7 +93,7 @@
   <section class="section" data-aos="fade-up" >
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-md-12 mt-5 text-center">
+        <div class="col-md-12 mt-5">
           <h2 class="title fw-bold">Pourquoi choisir Trois Puissance ?</h2>
         </div>
         <div class="col-md-6">
@@ -147,9 +147,11 @@
 
   <!-- GRID -->
   <section class="section soft" data-aos="fade-up" >
-    <div class="container text-center">
-      <h2 class="fw-bold">Nos Signatures</h2>
+    <div class="container">
       <div class="row grid-4 g-5 mt-4">
+        <div class="col-md-12">
+          <h2 class="fw-bold">Nos Signatures</h2>
+        </div>
         <div class="col-md-4">
           <div class="card bg-light1 border-0">
             <img alt="" src="/src/assets/images/1/Cuvées%20d’exception,%20sélectionnées%20avec%20exigences.jpg.jpeg" class="img-fluid">
