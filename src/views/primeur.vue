@@ -1,24 +1,24 @@
 <template>
-  <div class="banner1"></div>
+  <div class="banner1 mb-5"></div>
 
-  <div class="page-wrapper mt-5">
+  <div class="page-wrapper pt-5">
 
     <!-- ══════════════════════════════════
          HERO PRIMEURS (image + texte gauche)
     ══════════════════════════════════ -->
     <div class="hero-primeurs">
-      <div class="hero-primeurs-inner">
+      <div class="hero-primeurs-inner pt-5">
         <!-- Côté image à droite -->
         <div class="hero-img-side">
-          <img src="/src/assets/images/use/15.jpg" class="hero-main-img" alt="Primeurs"/>
+          <img src="/src/assets/images/primeur.jpeg" class="hero-main-img" alt="Primeurs"/>
         </div>
         <!-- Texte à gauche superposé -->
-        <div class="hero-text-side">
-          <h1 class="hero-title" style="font-size: 45px;">Éveillez<br/>vos Sens avec<br/>les Primeurs</h1>
-        </div>
+<!--        <div class="hero-text-side">-->
+<!--          <h1 class="hero-title" style="font-size: 45px;">Éveillez<br/>vos Sens avec<br/>les Primeurs</h1>-->
+<!--        </div>-->
       </div>
       <!-- Description sous le bloc hero -->
-      <div class="hero-description">
+      <div class="hero-description bg-light p-5">
         <p>
           Bienvenue dans l'univers des primeurs, un voyage sensoriel qui ravira les passionnés de
           vin. Ici, chaque bouteille raconte une histoire, chaque gorgée vous transporte au cœur
@@ -32,7 +32,7 @@
     <!-- ══════════════════════════════════
          TOOLBAR
     ══════════════════════════════════ -->
-    <div class="toolbar-bar">
+    <div class="toolbar-bar my-4 pb-4">
       <div class="toolbar-left">
         <button
           v-for="(icon, i) in ['fa-th', 'fa-list']"
@@ -59,7 +59,7 @@
     <!-- ══════════════════════════════════
          FILTRES
     ══════════════════════════════════ -->
-    <div class="filters-bar">
+    <div class="filters-bar my-4 pb-4">
       <button v-for="f in filters" :key="f" class="btn-filter">
         {{ f }} <i class="fa fa-chevron-down"></i>
       </button>
@@ -68,12 +68,12 @@
     <!-- ══════════════════════════════════
          GRILLE PRODUITS
     ══════════════════════════════════ -->
-    <section class="products-section">
+    <section class="products-section my-5">
       <div class="products-grid">
         <div
           v-for="(product, index) in products"
           :key="index"
-          class="product-card"
+          class="product-card mb-4"
         >
           <div class="badge-note">
             <span class="badge-score">{{ product.note }}</span>
@@ -105,7 +105,7 @@
     <!-- ══════════════════════════════════
          LIFESTYLE IMAGE
     ══════════════════════════════════ -->
-    <div class="lifestyle-wrap">
+    <div class="lifestyle-wrap my-5">
       <img src="/src/assets/images/partenaire.jpeg" class="lifestyle-img" alt="Dégustation"/>
     </div>
 
@@ -116,7 +116,7 @@
       <div class="content-block">
         <h2 class="content-title">
           Pourquoi Choisir les Primeurs ?<br/>
-          <span>Un Privilège pour les Amateurs Éclairés</span>
+          <small class="title fw-bold" style="font-size: 20px">Un Privilège pour les Amateurs Éclairés</small>
         </h2>
         <p class="content-body">
           Opter pour l'achat de vins en primeur, c'est faire le choix d'une expérience authentique
@@ -132,7 +132,7 @@
       <div class="content-block">
         <h2 class="content-title">
           Un Partenaire de Confiance :<br/>
-          <span>Travaillons Main dans la Main avec les Vignerons</span>
+          <small class="title fw-bold" style="font-size: 20px">Travaillons Main dans la Main avec les Vignerons</small>
         </h2>
         <p class="content-body">
           Nous croyons fermement à l'importance des liens authentiques. C'est pourquoi nous avons
@@ -148,7 +148,7 @@
       <div class="content-block">
         <h2 class="content-title">
           Un Service Exclusif pour Nos Abonnés :<br/>
-          <span>Une Communauté de Passionnés</span>
+          <small class="title fw-bold" style="font-size: 20px">Une Communauté de Passionnés</small>
         </h2>
         <p class="content-body">
           Pour préserver cette expérience unique, l'accès aux primeurs est réservé à nos abonnés.
@@ -471,7 +471,7 @@ function decrement(index: number) {
 
 .hero-primeurs-inner {
   position: relative;
-  height: 50vh;
+  height: 46vh;
   overflow: hidden;
 }
 
@@ -483,7 +483,7 @@ function decrement(index: number) {
 .hero-main-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center 40%;
   display: block;
 }
@@ -493,12 +493,6 @@ function decrement(index: number) {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to right,
-    rgba(90, 18, 32, 0.85) 0%,
-    rgba(90, 18, 32, 0.55) 40%,
-    transparent 65%
-  );
 }
 
 .hero-text-side {
@@ -661,8 +655,8 @@ function decrement(index: number) {
   position: absolute;
   top: 10px;
   left: 10px;
-  width: 38px;
-  height: 38px;
+  width: 58px;
+  height: 58px;
   border-radius: 50%;
   background: #7b1c2e;
   color: #fff;
@@ -674,12 +668,12 @@ function decrement(index: number) {
 }
 
 .badge-score {
-  font-size: 12px;
+  font-size: 20px;
   font-weight: 700;
 }
 
 .badge-pts {
-  font-size: 7.5px;
+  font-size: 12px;
   font-weight: 300;
   margin-top: 1px;
 }
@@ -812,7 +806,7 @@ function decrement(index: number) {
 }
 
 .content-block {
-  margin-bottom: 28px;
+  margin-bottom: 45px !important;
 }
 
 .content-title {
