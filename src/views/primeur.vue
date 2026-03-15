@@ -12,21 +12,22 @@
         <div class="hero-img-side">
           <img src="/src/assets/images/primeur.jpeg" class="hero-main-img" alt="Primeurs"/>
         </div>
+
+        <div class="hero-description bg-light p-5">
+          <p>
+            Bienvenue dans l'univers des primeurs, un voyage sensoriel qui ravira les passionnés de
+            vin. Ici, chaque bouteille raconte une histoire, chaque gorgée vous transporte au cœur
+            des vignes. Réservés exclusivement à nos abonnés, ces crus d'exception vous ouvrent les
+            portes de la découverte, vous permettant d'accéder à des millésimes soigneusement
+            sélectionnés bien avant leur mise en vente.
+          </p>
+        </div>
         <!-- Texte à gauche superposé -->
 <!--        <div class="hero-text-side">-->
 <!--          <h1 class="hero-title" style="font-size: 45px;">Éveillez<br/>vos Sens avec<br/>les Primeurs</h1>-->
 <!--        </div>-->
       </div>
       <!-- Description sous le bloc hero -->
-      <div class="hero-description bg-light p-5">
-        <p>
-          Bienvenue dans l'univers des primeurs, un voyage sensoriel qui ravira les passionnés de
-          vin. Ici, chaque bouteille raconte une histoire, chaque gorgée vous transporte au cœur
-          des vignes. Réservés exclusivement à nos abonnés, ces crus d'exception vous ouvrent les
-          portes de la découverte, vous permettant d'accéder à des millésimes soigneusement
-          sélectionnés bien avant leur mise en vente.
-        </p>
-      </div>
     </div>
 
     <!-- ══════════════════════════════════
@@ -471,12 +472,10 @@ function decrement(index: number) {
 
 .hero-primeurs-inner {
   position: relative;
-  height: 46vh;
   overflow: hidden;
 }
 
 .hero-img-side {
-  position: absolute;
   inset: 0;
 }
 
