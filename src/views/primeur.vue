@@ -117,7 +117,7 @@
       <div class="content-block">
         <h2 class="content-title">
           Pourquoi Choisir les Primeurs ?<br/>
-          <small class="title fw-bold" style="font-size: 20px">Un Privilège pour les Amateurs Éclairés</small>
+          Un Privilège pour les Amateurs Éclairés
         </h2>
         <p class="content-body">
           Opter pour l'achat de vins en primeur, c'est faire le choix d'une expérience authentique
@@ -132,8 +132,7 @@
 
       <div class="content-block">
         <h2 class="content-title">
-          Un Partenaire de Confiance :<br/>
-          <small class="title fw-bold" style="font-size: 20px">Travaillons Main dans la Main avec les Vignerons</small>
+          Un Partenaire de Confiance : <br> Travaillons Main dans la Main avec les Vignerons
         </h2>
         <p class="content-body">
           Nous croyons fermement à l'importance des liens authentiques. C'est pourquoi nous avons
@@ -148,8 +147,7 @@
 
       <div class="content-block">
         <h2 class="content-title">
-          Un Service Exclusif pour Nos Abonnés :<br/>
-          <small class="title fw-bold" style="font-size: 20px">Une Communauté de Passionnés</small>
+          Un Service Exclusif pour Nos Abonnés : <br> Une Communauté de Passionnés
         </h2>
         <p class="content-body">
           Pour préserver cette expérience unique, l'accès aux primeurs est réservé à nos abonnés.
