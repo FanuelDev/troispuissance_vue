@@ -106,7 +106,7 @@
     <!-- ══════════════════════════════════
          LIFESTYLE IMAGE
     ══════════════════════════════════ -->
-    <div class="lifestyle-wrap my-5 sticky-top">
+    <div class="lifestyle-wrap my-5">
       <img src="/src/assets/images/partenaire.jpeg" class="lifestyle-img" alt="Dégustation"/>
     </div>
 
@@ -782,13 +782,12 @@ function decrement(index: number) {
   margin: 30px 20px 0;
   overflow: hidden;
   border-radius: 3px;
-  max-height: 50vh;
 }
 
 .lifestyle-img {
   width: 100%;
-  height: 50vh;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain;
   object-position: center 35%;
   display: block;
   filter: brightness(0.87);
