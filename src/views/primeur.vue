@@ -106,7 +106,7 @@
     <!-- ══════════════════════════════════
          LIFESTYLE IMAGE
     ══════════════════════════════════ -->
-    <div class="lifestyle-wrap my-5">
+    <div class="lifestyle-wrap my-5 sticky-top">
       <img src="/src/assets/images/partenaire.jpeg" class="lifestyle-img" alt="Dégustation"/>
     </div>
 
