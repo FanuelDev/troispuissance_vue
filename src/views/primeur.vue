@@ -1,7 +1,7 @@
 <template>
   <div class="banner1 mb-5"></div>
 
-  <div class="page-wrapper pt-5">
+  <div class="container page-wrapper pt-5">
 
     <!-- ══════════════════════════════════
          HERO PRIMEURS (image + texte gauche)
@@ -269,7 +269,6 @@ function decrement(index: number) {
   font-family: 'Lato', sans-serif;
   color: #333;
   background: #fff;
-  max-width: 1200px;
   margin: 0 auto;
 }
 
