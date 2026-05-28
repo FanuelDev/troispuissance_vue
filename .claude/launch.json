@@ -5,6 +5,7 @@
       "name": "troispuissance-dev",
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "dev"],
+      "cwd": "C:\\Users\\Perce\\Documents\\GitHub\\troispuissance_vue",
       "port": 5173
     }
   ]

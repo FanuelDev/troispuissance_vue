@@ -4,7 +4,7 @@
   <!-- HERO SECTION -->
   <section class="section hero mt-5" data-aos="fade-up">
     <div class="container text-center">
-      <img alt="Trois Puissances" src="/src/assets/images/1.jpg" class="mb-5 hero-full-img">
+      <img alt="Trois Puissances" src="@/assets/images/1.jpg" class="mb-5 hero-full-img">
       <div class="row">
         <div class="col-md-8 offset-md-2">
           <div class="hero-card" style="position: relative; margin-top: -130px">
@@ -38,7 +38,7 @@
         <div class="col-md-1"></div>
         <div class="col-md-4">
           <div class="story-card">
-            <img alt="" src="/src/assets/images/2.jpg" class="img-fluid story-img">
+            <img alt="" src="@/assets/images/2.jpg" class="img-fluid story-img">
             <div class="story-body bg-primary text-center">
               <h2 class="title fw-bold text-white">Notre approche</h2>
               <span class="text-light story-span">
@@ -51,7 +51,7 @@
         <div class="col-md-2"></div>
         <div class="col-md-4">
           <div class="story-card">
-            <img alt="" src="/src/assets/images/3.jpg" class="img-fluid story-img">
+            <img alt="" src="@/assets/images/3.jpg" class="img-fluid story-img">
             <div class="story-body bg-primary text-center">
               <h2 class="title fw-bold text-white">Notre rôle</h2>
               <span class="text-light story-span">
@@ -71,7 +71,7 @@
         <div class="col-md-3">
           <div class="card card-premium p-4 h-100 text-center">
             <div class="d-flex justify-content-center">
-              <img alt="" src="/src/assets/images/analyse.png" class="img-fluid w-25">
+              <img alt="" src="@/assets/images/analyse.png" class="img-fluid w-25">
             </div>
             <h4 class="fw-bold title text-primary mt-4">Analyses de marché<br>pointues</h4>
             <span class="mt-2 text-justify expertise-text">Comprendre les dynamiques locales, anticiper la demande, identifier les marchés à fort potentiel : nous vous apportons une vision claire, guidée par l'observation des tendances premium qui dominent aujourd'hui en Afrique.</span>
@@ -80,7 +80,7 @@
         <div class="col-md-3">
           <div class="card card-premium p-4 h-100 text-center">
             <div class="d-flex justify-content-center">
-              <img alt="" src="/src/assets/images/Importation.png" class="img-fluid w-25">
+              <img alt="" src="@/assets/images/Importation.png" class="img-fluid w-25">
             </div>
             <h4 class="fw-bold title text-primary mt-4">Positionnement & image<br>de marque</h4>
             <span class="text-justify expertise-text">Comme pour une cuvée que l'on élève et affine, nous travaillons votre identité pour qu'elle trouve un écho naturel auprès des amateurs africains : élégance, cohérence, précision.</span>
@@ -89,7 +89,7 @@
         <div class="col-md-3">
           <div class="card card-premium p-4 h-100 text-center">
             <div class="d-flex justify-content-center">
-              <img alt="" src="/src/assets/images/Distribution & importation.png" class="img-fluid w-25">
+              <img alt="" :src="imgDistribution" class="img-fluid w-25">
             </div>
             <h4 class="fw-bold title text-primary mt-4">Réseaux d'importation<br>& distribution</h4>
             <span class="text-justify expertise-text">Nous vous ouvrons les portes des réseaux les plus sérieux, du Nigéria à la Côte d'Ivoire, du Ghana au Kenya : des partenaires fiables, engagés, à la recherche de vins ayant une histoire, un style, une signature.</span>
@@ -98,7 +98,7 @@
         <div class="col-md-3">
           <div class="card card-premium p-4 h-100 text-center">
             <div class="d-flex justify-content-center">
-              <img alt="" src="/src/assets/images/Event.png" class="img-fluid w-25">
+              <img alt="" src="@/assets/images/Event.png" class="img-fluid w-25">
             </div>
             <h4 class="fw-bold title text-primary mt-4">Événements & expériences<br>exclusives</h4>
             <span class="text-justify expertise-text">Dégustations confidentielles, présentations privées à des acheteurs triés sur le volet, événements œnologiques de prestige : nous créons des moments où votre vin s'exprime pleinement.</span>
@@ -310,15 +310,15 @@
 </template>
 
 <script setup lang="ts">
-// Chemins avec apostrophes/caractères spéciaux — bindés dynamiquement pour éviter l'analyse statique Vite
-const imgWhy = '/src/assets/images/1/Pourquoi choisir Trois Puissance.jpg.jpeg'
-const imgArt = "/src/assets/images/1/L’Art des Instants d’Exception.jpg.jpeg"
-const imgCuvees = "/src/assets/images/1/Cuvées d’exception, sélectionnées avec exigences.jpg.jpeg"
-const imgExperts = "/src/assets/images/1/Experts du vin dédiés à votre événement.jpg.jpeg"
-const imgDegus = "/src/assets/images/1/Dégustations privées, élégantes et immersives.jpg.jpeg"
-const imgAccords = '/src/assets/images/1/Accords%20mets-vins%20sur%20mesure,%20inspir%C3%A9s%20par%20de%20grands%20chefs.jpg.jpeg'
-const imgLieux = "/src/assets/images/1/Lieux de prestige, soigneusement choisis pour sublimer l’expérience.jpg.jpeg"
-const imgChaque = "/src/assets/images/1/Chaque rendez-vous associe la précision d’une sélection œnologique à la créativité culinaire.jpg.jpeg"
+import imgWhy from "@/assets/images/1/Pourquoi choisir Trois Puissance.jpg.jpeg"
+import imgArt from "@/assets/images/1/L’Art des Instants d’Exception.jpg.jpeg"
+import imgCuvees from "@/assets/images/1/Cuvées d’exception, sélectionnées avec exigences.jpg.jpeg"
+import imgExperts from "@/assets/images/1/Experts du vin dédiés à votre événement.jpg.jpeg"
+import imgDegus from "@/assets/images/1/Dégustations privées, élégantes et immersives.jpg.jpeg"
+import imgAccords from "@/assets/images/1/Accords mets-vins sur mesure, inspirés par de grands chefs.jpg.jpeg"
+import imgLieux from "@/assets/images/1/Lieux de prestige, soigneusement choisis pour sublimer l’expérience.jpg.jpeg"
+import imgChaque from "@/assets/images/1/Chaque rendez-vous associe la précision d’une sélection œnologique à la créativité culinaire.jpg.jpeg"
+import imgDistribution from "@/assets/images/Distribution & importation.png"
 </script>
 
 <style scoped>
