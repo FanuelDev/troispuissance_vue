@@ -3,7 +3,7 @@ version: "3"
 services:
     # trois_puissance:
     trois_puissance:
-      container_name: trois_puissance
+      container_name: trois_puissance_refont
       #hostname: dp-senyo
       # image: esmc-web:v1
       # image: perce26/entrersortie:trois_puissance
@@ -14,7 +14,7 @@ services:
       #command: tail -F anyts
       ports:
        #- "3000:3000"
-       - "3000:80"
+       - "3001:80"
       #environment:
        #- API_BASE_URL=http://160.242.199.14:8888
       networks:
