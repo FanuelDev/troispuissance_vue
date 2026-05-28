@@ -244,7 +244,7 @@
           </div>
         </div>
         <div class="editorial-divider"></div>
-        <div class="editorial-block" data-aos="fade-up">
+        <div class="editorial-block" data-aos="tp-rise" data-aos-delay="160">
           <div class="editorial-number">03</div>
           <div class="editorial-content">
             <h3 class="editorial-title">Un Service Exclusif pour Nos Membres</h3>

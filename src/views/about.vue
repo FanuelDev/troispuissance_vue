@@ -2,7 +2,7 @@
   <div class="banner1"></div>
 
   <!-- HERO SECTION -->
-  <section class="section hero mt-5" data-aos="fade-up">
+  <section class="section hero mt-5" data-aos="tp-rise" data-aos-delay="50">
     <div class="container text-center">
       <img alt="Trois Puissances" src="@/assets/images/1.jpg" class="mb-5 hero-full-img">
       <div class="row">
@@ -20,7 +20,7 @@
   </section>
 
   <!-- INTRO -->
-  <section class="container col-md-12 mt-5 mx-auto text-center about-intro" data-aos="fade-up">
+  <section class="container col-md-12 mt-5 mx-auto text-center about-intro" data-aos="tp-rise" data-aos-delay="100">
     <div class="intro-wrap">
       <div class="gold-eyebrow">Notre Mission</div>
       <p class="intro-text">
@@ -32,11 +32,11 @@
   </section>
 
   <!-- STORY — APPROCHE & RÔLE -->
-  <section class="section my-5" data-aos="fade-up">
+  <section class="section my-5" data-aos="tp-rise">
     <div class="container">
       <div class="row">
         <div class="col-md-1"></div>
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="tp-reveal" data-aos-delay="100">
           <div class="story-card">
             <img alt="" src="@/assets/images/2.jpg" class="img-fluid story-img">
             <div class="story-body bg-primary text-center">
@@ -49,7 +49,7 @@
           </div>
         </div>
         <div class="col-md-2"></div>
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="tp-reveal" data-aos-delay="280">
           <div class="story-card">
             <img alt="" src="@/assets/images/3.jpg" class="img-fluid story-img">
             <div class="story-body bg-primary text-center">
@@ -65,7 +65,7 @@
   </section>
 
   <!-- EXPERTISES -->
-  <section class="section soft bg-light py-5" data-aos="fade-up">
+  <section class="section soft bg-light py-5" data-aos="tp-rise">
     <div class="container">
       <div class="row g-4">
         <div class="col-md-3">
@@ -120,14 +120,14 @@
           </div>
         </div>
 
-        <div class="col-md-6" data-aos="fade-right">
+        <div class="col-md-6" data-aos="tp-reveal" data-aos-delay="100">
           <div class="why-img-frame">
             <img alt="" :src="imgWhy" class="img-fluid why-img">
             <div class="why-img-border"></div>
           </div>
         </div>
 
-        <div class="col-md-6" data-aos="fade-left">
+        <div class="col-md-6" data-aos="tp-right" data-aos-delay="200">
           <!-- LISTE REDESIGNÉE EN ATOUTS ÉLÉGANTS -->
           <div class="why-features">
 
@@ -204,7 +204,7 @@
   </section>
 
   <!-- ART DES INSTANTS -->
-  <section class="section bg-light mt-5 py-4" data-aos="fade-up">
+  <section class="section bg-light mt-5 py-4" data-aos="tp-rise">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6">
@@ -215,21 +215,21 @@
           <p class="about-p">Un moment suspendu, pensé pour un public averti et exigeant.</p>
         </div>
         <div class="col-md-6">
-          <img alt="" :src="imgArt" class="img-fluid about-right-img">
+          <img alt="" :src="imgArt" class="img-fluid about-right-img" data-aos="tp-reveal" data-aos-delay="200">
         </div>
       </div>
     </div>
   </section>
 
   <!-- NOS SIGNATURES -->
-  <section class="section soft" data-aos="fade-up">
+  <section class="section soft" data-aos="tp-rise">
     <div class="container">
       <div class="row g-5 mt-4">
         <div class="col-md-12 mb-2">
           <div class="gold-eyebrow">Notre catalogue</div>
           <h2 class="fw-bold about-section-title">Nos Signatures</h2>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="tp-rise" data-aos-delay="0">
           <div class="sig-card">
             <img alt="" :src="imgCuvees" class="sig-img img-fluid">
             <div class="sig-body">
@@ -238,7 +238,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="tp-rise" data-aos-delay="120">
           <div class="sig-card">
             <img alt="" :src="imgExperts" class="sig-img img-fluid">
             <div class="sig-body">
@@ -247,7 +247,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="tp-rise" data-aos-delay="240">
           <div class="sig-card">
             <img alt="" :src="imgDegus" class="sig-img img-fluid">
             <div class="sig-body">
@@ -256,7 +256,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="tp-rise" data-aos-delay="60">
           <div class="sig-card">
             <img alt="" :src="imgAccords" class="sig-img img-fluid">
             <div class="sig-body">
@@ -265,7 +265,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="tp-rise" data-aos-delay="180">
           <div class="sig-card">
             <img alt="" :src="imgLieux" class="sig-img img-fluid">
             <div class="sig-body">

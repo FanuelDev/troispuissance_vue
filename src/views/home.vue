@@ -15,13 +15,13 @@
     <div class="row">
       <div class="col-md-6 p-4" data-aos="fade-up">
         <div class="extra">
-          <img src="/src/assets/images/use/1.jpg" class="img img-fluid" alt="" />
+          <img src="@/assets/images/use/1.jpg" class="img img-fluid" alt="" />
           <div class="brd"></div>
         </div>
       </div>
       <div class="col-md-6 p-4" data-aos="fade-up" data-aos-duration="1500">
         <div class="extra1">
-          <img src="/src/assets/images/use/2.jpg" class="img img-fluid" alt="" />
+          <img src="@/assets/images/use/2.jpg" class="img img-fluid" alt="" />
           <div class="brd"></div>
         </div>
         <div class="top">
@@ -56,7 +56,7 @@
         >
           <Slide>
             <div class="p-4 mx-5" data-aos="fade-up">
-              <img src="/src/assets/images/carousel/1.jpg" class="img-fluid" alt="" />
+              <img src="@/assets/images/carousel/1.jpg" class="img-fluid" alt="" />
               <h5 class="italic text-primary title text-justify mt-4">
                 Lorem ipsum dolor sit amet consectetur adipisic <br />
                 elit. Repellendus nobis, perspiciatis asperiores <br />
@@ -68,7 +68,7 @@
           </Slide>
           <Slide>
             <div class="p-4 mx-5" data-aos="fade-up">
-              <img src="/src/assets/images/carousel/2.jpg" class="img-fluid" alt="" />
+              <img src="@/assets/images/carousel/2.jpg" class="img-fluid" alt="" />
               <h5 class="italic text-primary title text-justify mt-4">
                 Lorem ipsum dolor sit amet consectetur adipisic <br />
                 elit. Repellendus nobis, perspiciatis asperiores <br />
@@ -80,7 +80,7 @@
           </Slide>
           <Slide>
             <div class="p-4 mx-5" data-aos="fade-up">
-              <img src="/src/assets/images/carousel/3.jpg" class="img-fluid" alt="" />
+              <img src="@/assets/images/carousel/3.jpg" class="img-fluid" alt="" />
               <h5 class="italic text-primary title text-justify mt-4">
                 Lorem ipsum dolor sit amet consectetur adipisic <br />
                 elit. Repellendus nobis, perspiciatis asperiores <br />
@@ -92,7 +92,7 @@
           </Slide>
           <Slide>
             <div class="p-4 mx-5" data-aos="fade-up">
-              <img src="/src/assets/images/carousel/1.jpg" class="img-fluid" alt="" />
+              <img src="@/assets/images/carousel/1.jpg" class="img-fluid" alt="" />
               <h5 class="italic text-primary title text-justify mt-4">
                 Lorem ipsum dolor sit amet consectetur adipisic <br />
                 elit. Repellendus nobis, perspiciatis asperiores <br />
@@ -104,7 +104,7 @@
           </Slide>
           <Slide>
             <div class="p-4 mx-5" data-aos="fade-up">
-              <img src="/src/assets/images/carousel/2.jpg" class="img-fluid" alt="" />
+              <img src="@/assets/images/carousel/2.jpg" class="img-fluid" alt="" />
               <h5 class="italic text-primary title text-justify mt-4">
                 Lorem ipsum dolor sit amet consectetur adipisic <br />
                 elit. Repellendus nobis, perspiciatis asperiores <br />
@@ -116,7 +116,7 @@
           </Slide>
           <Slide>
             <div class="p-4 mx-5" data-aos="fade-up">
-              <img src="/src/assets/images/carousel/3.jpg" class="img-fluid" alt="" />
+              <img src="@/assets/images/carousel/3.jpg" class="img-fluid" alt="" />
               <h5 class="italic text-primary title text-justify mt-4">
                 Lorem ipsum dolor sit amet consectetur adipisic <br />
                 elit. Repellendus nobis, perspiciatis asperiores <br />
@@ -143,7 +143,7 @@
         <!--        >-->
         <!--          <swiper-slide>-->
         <!--            <div class="p-4 mx-5" data-aos="fade-up">-->
-        <!--              <img src="/src/assets/images/carousel/1.jpg" class="img-fluid" alt="" />-->
+        <!--              <img src="@/assets/images/carousel/1.jpg" class="img-fluid" alt="" />-->
         <!--              <h5 class="italic text-primary title text-justify mt-4">-->
         <!--                Lorem ipsum dolor sit amet consectetur adipisic <br />-->
         <!--                elit. Repellendus nobis, perspiciatis asperiores <br />-->
@@ -155,7 +155,7 @@
         <!--          </swiper-slide>-->
         <!--          <swiper-slide>-->
         <!--            <div class="p-4 mx-5" data-aos="fade-up">-->
-        <!--              <img src="/src/assets/images/carousel/2.jpg" class="img-fluid" alt="" />-->
+        <!--              <img src="@/assets/images/carousel/2.jpg" class="img-fluid" alt="" />-->
         <!--              <h5 class="italic text-primary title text-justify mt-4">-->
         <!--                Lorem ipsum dolor sit amet consectetur adipisic <br />-->
         <!--                elit. Repellendus nobis, perspiciatis asperiores <br />-->
@@ -167,7 +167,7 @@
         <!--          </swiper-slide>-->
         <!--          <swiper-slide>-->
         <!--            <div class="p-4 mx-5" data-aos="fade-up">-->
-        <!--              <img src="/src/assets/images/carousel/3.jpg" class="img-fluid" alt="" />-->
+        <!--              <img src="@/assets/images/carousel/3.jpg" class="img-fluid" alt="" />-->
         <!--              <h5 class="italic text-primary title text-justify mt-4">-->
         <!--                Lorem ipsum dolor sit amet consectetur adipisic <br />-->
         <!--                elit. Repellendus nobis, perspiciatis asperiores <br />-->
@@ -179,7 +179,7 @@
         <!--          </swiper-slide>-->
         <!--          <swiper-slide>-->
         <!--            <div class="p-4 mx-5" data-aos="fade-up">-->
-        <!--              <img src="/src/assets/images/carousel/1.jpg" class="img-fluid" alt="" />-->
+        <!--              <img src="@/assets/images/carousel/1.jpg" class="img-fluid" alt="" />-->
         <!--              <h5 class="italic text-primary title text-justify mt-4">-->
         <!--                Lorem ipsum dolor sit amet consectetur adipisic <br />-->
         <!--                elit. Repellendus nobis, perspiciatis asperiores <br />-->
@@ -191,7 +191,7 @@
         <!--          </swiper-slide>-->
         <!--          <swiper-slide>-->
         <!--            <div class="p-4 mx-5" data-aos="fade-up">-->
-        <!--              <img src="/src/assets/images/carousel/2.jpg" class="img-fluid" alt="" />-->
+        <!--              <img src="@/assets/images/carousel/2.jpg" class="img-fluid" alt="" />-->
         <!--              <h5 class="italic text-primary title text-justify mt-4">-->
         <!--                Lorem ipsum dolor sit amet consectetur adipisic <br />-->
         <!--                elit. Repellendus nobis, perspiciatis asperiores <br />-->
@@ -203,7 +203,7 @@
         <!--          </swiper-slide>-->
         <!--          <swiper-slide>-->
         <!--            <div class="p-4 mx-5" data-aos="fade-up">-->
-        <!--              <img src="/src/assets/images/carousel/3.jpg" class="img-fluid" alt="" />-->
+        <!--              <img src="@/assets/images/carousel/3.jpg" class="img-fluid" alt="" />-->
         <!--              <h5 class="italic text-primary title text-justify mt-4">-->
         <!--                Lorem ipsum dolor sit amet consectetur adipisic <br />-->
         <!--                elit. Repellendus nobis, perspiciatis asperiores <br />-->
@@ -215,7 +215,7 @@
         <!--          </swiper-slide>-->
         <!--          <swiper-slide>-->
         <!--            <div class="p-4 mx-5" data-aos="fade-up">-->
-        <!--              <img src="/src/assets/images/carousel/1.jpg" class="img-fluid" alt="" />-->
+        <!--              <img src="@/assets/images/carousel/1.jpg" class="img-fluid" alt="" />-->
         <!--              <h5 class="italic text-primary title text-justify mt-4">-->
         <!--                Lorem ipsum dolor sit amet consectetur adipisic <br />-->
         <!--                elit. Repellendus nobis, perspiciatis asperiores <br />-->
@@ -227,7 +227,7 @@
         <!--          </swiper-slide>-->
         <!--          <swiper-slide>-->
         <!--            <div class="p-4 mx-5" data-aos="fade-up">-->
-        <!--              <img src="/src/assets/images/carousel/2.jpg" class="img-fluid" alt="" />-->
+        <!--              <img src="@/assets/images/carousel/2.jpg" class="img-fluid" alt="" />-->
         <!--              <h5 class="italic text-primary title text-justify mt-4">-->
         <!--                Lorem ipsum dolor sit amet consectetur adipisic <br />-->
         <!--                elit. Repellendus nobis, perspiciatis asperiores <br />-->
@@ -239,7 +239,7 @@
         <!--          </swiper-slide>-->
         <!--          <swiper-slide>-->
         <!--            <div class="p-4 mx-5" data-aos="fade-up">-->
-        <!--              <img src="/src/assets/images/carousel/3.jpg" class="img-fluid" alt="" />-->
+        <!--              <img src="@/assets/images/carousel/3.jpg" class="img-fluid" alt="" />-->
         <!--              <h5 class="italic text-primary title text-justify mt-4">-->
         <!--                Lorem ipsum dolor sit amet consectetur adipisic <br />-->
         <!--                elit. Repellendus nobis, perspiciatis asperiores <br />-->
@@ -251,7 +251,7 @@
         <!--          </swiper-slide>-->
         <!--          <swiper-slide>-->
         <!--            <div class="p-4 mx-5" data-aos="fade-up">-->
-        <!--              <img src="/src/assets/images/carousel/1.jpg" class="img-fluid" alt="" />-->
+        <!--              <img src="@/assets/images/carousel/1.jpg" class="img-fluid" alt="" />-->
         <!--              <h5 class="italic text-primary title text-justify mt-4">-->
         <!--                Lorem ipsum dolor sit amet consectetur adipisic <br />-->
         <!--                elit. Repellendus nobis, perspiciatis asperiores <br />-->
@@ -263,7 +263,7 @@
         <!--          </swiper-slide>-->
         <!--          <swiper-slide>-->
         <!--            <div class="p-4 mx-5" data-aos="fade-up">-->
-        <!--              <img src="/src/assets/images/carousel/2.jpg" class="img-fluid" alt="" />-->
+        <!--              <img src="@/assets/images/carousel/2.jpg" class="img-fluid" alt="" />-->
         <!--              <h5 class="italic text-primary title text-justify mt-4">-->
         <!--                Lorem ipsum dolor sit amet consectetur adipisic <br />-->
         <!--                elit. Repellendus nobis, perspiciatis asperiores <br />-->
@@ -275,7 +275,7 @@
         <!--          </swiper-slide>-->
         <!--          <swiper-slide>-->
         <!--            <div class="p-4 mx-5" data-aos="fade-up">-->
-        <!--              <img src="/src/assets/images/carousel/3.jpg" class="img-fluid" alt="" />-->
+        <!--              <img src="@/assets/images/carousel/3.jpg" class="img-fluid" alt="" />-->
         <!--              <h5 class="italic text-primary title text-justify mt-4">-->
         <!--                Lorem ipsum dolor sit amet consectetur adipisic <br />-->
         <!--                elit. Repellendus nobis, perspiciatis asperiores <br />-->
@@ -293,7 +293,7 @@
   <section class="top container">
     <div class="row align-items-end">
       <div class="col-md-6" data-aos="fade-up">
-        <img src="/src/assets/images/use/3.jpg" class="img-fluid img-boutique" alt="" />
+        <img src="@/assets/images/use/3.jpg" class="img-fluid img-boutique" alt="" />
       </div>
       <div class="col-md-5">
         <div class="py-5 w-half">
