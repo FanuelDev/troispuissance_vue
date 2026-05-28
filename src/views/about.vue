@@ -1,17 +1,17 @@
 <template>
   <div class="banner1"></div>
-<!--  <div class="bg-light p-4">-->
-<!--    <h2 class="text-center text-primary title fw-bold" data-aos="zoom-in">QUI SOMMES-NOUS?</h2>-->
-<!--  </div>-->
-  <section class="section hero mt-5" data-aos="fade-up" >
+
+  <!-- HERO SECTION -->
+  <section class="section hero mt-5" data-aos="fade-up">
     <div class="container text-center">
-      <img alt="" src="/src/assets/images/1.jpg" class="mb-5">
+      <img alt="Trois Puissances" src="/src/assets/images/1.jpg" class="mb-5 hero-full-img">
       <div class="row">
         <div class="col-md-8 offset-md-2">
-          <div class="card bg-primary" style="position: relative; margin-top: -130px">
+          <div class="hero-card" style="position: relative; margin-top: -130px">
+            <div class="hero-card-ornament">✦</div>
             <h1 class="title text-white head fw-bold" style="text-transform: uppercase">Trois Puissances</h1>
-            <p class="col-md-8 mx-auto text-white">
-              L’Art de Valoriser les Grands Vins sur les Marchés Africains
+            <p class="col-md-8 mx-auto text-white hero-lead">
+              L'Art de Valoriser les Grands Vins sur les Marchés Africains
             </p>
           </div>
         </div>
@@ -19,217 +19,289 @@
     </div>
   </section>
 
-  <section class="container col-md-12 mt-5 mx-auto text-center" data-aos="fade-up">
-    <p>
-      Depuis ses débuts, Trois Puissance s’est donné une mission claire : offrir aux domaines, maisons et négociants une passerelle privilégiée vers les marchés africains, là où la culture du vin gagne chaque année en raffinement et en exigence.
-    </p>
+  <!-- INTRO -->
+  <section class="container col-md-12 mt-5 mx-auto text-center about-intro" data-aos="fade-up">
+    <div class="intro-wrap">
+      <div class="gold-eyebrow">Notre Mission</div>
+      <p class="intro-text">
+        Depuis ses débuts, Trois Puissances s'est donné une mission claire : offrir aux domaines,
+        maisons et négociants une passerelle privilégiée vers les marchés africains, là où la
+        culture du vin gagne chaque année en raffinement et en exigence.
+      </p>
+    </div>
   </section>
 
-  <!-- STORY -->
-  <section class="section my-5" data-aos="fade-up" >
+  <!-- STORY — APPROCHE & RÔLE -->
+  <section class="section my-5" data-aos="fade-up">
     <div class="container">
       <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-4">
-          <div class="card border-0">
-            <img alt="" src="/src/assets/images/2.jpg" class="img-fluid img-cardy">
-            <div class="card-body1 px-4 bg-primary text-center">
-              <div>
-                <h2 class="title fw-bold text-white">Notre approche</h2>
-                <span class="text-light">
-                Inspirée des plus belles maisons de distribution, conjugue expertise stratégique, sens du détail et mise en valeur des terroirs.
+          <div class="story-card">
+            <img alt="" src="/src/assets/images/2.jpg" class="img-fluid story-img">
+            <div class="story-body bg-primary text-center">
+              <h2 class="title fw-bold text-white">Notre approche</h2>
+              <span class="text-light story-span">
+                Inspirée des plus belles maisons de distribution, conjugue expertise
+                stratégique, sens du détail et mise en valeur des terroirs.
               </span>
-              </div>
             </div>
           </div>
         </div>
         <div class="col-md-2"></div>
         <div class="col-md-4">
-          <div class="card border-0">
-            <img alt="" src="/src/assets/images/3.jpg" class="img-fluid img-cardy">
-            <div class="card-body1 px-4 bg-primary text-center">
-              <div>
-                <h2 class="title fw-bold text-white">Notre rôle</h2>
-                <span class="text-light">
+          <div class="story-card">
+            <img alt="" src="/src/assets/images/3.jpg" class="img-fluid story-img">
+            <div class="story-body bg-primary text-center">
+              <h2 class="title fw-bold text-white">Notre rôle</h2>
+              <span class="text-light story-span">
                 Révéler votre singularité, sublimer votre image, structurer votre présence.
               </span>
-              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-
 
   <!-- EXPERTISES -->
-  <section class="section soft bg-light py-5" data-aos="fade-up" >
+  <section class="section soft bg-light py-5" data-aos="fade-up">
     <div class="container">
-<!--      <div class="text-center mb-5">-->
-<!--        <h2 class="fw-bold">Nos Expertises</h2>-->
-<!--      </div>-->
       <div class="row g-4">
-        <div class="col-md-3"><div class="card card-premium p-4 h-100 text-center">
-          <div class="d-flex justify-content-center">
-            <img alt="" src="/src/assets/images/analyse.png" class="img-fluid w-25"></div>
-          <h4 class="fw-bold title text-primary mt-4">Analyses de marché <br> pointues</h4>
-          <span class="mt-2 text-justify">Comprendre les dynamiques locales, anticiper la demande, identifier les marchés à fort potentiel : nous vous apportons une vision claire, guidée par l’observation des tendances premium qui dominent aujourd’hui en Afrique.</span></div></div>
-        <div class="col-md-3"><div class="card card-premium p-4 h-100 text-center"><div class="d-flex justify-content-center">
-          <img alt="" src="/src/assets/images/Importation.png" class="img-fluid w-25"></div>
-          <h4 class="fw-bold title text-primary mt-4">Positionnement & image <br> de marque</h4><span class="text-justify">Comme pour une cuvée que l’on élève et affine, nous travaillons votre identité pour qu’elle trouve un écho naturel auprès des amateurs africains : élégance, cohérence, précision.</span></div></div>
-        <div class="col-md-3"><div class="card card-premium p-4 h-100 text-center"><div class="d-flex justify-content-center">
-          <img alt="" src="/src/assets/images/Distribution & importation.png" class="img-fluid w-25"></div>
-          <h4 class="fw-bold title text-primary mt-4">Réseaux d’importation <br> & distribution</h4><span class="text-justify">Nous vous ouvrons les portes des réseaux les plus sérieux, du Nigéria à la Côte d’Ivoire, du Ghana au Kenya : des partenaires fiables, engagés, à la recherche de vins ayant une histoire, un style, une signature.</span></div></div>
-        <div class="col-md-3"><div class="card card-premium p-4 h-100 text-center"><div class="d-flex justify-content-center">
-          <img alt="" src="/src/assets/images/Event.png" class="img-fluid w-25"></div>
-          <h4 class="fw-bold title text-primary mt-4">
-          Événements & expériences <br> exclusives
-        </h4><span class="text-justify" >Dégustations confidentielles, présentations privées à des acheteurs triés sur le volet, événements œnologiques de prestige : nous créons des moments où votre vin s’exprime pleinement, dans des environnements propices à la décision.</span></div></div>
+        <div class="col-md-3">
+          <div class="card card-premium p-4 h-100 text-center">
+            <div class="d-flex justify-content-center">
+              <img alt="" src="/src/assets/images/analyse.png" class="img-fluid w-25">
+            </div>
+            <h4 class="fw-bold title text-primary mt-4">Analyses de marché<br>pointues</h4>
+            <span class="mt-2 text-justify expertise-text">Comprendre les dynamiques locales, anticiper la demande, identifier les marchés à fort potentiel : nous vous apportons une vision claire, guidée par l'observation des tendances premium qui dominent aujourd'hui en Afrique.</span>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card card-premium p-4 h-100 text-center">
+            <div class="d-flex justify-content-center">
+              <img alt="" src="/src/assets/images/Importation.png" class="img-fluid w-25">
+            </div>
+            <h4 class="fw-bold title text-primary mt-4">Positionnement & image<br>de marque</h4>
+            <span class="text-justify expertise-text">Comme pour une cuvée que l'on élève et affine, nous travaillons votre identité pour qu'elle trouve un écho naturel auprès des amateurs africains : élégance, cohérence, précision.</span>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card card-premium p-4 h-100 text-center">
+            <div class="d-flex justify-content-center">
+              <img alt="" src="/src/assets/images/Distribution & importation.png" class="img-fluid w-25">
+            </div>
+            <h4 class="fw-bold title text-primary mt-4">Réseaux d'importation<br>& distribution</h4>
+            <span class="text-justify expertise-text">Nous vous ouvrons les portes des réseaux les plus sérieux, du Nigéria à la Côte d'Ivoire, du Ghana au Kenya : des partenaires fiables, engagés, à la recherche de vins ayant une histoire, un style, une signature.</span>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card card-premium p-4 h-100 text-center">
+            <div class="d-flex justify-content-center">
+              <img alt="" src="/src/assets/images/Event.png" class="img-fluid w-25">
+            </div>
+            <h4 class="fw-bold title text-primary mt-4">Événements & expériences<br>exclusives</h4>
+            <span class="text-justify expertise-text">Dégustations confidentielles, présentations privées à des acheteurs triés sur le volet, événements œnologiques de prestige : nous créons des moments où votre vin s'exprime pleinement.</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- SPLIT 1 -->
-  <section class="section" data-aos="fade-up" >
+  <!-- POURQUOI NOUS — REDESIGN ÉLÉGANT -->
+  <section class="section why-section" data-aos="fade-up">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-md-12 mt-5">
-          <h2 class="title fw-bold">Pourquoi choisir Trois Puissance ?</h2>
+        <div class="col-md-12 mt-5 mb-4">
+          <div class="why-header">
+            <div class="gold-eyebrow">Nos engagements</div>
+            <h2 class="why-title">Pourquoi choisir Trois Puissances ?</h2>
+            <div class="why-title-line"></div>
+          </div>
         </div>
-        <div class="col-md-6">
-          <img alt="" src="/src/assets/images/1/Pourquoi choisir Trois Puissance.jpg.jpeg" class="img-fluid ">
-        </div>
-        <div class="col-md-6 my-5">
-          <ul>
-            <li>Une lecture fine des attentes d’un marché en pleine montée en gamme</li>
-            <li>Un accès direct à des réseaux d’importateurs exigeants et fidèles</li>
-            <li>Un accompagnement discret, structuré et orienté résultats</li>
-            <li>Une démarche qui honore le savoir-faire des producteurs comme les attentes des connaisseurs africains</li>
-            <li>Une vraie capacité à faire rayonner une marque dans un écosystème en évolution constante</li>
-            <li>
-              Avec Trois Puissance, chaque producteur bénéficie d’un accompagnement taillé sur mesure,
-              pensé pour valoriser l’authenticité des terroirs, la précision des assemblages et l’émotion
-              que procure un grand vin
-            </li>
-            <li>
-              Nous créons des ponts solides entre les domaines de caractère et les marchés africains
-              les plus dynamiques, afin que chaque bouteille trouve sa place, son public et son avenir
-            </li>
-          </ul>
 
+        <div class="col-md-6" data-aos="fade-right">
+          <div class="why-img-frame">
+            <img alt="" :src="imgWhy" class="img-fluid why-img">
+            <div class="why-img-border"></div>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- EVENT -->
-  <section class="section bg-light mt-5 py-4" data-aos="fade-up" >
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6">
-          <h2 class="fw-bold mb-4">L’Art des Instants d’Exception</h2>
-          <p>Chez Trois Puissance, chaque événement est conçu comme une œuvre éphémère : une rencontre rare entre grands vins, haute gastronomie et lieux d’exception.</p>
-          <p>Nos Master Classes ne se contentent pas de présenter des cuvées ; elles en révèlent la profondeur, la personnalité, l’histoire.</p>
-          <p>Un moment suspendu, pensé pour un public averti et exigeant.</p>
-<!--          <ul>-->
-<!--            <li>Cuvées d’exception</li>-->
-<!--            <li>Accords mets-vins</li>-->
-<!--            <li>Public premium</li>-->
-<!--            <li>Expériences mémorables</li>-->
-<!--          </ul>-->
-        </div>
-        <div class="col-md-6">
-          <img alt="" src="/src/assets/images/1/L’Art%20des%20Instants%20d’Exception.jpg.jpeg" class="img-fluid ">
-        </div>
-      </div>
-    </div>
-  </section>
+        <div class="col-md-6" data-aos="fade-left">
+          <!-- LISTE REDESIGNÉE EN ATOUTS ÉLÉGANTS -->
+          <div class="why-features">
 
-  <!-- GRID -->
-  <section class="section soft" data-aos="fade-up" >
-    <div class="container">
-      <div class="row grid-4 g-5 mt-4">
-        <div class="col-md-12">
-          <h2 class="fw-bold">Nos Signatures</h2>
-        </div>
-        <div class="col-md-4">
-          <div class="card bg-light1 border-0">
-            <img alt="" src="/src/assets/images/1/Cuvées%20d’exception,%20sélectionnées%20avec%20exigences.jpg.jpeg" class="img-fluid">
-            <div class="card-body">
-              <h5>
-                Cuvées d’exception,
-                sélectionnées avec exigence
-              </h5>
+            <div class="why-feature-item">
+              <div class="why-feature-icon">
+                <i class="fa fa-chart-line"></i>
+              </div>
+              <div class="why-feature-text">
+                <h5>Lecture fine des marchés africains</h5>
+                <p>Une connaissance approfondie des attentes d'un marché en pleine montée en gamme, guidée par une veille permanente et une présence terrain inégalée.</p>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card bg-light1 border-0">
-            <img alt="" src="/src/assets/images/1/Experts du vin dédiés à votre événement.jpg.jpeg" class="img-fluid">
-            <div class="card-body">
-              <h5>
-                Experts du vin dédiés à votre événement
-              </h5>
+
+            <div class="why-feature-item">
+              <div class="why-feature-icon">
+                <i class="fa fa-handshake"></i>
+              </div>
+              <div class="why-feature-text">
+                <h5>Accès à des réseaux d'importateurs exigeants</h5>
+                <p>Un accès direct à des importateurs fidèles et qualifiés, sélectionnés pour leur engagement envers l'excellence et leur ancrage local.</p>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card bg-light1 border-0">
-            <img alt="" src="/src/assets/images/1/Dégustations privées, élégantes et immersives.jpg.jpeg" class="img-fluid">
-            <div class="card-body">
-              <h5>
-                Dégustations privées, élégantes et immersives
-              </h5>
+
+            <div class="why-feature-item">
+              <div class="why-feature-icon">
+                <i class="fa fa-compass"></i>
+              </div>
+              <div class="why-feature-text">
+                <h5>Accompagnement discret et structuré</h5>
+                <p>Une démarche discrète, rigoureusement structurée et orientée vers des résultats mesurables — sans compromis sur l'image de votre maison.</p>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card bg-light1 border-0">
-            <img alt="" src="/src/assets/images/1/Accords%20mets-vins%20sur%20mesure,%20inspirés%20par%20de%20grands%20chefs.jpg.jpeg" class="img-fluid">
-            <div class="card-body">
-              <h5>
-                Accords mets-vins sur mesure, inspirés par de grands chefs
-              </h5>
+
+            <div class="why-feature-item">
+              <div class="why-feature-icon">
+                <i class="fa fa-award"></i>
+              </div>
+              <div class="why-feature-text">
+                <h5>Honorer le savoir-faire des producteurs</h5>
+                <p>Une démarche qui respecte profondément le savoir-faire des producteurs et les attentes des connaisseurs africains les plus exigeants.</p>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card bg-light1 border-0">
-            <img alt="" src="/src/assets/images/1/Lieux de prestige, soigneusement choisis pour sublimer l’expérience.jpg.jpeg" class="img-fluid">
-            <div class="card-body">
-              <h5>
-                Lieux de prestige, soigneusement choisis pour sublimer l’expérience
-              </h5>
+
+            <div class="why-feature-item">
+              <div class="why-feature-icon">
+                <i class="fa fa-globe-africa"></i>
+              </div>
+              <div class="why-feature-text">
+                <h5>Rayonner dans un écosystème en évolution</h5>
+                <p>Une vraie capacité à faire briller une marque dans un environnement africain en constante évolution, porté par une nouvelle génération de passionnés.</p>
+              </div>
             </div>
+
+            <div class="why-feature-item why-feature-highlight">
+              <div class="why-feature-icon why-feature-icon-gold">
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="why-feature-text">
+                <h5>Un accompagnement sur mesure, sans compromis</h5>
+                <p>
+                  Avec Trois Puissances, chaque producteur bénéficie d'un accompagnement
+                  taillé sur mesure, pensé pour valoriser l'authenticité des terroirs,
+                  la précision des assemblages et l'émotion que procure un grand vin.
+                  Nous créons des ponts solides entre les domaines de caractère et les
+                  marchés africains les plus dynamiques.
+                </p>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- NEWSLETTER -->
-<!--  <section class="section newsletter text-center">-->
-<!--    <div class="container">-->
-<!--      <h2>Rejoignez Notre Cercle Privé</h2>-->
-<!--      <p>Recevez nos événements & sélections premium.</p>-->
-<!--      <input class="form-control w-50 mx-auto mb-3" placeholder="Votre email">-->
-<!--      <button class="btn btn-outline-light">S'inscrire</button>-->
-<!--    </div>-->
-<!--  </section>-->
-
-  <section class="section bg-light mt-5" data-aos="fade-up" >
+  <!-- ART DES INSTANTS -->
+  <section class="section bg-light mt-5 py-4" data-aos="fade-up">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6">
-          <img alt="" src="/src/assets/images/1/Chaque rendez-vous associe la précision d’une sélection œnologique à la créativité culinaire.jpg.jpeg" class="img-fluid img-fin">
+          <div class="gold-eyebrow">Notre philosophie événementielle</div>
+          <h2 class="fw-bold mb-4 about-section-title">L'Art des Instants d'Exception</h2>
+          <p class="about-p">Chez Trois Puissances, chaque événement est conçu comme une œuvre éphémère : une rencontre rare entre grands vins, haute gastronomie et lieux d'exception.</p>
+          <p class="about-p">Nos Master Classes ne se contentent pas de présenter des cuvées ; elles en révèlent la profondeur, la personnalité, l'histoire.</p>
+          <p class="about-p">Un moment suspendu, pensé pour un public averti et exigeant.</p>
         </div>
         <div class="col-md-6">
-<!--          <h2 class="fw-bold mb-4">L’Art des Instants d’Exception</h2>-->
-          <p>
-            Chaque rendez-vous associe la précision d’une sélection œnologique à la créativité culinaire, pour donner naissance à une expérience où chaque détail a son importance : la lumière, le rythme, les arômes, l’histoire du vin, la délicatesse du service.
+          <img alt="" :src="imgArt" class="img-fluid about-right-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOS SIGNATURES -->
+  <section class="section soft" data-aos="fade-up">
+    <div class="container">
+      <div class="row g-5 mt-4">
+        <div class="col-md-12 mb-2">
+          <div class="gold-eyebrow">Notre catalogue</div>
+          <h2 class="fw-bold about-section-title">Nos Signatures</h2>
+        </div>
+        <div class="col-md-4">
+          <div class="sig-card">
+            <img alt="" :src="imgCuvees" class="sig-img img-fluid">
+            <div class="sig-body">
+              <div class="sig-num">01</div>
+              <h5 class="sig-title">Cuvées d'exception, sélectionnées avec exigence</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="sig-card">
+            <img alt="" :src="imgExperts" class="sig-img img-fluid">
+            <div class="sig-body">
+              <div class="sig-num">02</div>
+              <h5 class="sig-title">Experts du vin dédiés à votre événement</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="sig-card">
+            <img alt="" :src="imgDegus" class="sig-img img-fluid">
+            <div class="sig-body">
+              <div class="sig-num">03</div>
+              <h5 class="sig-title">Dégustations privées, élégantes et immersives</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="sig-card">
+            <img alt="" :src="imgAccords" class="sig-img img-fluid">
+            <div class="sig-body">
+              <div class="sig-num">04</div>
+              <h5 class="sig-title">Accords mets-vins sur mesure, inspirés par de grands chefs</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="sig-card">
+            <img alt="" :src="imgLieux" class="sig-img img-fluid">
+            <div class="sig-body">
+              <div class="sig-num">05</div>
+              <h5 class="sig-title">Lieux de prestige, soigneusement choisis pour sublimer l'expérience</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION FINALE -->
+  <section class="section bg-light mt-5" data-aos="fade-up">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img alt="" :src="imgChaque" class="img-fluid about-fin-img">
+        </div>
+        <div class="col-md-6 ps-5">
+          <p class="about-p">
+            Chaque rendez-vous associe la précision d'une sélection œnologique à la créativité
+            culinaire, pour donner naissance à une expérience où chaque détail a son importance :
+            la lumière, le rythme, les arômes, l'histoire du vin, la délicatesse du service.
           </p>
-          <p>De dîners confidentiels à de grandes rencontres œnologiques, nos événements offrent aux maisons et producteurs une scène parfaitement maîtrisée pour dialoguer avec un public privilégié, sensible à l’excellence et à la distinction.</p>
-          <h3 class="text-primary fw-bold">Une signature Trois Puissance : élégance, discrétion, profondeur.</h3>
+          <p class="about-p">
+            De dîners confidentiels à de grandes rencontres œnologiques, nos événements offrent
+            aux maisons et producteurs une scène parfaitement maîtrisée pour dialoguer avec un
+            public privilégié, sensible à l'excellence et à la distinction.
+          </p>
+          <div class="about-signature">
+            <div class="about-sig-line"></div>
+            <h3 class="text-primary fw-bold about-sig-text">
+              Une signature Trois Puissances :<br>élégance, discrétion, profondeur.
+            </h3>
+          </div>
         </div>
       </div>
     </div>
@@ -238,148 +310,215 @@
 </template>
 
 <script setup lang="ts">
+// Chemins avec apostrophes/caractères spéciaux — bindés dynamiquement pour éviter l'analyse statique Vite
+const imgWhy = '/src/assets/images/1/Pourquoi choisir Trois Puissance.jpg.jpeg'
+const imgArt = "/src/assets/images/1/L’Art des Instants d’Exception.jpg.jpeg"
+const imgCuvees = "/src/assets/images/1/Cuvées d’exception, sélectionnées avec exigences.jpg.jpeg"
+const imgExperts = "/src/assets/images/1/Experts du vin dédiés à votre événement.jpg.jpeg"
+const imgDegus = "/src/assets/images/1/Dégustations privées, élégantes et immersives.jpg.jpeg"
+const imgAccords = '/src/assets/images/1/Accords%20mets-vins%20sur%20mesure,%20inspir%C3%A9s%20par%20de%20grands%20chefs.jpg.jpeg'
+const imgLieux = "/src/assets/images/1/Lieux de prestige, soigneusement choisis pour sublimer l’expérience.jpg.jpeg"
+const imgChaque = "/src/assets/images/1/Chaque rendez-vous associe la précision d’une sélection œnologique à la créativité culinaire.jpg.jpeg"
 </script>
 
-<style>
+<style scoped>
 /* BASE */
-body{
-  margin:0;
-  background:#f8f8f6;
-  color:#222;
-  font-family:'Inter',sans-serif;
-  line-height:1.75;
+.gold-eyebrow {
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #C9A84C;
+  margin-bottom: 12px;
+  display: block;
 }
 
-h1,h2,h3{
-  font-family:'Playfair Display',serif;
-  letter-spacing:.04em;
-  color:#111;
-}
-
-p{
-  color: #555;
-}
-
-ul li {
-  font-size: 20px !important;
-  margin-top: 20px;
-}
-
-spam {
-  font-size: 18px;
-}
-
-/* STRUCTURE */
-.section{
-  padding: 40px 0;
-}
-
-.soft{
-  background:#ffffff;
-}
-
-p {
-  font-size: 23px !important;
-}
 /* HERO */
-.hero img{
+.hero-full-img {
   width: 100%;
   height: 500px;
   object-fit: cover;
   object-position: 0 15%;
-  margin:auto;
-  display:block;
+  display: block;
+}
+.hero-card {
+  background: #8d4e56;
+  padding: 40px 32px;
+  text-align: center;
+}
+.hero-card-ornament {
+  font-size: 20px;
+  color: #C9A84C;
+  letter-spacing: 6px;
+  margin-bottom: 12px;
+}
+.hero-lead {
+  font-size: 17px;
+  font-style: italic;
+  line-height: 1.6;
+}
+.head {
+  font-size: clamp(32px, 5vw, 60px);
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
-.hero h1{
-  font-size:3rem;
-  margin-top:36px;
+/* INTRO */
+.about-intro { padding: 60px 0 40px; }
+.intro-wrap { max-width: 680px; margin: 0 auto; text-align: center; }
+.intro-text {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.85;
 }
 
-.hero p{
-  max-width:640px;
-  margin:16px auto;
-  font-size:1.05rem;
-  color:#666;
-}
-
-/* SPLIT */
-.section .row{
-  margin:auto;
-}
-
-/* CARDS */
-.card {
-  border-radius: 0 !important;
-}
-
-.card-premium{
-  background:#fff;
-  padding:30px 26px;
-  border:1px solid #eee;
-  transition:.25s ease;
-  border-radius: 0;
-}
-
-.card-premium:hover{
-  border-color:#ddd;
-}
-
-.card-premium h5{
-  font-size:1rem;
-  margin-bottom:10px;
-}
-
-/* GRID */
-.grid-4 img{
-  height:240px;
-  width:100%;
-  object-fit:cover;
-}
-
-/* LIST */
-ul li{
-  margin-bottom:8px;
-  color:#444;
-}
-
-/* NEWSLETTER */
-.newsletter{
-  background:#111;
-  color:#fff;
-}
-
-.newsletter input{
-  padding:14px 18px;
-  max-width:340px;
-}
-
-.newsletter button{
-  padding:12px 28px;
-  letter-spacing:1px;
-  text-transform:uppercase;
-}
-
-/* MOBILE */
-@media(max-width:768px){
-  .hero h1{font-size:2.2rem}
-  .section{padding:70px 0}
-}
-
-.img-cardy {
+/* STORY CARDS */
+.story-card { }
+.story-img {
   width: 100%;
-  height: 500px !important;
+  height: 480px;
   object-fit: cover;
 }
+.story-body {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  gap: 10px;
+}
+.story-span {
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.82);
+}
 
-.card-body1 {
-  height: 200px !important;
+/* EXPERTISE CARDS */
+.card { border-radius: 0 !important; }
+.card-premium {
+  background: #fff;
+  padding: 30px 26px;
+  border: 1px solid #eee !important;
+  transition: .25s ease;
+}
+.card-premium:hover { box-shadow: 0 8px 32px rgba(107,26,39,0.08); border-color: #ddd !important; }
+.expertise-text { font-size: 14px; color: #666; line-height: 1.7; }
+
+/* WHY SECTION */
+.why-section { padding: 60px 0 80px; background: #fff; }
+.why-header { margin-bottom: 8px; }
+.why-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(26px, 3vw, 38px);
+  color: #1C1C1C;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+.why-title-line {
+  width: 64px; height: 2px;
+  background: linear-gradient(to right, #C9A84C, #E8D5A3);
+  margin-bottom: 0;
+}
+.why-img-frame {
+  position: relative;
+  margin-right: 24px;
+}
+.why-img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  display: block;
+}
+.why-img-border {
+  position: absolute;
+  top: 16px; left: 16px; right: -16px; bottom: -16px;
+  border: 1px solid #C9A84C;
+  z-index: -1;
+}
+
+/* WHY FEATURES — redesign élégant */
+.why-features {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.why-feature-item {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid #f0e8e4;
+  align-items: flex-start;
+  transition: background 0.2s;
+}
+.why-feature-item:last-child { border-bottom: none; }
+.why-feature-item:hover { background: #fdf9f7; padding-left: 8px; border-radius: 2px; }
+
+.why-feature-highlight {
+  background: linear-gradient(135deg, #fdf5ec, #fff);
+  border: 1px solid #e8d5a3 !important;
+  border-radius: 2px;
+  padding: 20px;
+  margin-top: 8px;
+}
+.why-feature-highlight:hover { background: linear-gradient(135deg, #faebd7, #fff); padding-left: 20px; }
+
+.why-feature-icon {
+  width: 44px;
+  height: 44px;
+  background: #6B1A27;
+  color: #fff;
   display: flex;
   align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  flex-shrink: 0;
+  transition: background 0.2s;
+}
+.why-feature-item:hover .why-feature-icon { background: #3D0D17; }
+.why-feature-icon-gold { background: linear-gradient(135deg, #C9A84C, #a8893e) !important; }
+.why-feature-item:hover .why-feature-icon-gold { background: linear-gradient(135deg, #b8943c, #8a6d2e) !important; }
+
+.why-feature-text h5 {
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  color: #1C1C1C;
+  font-weight: 700;
+  margin-bottom: 4px;
+  line-height: 1.3;
+}
+.why-feature-text p {
+  font-size: 13px;
+  color: #777;
+  line-height: 1.7;
+  margin: 0;
 }
 
-.bg-light1 {
-  background-color: #E4E4E4 !important;
-  height: 330px !important;
+/* ABOUT GENERIC */
+.about-p { font-size: 16px; color: #555; line-height: 1.85; margin-bottom: 16px; }
+.about-section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(22px, 2.5vw, 32px);
+  color: #1C1C1C;
+  margin-bottom: 20px;
 }
+.about-right-img { width: 100%; height: 420px; object-fit: cover; }
+.about-fin-img { width: 100%; height: 480px; object-fit: cover; }
+.about-signature { margin-top: 28px; }
+.about-sig-line { width: 48px; height: 2px; background: linear-gradient(to right, #C9A84C, #E8D5A3); margin-bottom: 16px; }
+.about-sig-text { font-size: clamp(16px, 2vw, 22px); line-height: 1.4; }
+
+/* SIGNATURE CARDS */
+.sig-card { overflow: hidden; border: 1px solid #ede5e0; transition: box-shadow 0.3s; }
+.sig-card:hover { box-shadow: 0 10px 30px rgba(107,26,39,0.1); }
+.sig-img { width: 100%; height: 220px; object-fit: cover; display: block; transition: transform 0.5s; }
+.sig-card:hover .sig-img { transform: scale(1.04); }
+.sig-body { padding: 18px 20px; display: flex; gap: 12px; align-items: flex-start; background: #fff; }
+.sig-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px; color: #e8ddd5; line-height: 1; font-weight: 700; flex-shrink: 0;
+}
+.sig-title { font-size: 14px; color: #1C1C1C; line-height: 1.4; margin: 0; font-weight: 600; }
+
+.section { padding: 40px 0; }
+.soft { background: #ffffff; }
 </style>

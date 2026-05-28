@@ -1,357 +1,430 @@
 <template>
-  <div class="banner1"></div>
-
-    <section class="top container">
-      <div class="row">
-        <div class="col-md-12 p-4">
-          <div class="text-center border-pri" data-aos="fade-up">
-            <h1 class="title text-primary fw-bold">NOTES</h1>
-          </div>
-          <div class="py-4 border-pri" data-aos="fade-up">
-            <p class="text-center">
-              Déguster un vin, c’est s’immerger dans un monde de sensations. Chaque bouteille raconte une histoire, une alchimie de terroir, de cépages et de savoir-faire. Pour apprécier pleinement cette expérience, il est essentiel de se familiariser avec les notes de dégustation. Elles sont votre boussole, vous guidant à travers les nuances et les subtilités de chaque vin, afin que vous puissiez faire des choix éclairés et savourer chaque gorgée.
-            </p>
-          </div>
-          <div class="text-center">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-6 offset-md-3 my-4">
-                  <h3 class="title text-primary mt-4" data-aos="fade-up">
-                    FAITES VOTRE CHOIX PAR TYPE DE BOISSON
-                  </h3>
-                  <div class="my-5 d-flex justify-content-between" data-aos="fade-up">
-                    <button class="btn btn-primary">Vins</button>
-                    <button class="btn btn-primary">Spiritueux</button>
-                  </div>
-                </div>
-
-                <div class="input-group col-md-12 my-4" data-aos="fade-up">
-                  <span class="input-group-text s2">
-                    <img
-                      src="/src/assets/icons/s2.png"
-                      alt="Icon"
-                      style="width: 20px; height: 20px"
-                    />
-                  </span>
-                  <input type="search" placeholder="Recherche ..." class="form-control input1" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="my-5 text-center">
-            <h3 class="title text-primary mt-4" data-aos="fade-up">LAISSEZ-VOUS GUIDER</h3>
-          </div>
-          <div class="bg-primary p-5">
-            <div class="container">
-              <div class="row align-item-center">
-                <div class="col-md-6">
-                  <h5 class="text-white title" data-aos="fade-up">Recherche de vin</h5>
-                  <p class="text-white" data-aos="fade-up">
-                    Dis-mois qui tu est et je te dirai quel vin il te faut
-                  </p>
-                  <button class="btn btn-outline-light" style="border-radius: 0" data-aos="fade-up">Traiter</button>
-                </div>
-                <div class="col-md-6">
-                  <form action="#">
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-md-6 my-2">
-                          <input
-                            type="text"
-                            class="form-control input2"
-                            placeholder="Je recherche une bouteille"
-                          />
-                        </div>
-                        <div class="col-md-6 my-2">
-                          <input type="text" class="form-control input2" placeholder="Millesime" />
-                        </div>
-                        <div class="col-md-6 my-2">
-                          <input type="text" class="form-control input2" placeholder="d'origine" />
-                        </div>
-                        <div class="col-md-6 my-2">
-                          <input
-                            type="text"
-                            class="form-control input2"
-                            placeholder="j'ai un budget de"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-<section class="section-banner-note1 bg-light pb-5 mt-5 pt-4">
-  <div class="banner-note1">
-    <div class="text-center top" data-aos="fade-up">
-      <h1 class="hh1 text-primary fw-bold">Explorer les resultats <br> par distinction</h1>
-    </div>
-    <div class="py-4" data-aos="fade-up">
-      <p class="text-center ppp">
-        Selectionnez une médaille pour decouvrir les <br> vins recompensés par notre jury d'experts
-      </p>
-    </div>
-
-    <div class="py-5 d-flex align-items-center">
-      <div class="container">
-        <div class="row justify-content-center g-4">
-          <div class="col-md-8 col-offset-2">
-            <div class="row">
-              <!-- OR -->
-              <div class="col-md-4">
-                <div class="award-card bg-or p-2 text-center">
-                  <div class="border p-4 radius">
-                    <div><img src="/src/assets/images/or.png" class="img-fluid medal " alt="or"/></div>
-                    <h3 style="color: #8A6041; font-size: 35px">Médaille <br> d’Or</h3>
-                    <span>Découvrez l’excellence</span>
-                    <a href="#" class="btn btn-gold shadow-lg mt-4">VOIR LES VINS PRIMÉS</a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- ARGENT -->
-              <div class="col-md-4">
-                <div class="award-card bg-ag p-2 text-center">
-                  <div class="border p-4 radius">
-                    <div><img src="/src/assets/images/argent.png" class="img-fluid medal " alt="or"/></div>
-                    <h3 style="color: #3E3030; font-size: 35px">Médaille <br> d’Argent</h3>
-                    <span>Explorez les distinctions</span>
-                    <a href="#" class="btn btn-silver mt-4">VOIR LES VINS PRIMÉS</a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- BRONZE -->
-              <div class="col-md-4">
-                <div class="award-card bg-bz p-2 text-center">
-                  <div class="border p-4 radius">
-                    <div><img src="/src/assets/images/bronze.png" class="img-fluid medal " alt="or"/></div>
-                    <h3 style="color: #392D28; font-size: 35px">Médaille <br> de Bronze</h3>
-                    <span>Découvrez les vins distingués</span>
-                    <a href="#" class="btn btn-bronze mt-4">VOIR LES VINS PRIMÉS</a>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
+  <div class="banner1 notes-banner">
+    <div class="notes-banner-overlay">
+      <div class="notes-tagline">— Expertise & Distinction —</div>
+      <h1 class="notes-banner-title">Recherche de Produits</h1>
+      <p class="notes-banner-sub">Trouvez le produit d'exception qui vous correspond</p>
     </div>
   </div>
-</section>
 
-  <section class="section-banner-note2">
-    <div class="banner-note2">
-      <div class="text-center top" data-aos="fade-up">
-        <h1 class="hh1 text-primary fw-bold text-uppercase">Résultats officiels 2024</h1>
-      </div>
-      <div class="py-4" data-aos="fade-up">
-        <p class="text-center ppp">
-          Accédez à la liste complète des vins récompensés par notre jury d’experts internationaux
-        </p>
-      </div>
+  <section class="notes-intro container" data-aos="fade-up">
+    <div class="notes-intro-inner">
+      <div class="gold-eyebrow">Notre Philosophie</div>
+      <h2 class="notes-intro-title">L'Art de Choisir le Bon Produit</h2>
+      <div class="gold-divider mx-auto"></div>
+      <p class="notes-intro-body">
+        Déguster un vin, c'est s'immerger dans un monde de sensations. Chaque bouteille raconte
+        une histoire — une alchimie de terroir, de cépages et de savoir-faire. Pour apprécier
+        pleinement cette expérience, il est essentiel de se familiariser avec les notes de
+        dégustation. Elles sont votre boussole, vous guidant à travers les nuances et les
+        subtilités de chaque produit, afin que vous puissiez faire des choix éclairés.
+      </p>
+    </div>
+  </section>
 
-      <div class="py-2 text-center" data-aos="fade-up">
-        <button class="btn btn-primary">VOIR TOUS LES RÉSULTATS</button>
+  <!-- SÉLECTION PAR TYPE DE PRODUIT -->
+  <section class="product-type-section" data-aos="fade-up">
+    <div class="container">
+      <div class="section-label">Faites votre choix</div>
+      <h3 class="section-heading">Par Type de Produit</h3>
+      <div class="product-type-grid">
+        <button class="type-card" :class="{ active: activeType === 'vins' }" @click="activeType = 'vins'">
+          <div class="type-icon"><i class="fa fa-wine-bottle"></i></div>
+          <div class="type-name">Vins</div>
+          <div class="type-desc">Rouges, Blancs, Rosés, Effervescents</div>
+        </button>
+        <button class="type-card" :class="{ active: activeType === 'spiritueux' }" @click="activeType = 'spiritueux'">
+          <div class="type-icon"><i class="fa fa-glass-martini-alt"></i></div>
+          <div class="type-name">Spiritueux</div>
+          <div class="type-desc">Cognac, Whisky, Rhum, Armagnac</div>
+        </button>
       </div>
     </div>
   </section>
 
-<!--  <section data-aos="fade-up" class="top">-->
-<!--    <div class="container">-->
-<!--      <div class="row">-->
-<!--        <div class="col-md-6 offset-md-3">-->
-<!--          <h1 class="text-primary">-->
-<!--            Cliquez pour chercher tous les gagnants; Rechercher les resultats par médaille:-->
-<!--          </h1>-->
+  <!-- BARRE DE RECHERCHE -->
+  <section class="search-section" data-aos="fade-up">
+    <div class="container">
+      <div class="search-label">Rechercher un produit</div>
+      <div class="search-bar-wrap">
+        <i class="fa fa-search search-icon"></i>
+        <input
+          type="search"
+          placeholder="Nom du produit, millésime, appellation, pays..."
+          class="luxury-search"
+        />
+        <button class="search-btn">Rechercher</button>
+      </div>
+    </div>
+  </section>
 
-<!--          <div class="row my-5">-->
-<!--            <div class="col-md-4 my-4">-->
-<!--              <div class="my-4 d-flex justify-content-center">-->
-<!--                <div class="rond or"></div>-->
-<!--              </div>-->
-<!--              <p class="text-center">Médaille d'Or</p>-->
-<!--            </div>-->
-<!--            <div class="col-md-4 my-4">-->
-<!--              <div class="my-4 d-flex justify-content-center">-->
-<!--                <div class="rond argent"></div>-->
-<!--              </div>-->
-<!--              <p class="text-center">Médaille d'Argent</p>-->
-<!--            </div>-->
-<!--            <div class="col-md-4 my-4">-->
-<!--              <div class="my-4 d-flex justify-content-center">-->
-<!--                <div class="rond bronze"></div>-->
-<!--              </div>-->
-<!--              <p class="text-center">Médaille de Bronze</p>-->
-<!--            </div>-->
-<!--          </div>-->
+  <!-- GUIDE DE SÉLECTION -->
+  <section class="guide-section bg-cream" data-aos="fade-up">
+    <div class="container">
+      <div class="guide-inner">
+        <div class="guide-text">
+          <div class="gold-eyebrow">Conseil Personnalisé</div>
+          <h3 class="guide-title">Laissez-vous Guider<br/>vers le Produit Idéal</h3>
+          <p class="guide-body">
+            Dites-nous qui vous êtes, et nous vous révélerons le produit qui vous correspond.
+            Notre équipe d'experts façonne votre expérience avec précision et raffinement.
+          </p>
+          <button class="guide-btn">Découvrir ma sélection</button>
+        </div>
+        <div class="guide-form-wrap">
+          <form class="guide-form" action="#">
+            <div class="gf-field">
+              <label>Je recherche un produit</label>
+              <input type="text" class="gf-input" placeholder="Ex: un grand rouge tannique..."/>
+            </div>
+            <div class="gf-field">
+              <label>Millésime souhaité</label>
+              <input type="text" class="gf-input" placeholder="Ex: 2018, 2020..."/>
+            </div>
+            <div class="gf-field">
+              <label>Origine / Région</label>
+              <input type="text" class="gf-input" placeholder="Ex: Bordeaux, Toscane..."/>
+            </div>
+            <div class="gf-field">
+              <label>Budget estimé</label>
+              <input type="text" class="gf-input" placeholder="Ex: 50–150 €"/>
+            </div>
+            <button type="submit" class="gf-submit">Trouver mon produit →</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!--          <div class="row my-5">-->
-<!--            <h1 class="text-center">RESULT OUT NOW</h1>-->
-<!--            <div class="d-flex justify-content-center my-4">-->
-<!--              <button class="btn btn-primary">SEE 2024 RESULTS</button>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </section>-->
+  <!-- REDIRECT VERS TOP AFRIQUE POUR LES DISTINCTIONS -->
+  <section class="redirect-section" data-aos="fade-up">
+    <div class="container">
+      <div class="redirect-inner">
+        <div class="redirect-medal-icons">
+          <img src="/src/assets/images/or.png" class="redir-medal" alt="Or"/>
+          <img src="/src/assets/images/argent.png" class="redir-medal redir-medal-main" alt="Argent"/>
+          <img src="/src/assets/images/bronze.png" class="redir-medal" alt="Bronze"/>
+        </div>
+        <div class="redirect-text">
+          <div class="gold-eyebrow">Nouvellement intégré</div>
+          <h3 class="redirect-title">
+            Les distinctions & médailles sont<br/>désormais dans <em>Top Afrique</em>
+          </h3>
+          <p class="redirect-body">
+            Notre système complet de récompenses — Médaille d'Or, d'Argent et de Bronze —
+            a été transféré vers la section <strong>Top Afrique</strong>, pour une meilleure
+            valorisation des meilleures références du continent.
+          </p>
+          <a href="/topafrique" class="redirect-btn">
+            Découvrir le Top Afrique <span>→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script lang="ts" setup>
+import { ref } from 'vue'
+const activeType = ref('vins')
 </script>
 
-<style lang="css" scoped>
-.section-banner-note1 {
+<style scoped>
+.notes-banner {
   position: relative;
+  background-position: 50% 55% !important;
 }
-
-
-.hh1 {
-  font-size: 60px;
-}
-
-.ppp {
-  font-size: 25px;
-}
-
-.section-banner-note2 {
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-top: 0;
-  padding-top: 40px;
-  padding-bottom: 50px;
-}
-
-.banner-note2 {
-  width: 100%;
-  height: 100%;
+.notes-banner-overlay {
+  position: absolute;
   inset: 0;
+  background: linear-gradient(to bottom, rgba(20,5,10,0.5) 0%, rgba(60,10,20,0.72) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
 }
-
-.radius {
-  border-radius: 0 !important;
+.notes-tagline {
+  font-size: 12px;
+  letter-spacing: 5px;
+  color: #C9A84C;
+  text-transform: uppercase;
+  margin-bottom: 12px;
 }
-
-.medail-img {
-  width: 250px !important;
-}
-
-/* ===== SECTION BACKGROUND ===== */
-
-/* ===== CARD STYLE ===== */
-.award-card {
-  border-radius: 0;
-  padding: 40px 25px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease;
-}
-
-.award-card:hover {
-  transform: translateY(-6px);
-}
-
-.bg-or {
-  background-color: #EFD9C1;
-}
-.bg-ag {
-  background-color: #F0E5DF;
-}
-.bg-bz {
-  background-color: #F3DFD0;
-}
-
-/* ===== TYPOGRAPHY ===== */
-h3 {
+.notes-banner-title {
   font-family: 'Playfair Display', serif;
-  font-weight: 600;
-  margin-top: 25px;
+  font-size: clamp(36px, 5vw, 64px);
+  color: #fff;
+  font-weight: 400;
+  margin: 0 0 10px;
+}
+.notes-banner-sub {
+  color: rgba(255,255,255,0.72);
+  font-size: 15px;
+  font-style: italic;
+  margin: 0;
+}
+
+.notes-intro {
+  padding: 80px 0 60px;
+  text-align: center;
+}
+.notes-intro-inner { max-width: 680px; margin: 0 auto; }
+.gold-eyebrow {
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #C9A84C;
+  margin-bottom: 14px;
+}
+.notes-intro-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #1C1C1C;
+  margin-bottom: 20px;
+}
+.gold-divider {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(to right, #C9A84C, #E8D5A3);
+  margin-bottom: 28px;
+}
+.mx-auto { margin-left: auto; margin-right: auto; }
+.notes-intro-body {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.85;
+}
+
+.product-type-section {
+  padding: 60px 0;
+  background: #1C1C1C;
+}
+.section-label {
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #C9A84C;
+  text-align: center;
   margin-bottom: 10px;
-  color: #4a3a2c;
 }
-
-p {
-  color: #7a6a5a;
-  margin-bottom: 25px;
+.section-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 40px;
 }
+.product-type-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.type-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.12);
+  padding: 36px 28px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: rgba(255,255,255,0.7);
+}
+.type-card:hover,
+.type-card.active {
+  background: rgba(201,168,76,0.12);
+  border-color: #C9A84C;
+  color: #fff;
+}
+.type-icon { font-size: 32px; color: #C9A84C; margin-bottom: 14px; }
+.type-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+.type-desc { font-size: 12px; color: rgba(255,255,255,0.5); letter-spacing: 0.5px; }
+.type-card.active .type-desc { color: rgba(255,255,255,0.7); }
 
-/* ===== MEDAL ===== */
-.medal {
-  width: 200px;
-  height: 200px;
+.search-section {
+  padding: 60px 0;
+  background: #F8F4EF;
+}
+.search-label {
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #6B1A27;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.search-bar-wrap {
+  display: flex;
+  align-items: center;
+  border: 1px solid #c8b8b2;
+  background: #fff;
+  max-width: 700px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.search-icon { padding: 0 16px; color: #aaa; font-size: 14px; }
+.luxury-search {
+  flex: 1;
+  border: none;
+  padding: 16px 8px;
+  font-size: 14px;
+  color: #333;
+  background: transparent;
+  outline: none;
+}
+.luxury-search::placeholder { color: #bbb; font-style: italic; }
+.search-btn {
+  background: #6B1A27;
+  color: #fff;
+  border: none;
+  padding: 16px 28px;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.search-btn:hover { background: #3D0D17; }
+
+.guide-section { padding: 80px 0; }
+.bg-cream { background: #fff; }
+.guide-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+.guide-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #1C1C1C;
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+.guide-body { font-size: 15px; color: #666; line-height: 1.8; margin-bottom: 28px; }
+.guide-btn {
+  background: transparent;
+  border: 1px solid #6B1A27;
+  color: #6B1A27;
+  padding: 12px 32px;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+.guide-btn:hover { background: #6B1A27; color: #fff; }
+
+.guide-form {
+  background: #F8F4EF;
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.gf-field { display: flex; flex-direction: column; gap: 6px; }
+.gf-field label {
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #6B1A27;
+  font-weight: 600;
+}
+.gf-input {
+  border: none;
+  border-bottom: 1px solid #d8cbc6;
+  padding: 10px 4px;
+  font-size: 14px;
+  background: transparent;
+  outline: none;
+  color: #333;
+  transition: border-color 0.2s;
+}
+.gf-input:focus { border-bottom-color: #6B1A27; }
+.gf-input::placeholder { color: #bbb; font-style: italic; }
+.gf-submit {
+  background: #6B1A27;
+  color: #fff;
+  border: none;
+  padding: 14px 24px;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 8px;
+  text-align: center;
+  transition: background 0.2s;
+}
+.gf-submit:hover { background: #3D0D17; }
+
+.redirect-section {
+  padding: 80px 0 100px;
+  background: #1C1C1C;
+}
+.redirect-inner {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 60px;
+  align-items: center;
+  max-width: 860px;
+  margin: 0 auto;
+}
+.redirect-medal-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.redir-medal {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
   border-radius: 50%;
+  opacity: 0.8;
+  transition: opacity 0.2s;
 }
-
-/* ===== COLORS ===== */
-.gold {
-  background: linear-gradient(145deg, #d4af37, #f5d77a);
+.redir-medal-main { width: 90px; height: 90px; opacity: 1; }
+.redirect-text .gold-eyebrow { color: #C9A84C; }
+.redirect-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 400;
   color: #fff;
+  line-height: 1.35;
+  margin-bottom: 16px;
 }
-
-.silver {
-  background: linear-gradient(145deg, #bfc1c2, #ececec);
-  color: #4a4a4a;
+.redirect-title em { color: #C9A84C; font-style: normal; }
+.redirect-body { font-size: 15px; color: rgba(255,255,255,0.6); line-height: 1.75; margin-bottom: 28px; }
+.redirect-body strong { color: rgba(255,255,255,0.85); }
+.redirect-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #C9A84C;
+  color: #1C1C1C;
+  text-decoration: none;
+  padding: 14px 32px;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: background 0.25s, transform 0.2s;
 }
-
-.bronze {
-  background: linear-gradient(145deg, #b87333, #d99a5b);
-  color: #fff;
+.redirect-btn:hover {
+  background: #e8c96a;
+  transform: translateY(-1px);
+  color: #1C1C1C;
 }
-
-/* ===== BUTTONS ===== */
-.btn {
-  font-size: 13px;
-  letter-spacing: 0.5px;
-  padding: 10px 22px;
-  border-radius: 8px;
-  font-weight: 500;
-}
-
-.btn-gold {
-  background: transparent;
-  color: #8A6041;
-  border: 1px solid #8A6041;
-  border-radius: 0;
-}
-
-.btn-gold:hover {
-  background: #8A6041;
-  color: white;
-}
-
-.btn-silver {
-  background: transparent;
-  color: #3E3030;
-  border: 1px solid #3E3030;
-  border-radius: 0;
-}
-
-.btn-silver:hover {
-  background: #3E3030;
-  color: white;
-}
-
-.btn-bronze {
-  background: transparent;
-  color: #392D28;
-  border: 1px solid #392D28;
-  border-radius: 0;
-}
-
-.btn-bronze:hover {
-  background: #392D28;
-  color: white;
-}
-
-.border {
-  border: 1px solid #fff !important;
-}
-
 </style>
