@@ -21,10 +21,12 @@ import '/src/assets/styles/css/main.css'
 
 const app = createApp(App)
 
-// Initialisation d'AOS
-app.config.globalProperties.$aos = AOS.init({
-    duration: 800, // Durée de l'animation
-    once: true,    // L'animation se déclenche une seule fois
+AOS.init({
+  duration: 1100,
+  easing: 'cubic-bezier(0.16, 1, 0.3, 1)',
+  once: true,
+  offset: 80,
+  delay: 0,
 });
 
 app.use(createPinia())

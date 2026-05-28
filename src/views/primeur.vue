@@ -14,10 +14,10 @@
     ══════════════════════════════════════ -->
     <section class="description-hero">
       <div class="description-hero-inner container">
-        <div class="description-text" data-aos="fade-right">
-          <div class="gold-eyebrow">L'univers des Primeurs</div>
-          <h2 class="description-title">Un voyage sensoriel<br/>au cœur des vignes</h2>
-          <div class="gold-divider"></div>
+        <div class="description-text" data-aos="tp-left" data-aos-delay="100">
+          <div class="gold-eyebrow" data-aos="tp-rise" data-aos-delay="150">L'univers des Primeurs</div>
+          <h2 class="description-title" data-aos="tp-rise" data-aos-delay="250">Un voyage sensoriel<br/>au cœur des vignes</h2>
+          <div class="gold-divider" data-aos="tp-line" data-aos-delay="400"></div>
           <p class="description-body">
             Bienvenue dans l'univers des primeurs, un voyage sensoriel qui ravira les passionnés
             de vin. Ici, chaque bouteille raconte une histoire, chaque gorgée vous transporte au
@@ -31,9 +31,9 @@
             d'enrichir votre cave de trésors rares et précieux.
           </p>
         </div>
-        <div class="description-image" data-aos="fade-left">
+        <div class="description-image" data-aos="tp-right" data-aos-delay="200">
           <div class="image-frame">
-            <img src="/src/assets/images/primeur.jpeg" alt="Vins Primeurs" class="desc-img"/>
+            <img :src="imgPrimeur" alt="Vins Primeurs" class="desc-img"/>
             <div class="image-caption">Millésimes sélectionnés avec exigence</div>
           </div>
         </div>
@@ -43,7 +43,7 @@
     <!-- ══════════════════════════════════════
          FORMULAIRE D'ACCÈS OBLIGATOIRE
     ══════════════════════════════════════ -->
-    <section v-if="!accessGranted" class="access-gate" data-aos="fade-up">
+    <section v-if="!accessGranted" class="access-gate" data-aos="tp-rise" data-aos-delay="100">
       <div class="gate-container container">
         <div class="gate-ornament">✦</div>
         <h2 class="gate-title">Accès Réservé aux Membres</h2>
@@ -171,8 +171,8 @@
               v-for="(product, index) in products"
               :key="index"
               class="product-card"
-              data-aos="fade-up"
-              :data-aos-delay="(index % 3) * 100"
+              data-aos="tp-rise"
+              :data-aos-delay="(index % 3) * 120"
             >
               <div class="badge-note">
                 <span class="badge-score">{{ product.note }}</span>
@@ -180,7 +180,7 @@
               </div>
               <div class="product-img-wrap">
                 <img
-                  src="/src/assets/images/product/3.png"
+                  :src="imgProduct"
                   :alt="product.name"
                   class="product-img"
                 />
@@ -208,7 +208,7 @@
 
       <!-- IMAGE LIFESTYLE -->
       <div class="lifestyle-wrap my-5">
-        <img src="/src/assets/images/partenaire.jpeg" class="lifestyle-img" alt="Dégustation Primeur"/>
+        <img :src="imgPartenaire" class="lifestyle-img" alt="Dégustation Primeur"/>
         <div class="lifestyle-caption">
           <span>Chaque bouteille, une histoire. Chaque millésime, un voyage.</span>
         </div>
@@ -216,7 +216,7 @@
 
       <!-- SECTIONS ÉDITORIALES -->
       <section class="editorial-section container">
-        <div class="editorial-block" data-aos="fade-up">
+        <div class="editorial-block" data-aos="tp-rise" data-aos-delay="0">
           <div class="editorial-number">01</div>
           <div class="editorial-content">
             <h3 class="editorial-title">Pourquoi Choisir les Primeurs ?</h3>
@@ -230,7 +230,7 @@
           </div>
         </div>
         <div class="editorial-divider"></div>
-        <div class="editorial-block" data-aos="fade-up">
+        <div class="editorial-block" data-aos="tp-rise" data-aos-delay="80">
           <div class="editorial-number">02</div>
           <div class="editorial-content">
             <h3 class="editorial-title">Un Partenaire de Confiance</h3>
@@ -265,6 +265,9 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
+import imgPrimeur from '@/assets/images/use/p1.jpg'
+import imgPartenaire from '@/assets/images/use/p2.jpg'
+import imgProduct from '@/assets/images/product/3.png'
 
 const activeView = ref(0)
 const accessGranted = ref(false)
