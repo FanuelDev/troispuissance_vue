@@ -1,5 +1,11 @@
 <template>
-  <div class="banner1"></div>
+  <div class="banner1 page-banner">
+    <div class="page-banner-overlay">
+      <div class="page-tagline">— Notre Histoire —</div>
+      <h1 class="page-banner-title">Qui Sommes-Nous ?</h1>
+      <p class="page-banner-sub">L'art de valoriser les grands vins sur les marchés africains</p>
+    </div>
+  </div>
 
   <!-- HERO SECTION -->
   <section class="section hero mt-5" data-aos="tp-rise" data-aos-delay="50">
@@ -322,6 +328,18 @@ import imgDistribution from "@/assets/images/Distribution & importation.png"
 </script>
 
 <style scoped>
+/* BANNER */
+.page-banner { position: relative; }
+.page-banner-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to bottom, rgba(15,5,8,0.5), rgba(50,10,18,0.75));
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  text-align: center; padding: 20px;
+}
+.page-tagline { font-size: 12px; letter-spacing: 5px; color: #C9A84C; text-transform: uppercase; margin-bottom: 12px; }
+.page-banner-title { font-family: 'Playfair Display', serif; font-size: clamp(38px,6vw,70px); color: #fff; font-weight: 400; margin: 0 0 10px; }
+.page-banner-sub { color: rgba(255,255,255,0.7); font-size: 15px; font-style: italic; margin: 0; }
+
 /* BASE */
 .gold-eyebrow {
   font-size: 11px;

@@ -1,8 +1,10 @@
 <template>
-  <div class="banner3">
-    <!-- <div class="bg-banner"> -->
-    <!-- <h2 class="text-center text-white title fw-bold">CLUBS</h2> -->
-    <!-- </div> -->
+  <div class="banner3 page-banner">
+    <div class="page-banner-overlay">
+      <div class="page-tagline">— Membres Privilégiés —</div>
+      <h1 class="page-banner-title">Club VIP</h1>
+      <p class="page-banner-sub">Un cercle d'exception réservé aux passionnés des grands vins africains</p>
+    </div>
   </div>
 
   <div data-aos="fade-up" class="container top">
@@ -203,6 +205,19 @@
   </div>
   <div class="top"></div>
 </template>
+
+<style scoped>
+.page-banner { position: relative; height: 40vh !important; }
+.page-banner-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to bottom, rgba(15,5,8,0.82), rgba(50,10,18,0.96));
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  text-align: center; padding: 20px;
+}
+.page-tagline { font-size: 12px; letter-spacing: 5px; color: #C9A84C; text-transform: uppercase; margin-bottom: 12px; }
+.page-banner-title { font-family: 'Playfair Display', serif; font-size: clamp(38px,6vw,70px); color: #fff; font-weight: 400; margin: 0 0 10px; }
+.page-banner-sub { color: rgba(255,255,255,0.7); font-size: 15px; font-style: italic; margin: 0; }
+</style>
 
 <script lang="ts" setup>
 import { ref } from 'vue'

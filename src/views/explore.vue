@@ -1,5 +1,11 @@
 <template>
-  <div class="banner1"></div>
+  <div class="banner1 page-banner">
+    <div class="page-banner-overlay">
+      <div class="page-tagline">— Œnologie & Découverte —</div>
+      <h1 class="page-banner-title">Explorez l'Art du Vin</h1>
+      <p class="page-banner-sub">Les derniers avis premium sélectionnés par nos experts</p>
+    </div>
+  </div>
 
   <section class="bg-white">
     <div class="container py-5">
@@ -146,3 +152,16 @@
 </template>
 
 <script lang="ts" setup></script>
+
+<style scoped>
+.page-banner { position: relative; }
+.page-banner-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to bottom, rgba(15,5,8,0.5), rgba(50,10,18,0.75));
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  text-align: center; padding: 20px;
+}
+.page-tagline { font-size: 12px; letter-spacing: 5px; color: #C9A84C; text-transform: uppercase; margin-bottom: 12px; }
+.page-banner-title { font-family: 'Playfair Display', serif; font-size: clamp(38px,6vw,70px); color: #fff; font-weight: 400; margin: 0 0 10px; }
+.page-banner-sub { color: rgba(255,255,255,0.7); font-size: 15px; font-style: italic; margin: 0; }
+</style>
