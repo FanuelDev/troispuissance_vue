@@ -320,7 +320,7 @@ export const i18n = createI18n({
         actualite: 'News',
         about: 'Who are we?',
         search: 'Search...',
-        primeurs: 'En Primeur',
+        primeurs: 'Primeur',
         notes: 'Notes',
         topAfrique: 'Top Africa',
         explore: 'Explore the Art of Wine',
