@@ -12,9 +12,9 @@
           <p class="text-justify title mt-4">
             <strong
               >Les Notes de Dégustation : Votre Compagnon pour Apprécier et Choisir Vos Vins
-              L’Essence de la Dégustation</strong
+              L'Essence de la Dégustation</strong
             ><br />
-            Déguster un vin, c’est s’immerger dans un monde de sensations. Chaque bouteille raconte
+            Déguster un vin, c'est s'immerger dans un monde de sensations. Chaque bouteille raconte
             une histoire, une alchimie de terroir, de cépages et de savoir-faire. Pour apprécier
             pleinement cette expérience, il est essentiel de se familiariser avec les notes de
             dégustation. Elles sont votre boussole, vous guidant à travers les nuances et les
@@ -24,29 +24,29 @@
             <br /><br /><strong>Un Outil Indispensable pour Vos Choix</strong><br />
 
             Les notes de dégustation fournissent une description détaillée et évocatrice des
-            caractéristiques d’un vin. En prenant en compte plusieurs dimensions, elles vous aident
+            caractéristiques d'un vin. En prenant en compte plusieurs dimensions, elles vous aident
             à : <br />
 
-            Analyser l’Aspect Visuel : La couleur et la brillance du vin peuvent révéler son âge et
-            son potentiel. Un vin rouge profond peut suggérer une richesse, tandis qu’un blanc doré
+            Analyser l'Aspect Visuel : La couleur et la brillance du vin peuvent révéler son âge et
+            son potentiel. Un vin rouge profond peut suggérer une richesse, tandis qu'un blanc doré
             évoque des arômes complexes. <br />
 
             Évaluer le Nez : Les arômes sont la première rencontre avec un vin. Des notes de fruits
-            mûrs, d’épices ou de fleurs peuvent captiver vos sens et vous orienter vers un style que
+            mûrs, d'épices ou de fleurs peuvent captiver vos sens et vous orienter vers un style que
             vous aimez. <br />
 
-            Découvrir la Bouche : La texture et l’équilibre du vin en bouche sont essentiels. Des
-            tannins veloutés, une acidité vive ou une douceur subtile contribuent à l’harmonie
+            Découvrir la Bouche : La texture et l'équilibre du vin en bouche sont essentiels. Des
+            tannins veloutés, une acidité vive ou une douceur subtile contribuent à l'harmonie
             globale du vin. <br />
 
             Ressentir la Finale : La persistance des saveurs après la dégustation, ou la "finale",
-            est souvent un indice de la qualité du vin. Une longue finale est le signe d’un vin bien
+            est souvent un indice de la qualité du vin. Une longue finale est le signe d'un vin bien
             élaboré qui laisse une empreinte durable. <br />
 
             <br /><br />
             <strong>Affinez Votre Appréciation du Vin</strong> <br />
 
-            En apprenant à lire les notes de dégustation, vous vous donnez les moyens d’explorer le
+            En apprenant à lire les notes de dégustation, vous vous donnez les moyens d'explorer le
             monde du vin avec confiance et curiosité. Que vous soyez novice ou amateur passionné,
             ces notes enrichissent votre expérience, vous permettant de découvrir des trésors cachés
             et de développer votre palais.
@@ -54,7 +54,7 @@
             <br /><br />
             <strong>Explorez Notre Sélection avec Émerveillement</strong><br />
 
-            Que vous soyez à la recherche d’un vin pour une soirée romantique, un repas entre amis
+            Que vous soyez à la recherche d'un vin pour une soirée romantique, un repas entre amis
             ou simplement pour vous faire plaisir, nos notes de dégustation sont là pour vous
             guider. Elles vous aideront à choisir des vins qui sauront captiver vos sens et égayer
             vos moments.

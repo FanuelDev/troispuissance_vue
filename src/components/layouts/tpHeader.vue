@@ -1,4 +1,4 @@
-<template>
+﻿<template>
   <!-- HEADER TOP -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white mt-3">
     <div class="container">
@@ -19,16 +19,16 @@
       <div class="collapse navbar-collapse" id="topNavbar">
         <ul class="navbar-nav ms-auto align-items-lg-center menu1">
           <li class="nav-item">
-            <router-link class="nav-link title" to="">Magazine</router-link>
+            <router-link class="nav-link title" to="">{{ $t('nav.magazine') }}</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link title" to="actualite">Actualité</router-link>
+            <router-link class="nav-link title" to="actualite">{{ $t('nav.actualite') }}</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link title" to="about">Qui sommes-nous ?</router-link>
+            <router-link class="nav-link title" to="about">{{ $t('nav.about') }}</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="btn btn-primary btn-tran ms-lg-3" to="">EN</router-link>
+            <router-link class="btn btn-primary btn-tran ms-lg-3" to="" @click.prevent="toggleLocale">{{ locale === 'fr' ? 'EN' : 'FR' }}</router-link>
           </li>
         </ul>
       </div>
@@ -49,11 +49,11 @@
 
       <div class="collapse navbar-collapse" id="topNavbar">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><router-link class="nav-link title" to="primeur">Primeurs</router-link></li>
-          <li class="nav-item"><router-link class="nav-link title" to="notes">Notes</router-link></li>
-          <li class="nav-item"><router-link class="nav-link title" to="topafrique">Top Afrique</router-link></li>
-          <li class="nav-item"><router-link class="nav-link title" to="explore">Explorez l’art du vin</router-link></li>
-          <li class="nav-item"><router-link class="nav-link title" to="club">Club VIP</router-link></li>
+          <li class="nav-item"><router-link class="nav-link title" to="primeur">{{ $t('nav.primeurs') }}</router-link></li>
+          <li class="nav-item"><router-link class="nav-link title" to="notes">{{ $t('nav.notes') }}</router-link></li>
+          <li class="nav-item"><router-link class="nav-link title" to="topafrique">{{ $t('nav.topAfrique') }}</router-link></li>
+          <li class="nav-item"><router-link class="nav-link title" to="explore">{{ $t('nav.explore') }}</router-link></li>
+          <li class="nav-item"><router-link class="nav-link title" to="club">{{ $t('nav.club') }}</router-link></li>
         </ul>
 
         <!-- Search + User -->
@@ -62,7 +62,7 @@
             <span class="input-group-text">
               <img src="/src/assets/icons/s1.png" style="width:15px " />
             </span>
-            <input type="text" class="form-control input-search" placeholder="Recherche..." />
+            <input type="text" class="form-control input-search" :placeholder="$t('nav.search')" />
           </div>
 
           <router-link to="auth/login">
@@ -74,7 +74,15 @@
   </nav>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { useI18n } from 'vue-i18n'
+
+const { locale } = useI18n()
+
+function toggleLocale() {
+  locale.value = locale.value === 'fr' ? 'en' : 'fr'
+}
+</script>
 
 <style>
 .menu2 .nav-link {

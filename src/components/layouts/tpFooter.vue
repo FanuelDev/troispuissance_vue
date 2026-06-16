@@ -9,9 +9,7 @@
             </div>
             <div class="">
               <p class="text-white" style="font-size: 20px !important">
-                Inscrivez-vous pour connaitre les nouveautés et offres exclusives Trois Puissances
-                utilisera vos données personnelles, comme précisé dans notre politique de
-                confidentialité.
+                {{ $t('footer.newsletter') }}
               </p>
             </div>
           </div>
@@ -21,9 +19,9 @@
                 <input
                   type="text"
                   class="form-control form-control-lg input mx-4 py-4"
-                  placeholder="Entrer votre adresse mail..."
+                  :placeholder="$t('footer.emailPlaceholder')"
                 />
-                <button class="btn btn-light px-4">Envoyer</button>
+                <button class="btn btn-light px-4">{{ $t('footer.send') }}</button>
               </div>
             </div>
           </div>
@@ -44,7 +42,7 @@
           </div>
           <div class="col-md-3 px-5">
             <div class="">
-              <h4 class="text-primary title fw-bold">Liens Rapides</h4>
+              <h4 class="text-primary title fw-bold">{{ $t('footer.quickLinks') }}</h4>
               <!-- <img src="/src/assets/images/logo/logo.png" class="img-logo img-fluid" alt="" /> -->
             </div>
             <div>
@@ -54,11 +52,11 @@
                 totam praesentium officia. Eaque, hic ea!
               </p> -->
               <ul class="my-4 ul">
-                <li><a href="#">Primeur</a></li>
-                <li><a href="#">Notes</a></li>
-                <li><a href="#">Top Afrique</a></li>
-                <li><a href="#">Explorez l'art du vin</a></li>
-                <li><a href="#">Degustation</a></li>
+                <li><a href="#">{{ $t('nav.primeurs') }}</a></li>
+                <li><a href="#">{{ $t('nav.notes') }}</a></li>
+                <li><a href="#">{{ $t('nav.topAfrique') }}</a></li>
+                <li><a href="#">{{ $t('nav.explore') }}</a></li>
+                <li><a href="#">{{ $t('footer.degus') }}</a></li>
                 <!-- <li><a href="#">Club VIP</a></li>
                 <li><a href="#">Boutique</a></li>
                 <li><a href="#">Actualité</a></li>
@@ -68,21 +66,21 @@
           </div>
           <div class="col-md-3 px-5">
             <div class="">
-              <h4 class="text-primary title fw-bold">Liens Utiles</h4>
+              <h4 class="text-primary title fw-bold">{{ $t('footer.usefulLinks') }}</h4>
             </div>
             <div>
               <ul class="my-4 ul">
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">A propos</a></li>
-                <li><a href="#">Mention Légale</a></li>
-                <li><a href="#">FAQ</a></li>
+                <li><a href="#">{{ $t('footer.home') }}</a></li>
+                <li><a href="#">{{ $t('footer.contact') }}</a></li>
+                <li><a href="#">{{ $t('footer.about') }}</a></li>
+                <li><a href="#">{{ $t('footer.legal') }}</a></li>
+                <li><a href="#">{{ $t('footer.faq') }}</a></li>
               </ul>
             </div>
           </div>
           <div class="col-md-3 px-5">
             <div class="mb-4">
-              <h4 class="text-primary title fw-bold">Contacts</h4>
+              <h4 class="text-primary title fw-bold">{{ $t('footer.contacts') }}</h4>
             </div>
             <ul class="my-5 ul">
               <li>
@@ -117,10 +115,8 @@
       <div class="container">
         <div class="row py-4">
           <div class="d-flex justify-content-between">
-            <small class="" style="font-size: 13px"
-              >TROIS PUISSANCES &copy; tous droits réservés 2024
-            </small>
-            <small class="" style="font-size: 13px">Powered by Agence 07</small>
+            <small class="" style="font-size: 13px">{{ $t('footer.rights') }}</small>
+            <small class="" style="font-size: 13px">{{ $t('footer.poweredBy') }}</small>
           </div>
         </div>
       </div>

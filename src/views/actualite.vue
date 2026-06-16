@@ -4,11 +4,9 @@
     <div class="actu-hero-bg"></div>
     <div class="actu-hero-overlay">
       <div class="actu-hero-content">
-        <div class="hero-eyebrow">— Revue & Chroniques —</div>
-        <h1 class="actu-hero-title">L'Art du Vin</h1>
-        <p class="actu-hero-sub">
-          Terroirs, millésimes, rencontres et tendances — l'actualité des vins d'excellence
-        </p>
+        <div class="hero-eyebrow">{{ $t('actualite.heroEyebrow') }}</div>
+        <h1 class="actu-hero-title">{{ $t('actualite.heroTitle') }}</h1>
+        <p class="actu-hero-sub">{{ $t('actualite.heroSub') }}</p>
         <div class="hero-scroll-hint"><span></span></div>
       </div>
     </div>
@@ -19,16 +17,14 @@
     <div class="featured-inner">
       <div class="featured-image-wrap">
         <img src="/src/assets/images/banner/banner3.jpg" class="featured-img" alt="Article vedette"/>
-        <div class="featured-category">À la une</div>
+        <div class="featured-category">{{ $t('actualite.featured') }}</div>
       </div>
       <div class="featured-text">
         <div class="article-meta">
           <span class="meta-date"><i class="fa fa-calendar-alt"></i> 12 Mai 2025</span>
           <span class="meta-read"><i class="fa fa-clock"></i> 8 min de lecture</span>
         </div>
-        <h2 class="featured-title">
-          L'Afrique, Nouveau Continent du Vin Premium : Une Révolution Silencieuse
-        </h2>
+        <h2 class="featured-title">{{ $t('actualite.featuredTitle') }}</h2>
         <div class="featured-lead-line"></div>
         <p class="featured-lead">
           Depuis quelques années, le continent africain s'impose comme l'une des destinations
@@ -43,7 +39,7 @@
           Trois Puissances accompagne cette évolution au plus près, en créant des ponts
           durables entre les domaines d'exception et ces marchés en pleine effervescence.
         </p>
-        <a href="#" class="read-more-btn">Lire l'article complet <span>→</span></a>
+        <a href="#" class="read-more-btn">{{ $t('actualite.readFull') }} <span>→</span></a>
       </div>
     </div>
   </section>
@@ -58,8 +54,8 @@
   <!-- GRILLE D'ARTICLES -->
   <section class="articles-grid-section container" data-aos="fade-up">
     <div class="section-header">
-      <div class="gold-eyebrow">Chroniques & Dossiers</div>
-      <h2 class="section-title">L'Actualité du Domaine</h2>
+      <div class="gold-eyebrow">{{ $t('actualite.chroniclesLabel') }}</div>
+      <h2 class="section-title">{{ $t('actualite.sectionTitle') }}</h2>
     </div>
 
     <div class="articles-grid">
@@ -82,7 +78,7 @@
             aromatique avec une élégance que les plus grandes maisons bordelaises
             ne peuvent ignorer.
           </p>
-          <a href="#" class="article-link">Lire la suite <i class="fa fa-arrow-right"></i></a>
+          <a href="#" class="article-link">{{ $t('actualite.readMore') }} <i class="fa fa-arrow-right"></i></a>
         </div>
       </article>
 
@@ -104,7 +100,7 @@
             d'une concentration exceptionnelle. Notre sélection des cuvées les plus
             prometteuses du millésime 2023 sur le continent africain.
           </p>
-          <a href="#" class="article-link">Lire la suite <i class="fa fa-arrow-right"></i></a>
+          <a href="#" class="article-link">{{ $t('actualite.readMore') }} <i class="fa fa-arrow-right"></i></a>
         </div>
       </article>
 
@@ -126,7 +122,7 @@
             de nouveaux horizons dans l'art des accords mets-vins. Une rencontre
             inattendue entre traditions millénaires et œnologie de prestige.
           </p>
-          <a href="#" class="article-link">Lire la suite <i class="fa fa-arrow-right"></i></a>
+          <a href="#" class="article-link">{{ $t('actualite.readMore') }} <i class="fa fa-arrow-right"></i></a>
         </div>
       </article>
     </div>

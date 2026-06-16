@@ -1,16 +1,16 @@
 <template>
   <div class="banner1 page-banner">
     <div class="page-banner-overlay">
-      <div class="page-tagline">— Œnologie & Découverte —</div>
-      <h1 class="page-banner-title">Explorez l'Art du Vin</h1>
-      <p class="page-banner-sub">Les derniers avis premium sélectionnés par nos experts</p>
+      <div class="page-tagline">{{ $t('explore.bannerTagline') }}</div>
+      <h1 class="page-banner-title">{{ $t('explore.bannerTitle') }}</h1>
+      <p class="page-banner-sub">{{ $t('explore.bannerSub') }}</p>
     </div>
   </div>
 
   <section class="bg-white">
     <div class="container py-5">
-      <h2 class="text-center title fw-bold" data-aos="fade-up">EXPLOREZ L'ART DU VIN</h2>
-      <p class="text-center" data-aos="fade-up" data-aos-duration="1200">Derniers avis premium</p>
+      <h2 class="text-center title fw-bold" data-aos="fade-up">{{ $t('explore.title') }}</h2>
+      <p class="text-center" data-aos="fade-up" data-aos-duration="1200">{{ $t('explore.subtitle') }}</p>
       <div class="row">
         <div class="col-md-10 offset-md-1">
           <div class="container my-5">
@@ -21,7 +21,7 @@
                     <img src="/src/assets/images/explor/1.jpg" class="img-fluid" alt="" />
                   </div>
                   <div class="mt-2 text-center">
-                    <h5 class="title text-white">ALSACE FRANCOIS SCHMIT</h5>
+                    <h5 class="title text-white">{{ $t('explore.wineLabel') }}</h5>
                     <small class="text-white"
                       >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio,
                       deserunt.</small
@@ -35,7 +35,7 @@
                     <img src="/src/assets/images/explor/2.jpg" class="img-fluid" alt="" />
                   </div>
                   <div class="mt-2 text-center">
-                    <h5 class="title text-white">ALSACE FRANCOIS SCHMIT</h5>
+                    <h5 class="title text-white">{{ $t('explore.wineLabel') }}</h5>
                     <small class="text-white"
                       >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio,
                       deserunt.</small
@@ -49,7 +49,7 @@
                     <img src="/src/assets/images/explor/3.jpg" class="img-fluid" alt="" />
                   </div>
                   <div class="mt-2 text-center">
-                    <h5 class="title text-white">ALSACE FRANCOIS SCHMIT</h5>
+                    <h5 class="title text-white">{{ $t('explore.wineLabel') }}</h5>
                     <small class="text-white"
                       >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio,
                       deserunt.</small
@@ -63,7 +63,7 @@
                     <img src="/src/assets/images/explor/4.jpg" class="img-fluid" alt="" />
                   </div>
                   <div class="mt-2 text-center">
-                    <h5 class="title text-white">ALSACE FRANCOIS SCHMIT</h5>
+                    <h5 class="title text-white">{{ $t('explore.wineLabel') }}</h5>
                     <small class="text-white"
                       >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio,
                       deserunt.</small
@@ -78,7 +78,7 @@
                     <img src="/src/assets/images/explor/1.jpg" class="img-fluid" alt="" />
                   </div>
                   <div class="mt-2 text-center">
-                    <h5 class="title text-white">ALSACE FRANCOIS SCHMIT</h5>
+                    <h5 class="title text-white">{{ $t('explore.wineLabel') }}</h5>
                     <small class="text-white"
                       >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio,
                       deserunt.</small
@@ -92,7 +92,7 @@
                     <img src="/src/assets/images/explor/2.jpg" class="img-fluid" alt="" />
                   </div>
                   <div class="mt-2 text-center">
-                    <h5 class="title text-white">ALSACE FRANCOIS SCHMIT</h5>
+                    <h5 class="title text-white">{{ $t('explore.wineLabel') }}</h5>
                     <small class="text-white"
                       >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio,
                       deserunt.</small
@@ -106,7 +106,7 @@
                     <img src="/src/assets/images/explor/3.jpg" class="img-fluid" alt="" />
                   </div>
                   <div class="mt-2 text-center">
-                    <h5 class="title text-white">ALSACE FRANCOIS SCHMIT</h5>
+                    <h5 class="title text-white">{{ $t('explore.wineLabel') }}</h5>
                     <small class="text-white"
                       >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio,
                       deserunt.</small
@@ -120,7 +120,7 @@
                     <img src="/src/assets/images/explor/1.jpg" class="img-fluid" alt="" />
                   </div>
                   <div class="mt-2 text-center">
-                    <h5 class="title text-white">ALSACE FRANCOIS SCHMIT</h5>
+                    <h5 class="title text-white">{{ $t('explore.wineLabel') }}</h5>
                     <small class="text-white"
                       >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio,
                       deserunt.</small
@@ -134,7 +134,7 @@
                     <img src="/src/assets/images/explor/2.jpg" class="img-fluid" alt="" />
                   </div>
                   <div class="mt-2 text-center">
-                    <h5 class="title text-white">ALSACE FRANCOIS SCHMIT</h5>
+                    <h5 class="title text-white">{{ $t('explore.wineLabel') }}</h5>
                     <small class="text-white"
                       >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio,
                       deserunt.</small

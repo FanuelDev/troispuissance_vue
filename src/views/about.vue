@@ -1,9 +1,9 @@
-<template>
+﻿<template>
   <div class="banner1 page-banner">
     <div class="page-banner-overlay">
-      <div class="page-tagline">— Notre Histoire —</div>
-      <h1 class="page-banner-title">Qui Sommes-Nous ?</h1>
-      <p class="page-banner-sub">L'art de valoriser les grands vins sur les marchés africains</p>
+      <div class="page-tagline">{{ $t('about.bannerTagline') }}</div>
+      <h1 class="page-banner-title">{{ $t('about.bannerTitle') }}</h1>
+      <p class="page-banner-sub">{{ $t('about.bannerSub') }}</p>
     </div>
   </div>
 
@@ -28,12 +28,8 @@
   <!-- INTRO -->
   <section class="container col-md-12 mt-5 mx-auto text-center about-intro" data-aos="tp-rise" data-aos-delay="100">
     <div class="intro-wrap">
-      <div class="gold-eyebrow">Notre Mission</div>
-      <p class="intro-text">
-        Depuis ses débuts, Trois Puissances s'est donné une mission claire : offrir aux domaines,
-        maisons et négociants une passerelle privilégiée vers les marchés africains, là où la
-        culture du vin gagne chaque année en raffinement et en exigence.
-      </p>
+      <div class="gold-eyebrow">{{ $t('about.missionLabel') }}</div>
+      <p class="intro-text">{{ $t('about.missionText') }}</p>
     </div>
   </section>
 
@@ -46,11 +42,8 @@
           <div class="story-card">
             <img alt="" src="@/assets/images/2.jpg" class="img-fluid story-img">
             <div class="story-body bg-primary text-center">
-              <h2 class="title fw-bold text-white">Notre approche</h2>
-              <span class="text-light story-span">
-                Inspirée des plus belles maisons de distribution, conjugue expertise
-                stratégique, sens du détail et mise en valeur des terroirs.
-              </span>
+              <h2 class="title fw-bold text-white">{{ $t('about.approche') }}</h2>
+              <span class="text-light story-span">{{ $t('about.approcheText') }}</span>
             </div>
           </div>
         </div>
@@ -59,10 +52,8 @@
           <div class="story-card">
             <img alt="" src="@/assets/images/3.jpg" class="img-fluid story-img">
             <div class="story-body bg-primary text-center">
-              <h2 class="title fw-bold text-white">Notre rôle</h2>
-              <span class="text-light story-span">
-                Révéler votre singularité, sublimer votre image, structurer votre présence.
-              </span>
+              <h2 class="title fw-bold text-white">{{ $t('about.role') }}</h2>
+              <span class="text-light story-span">{{ $t('about.roleText') }}</span>
             </div>
           </div>
         </div>
@@ -79,8 +70,8 @@
             <div class="d-flex justify-content-center">
               <img alt="" src="@/assets/images/analyse.png" class="img-fluid w-25">
             </div>
-            <h4 class="fw-bold title text-primary mt-4">Analyses de marché<br>pointues</h4>
-            <span class="mt-2 text-justify expertise-text">Comprendre les dynamiques locales, anticiper la demande, identifier les marchés à fort potentiel : nous vous apportons une vision claire, guidée par l'observation des tendances premium qui dominent aujourd'hui en Afrique.</span>
+            <h4 class="fw-bold title text-primary mt-4">{{ $t('about.expertises.label1') }}</h4>
+            <span class="mt-2 text-justify expertise-text">{{ $t('about.expertises.text1') }}</span>
           </div>
         </div>
         <div class="col-md-3">
@@ -88,8 +79,8 @@
             <div class="d-flex justify-content-center">
               <img alt="" src="@/assets/images/Importation.png" class="img-fluid w-25">
             </div>
-            <h4 class="fw-bold title text-primary mt-4">Positionnement & image<br>de marque</h4>
-            <span class="text-justify expertise-text">Comme pour une cuvée que l'on élève et affine, nous travaillons votre identité pour qu'elle trouve un écho naturel auprès des amateurs africains : élégance, cohérence, précision.</span>
+            <h4 class="fw-bold title text-primary mt-4">{{ $t('about.expertises.label2') }}</h4>
+            <span class="text-justify expertise-text">{{ $t('about.expertises.text2') }}</span>
           </div>
         </div>
         <div class="col-md-3">
@@ -97,8 +88,8 @@
             <div class="d-flex justify-content-center">
               <img alt="" :src="imgDistribution" class="img-fluid w-25">
             </div>
-            <h4 class="fw-bold title text-primary mt-4">Réseaux d'importation<br>& distribution</h4>
-            <span class="text-justify expertise-text">Nous vous ouvrons les portes des réseaux les plus sérieux, du Nigéria à la Côte d'Ivoire, du Ghana au Kenya : des partenaires fiables, engagés, à la recherche de vins ayant une histoire, un style, une signature.</span>
+            <h4 class="fw-bold title text-primary mt-4">{{ $t('about.expertises.label3') }}</h4>
+            <span class="text-justify expertise-text">{{ $t('about.expertises.text3') }}</span>
           </div>
         </div>
         <div class="col-md-3">
@@ -106,8 +97,8 @@
             <div class="d-flex justify-content-center">
               <img alt="" src="@/assets/images/Event.png" class="img-fluid w-25">
             </div>
-            <h4 class="fw-bold title text-primary mt-4">Événements & expériences<br>exclusives</h4>
-            <span class="text-justify expertise-text">Dégustations confidentielles, présentations privées à des acheteurs triés sur le volet, événements œnologiques de prestige : nous créons des moments où votre vin s'exprime pleinement.</span>
+            <h4 class="fw-bold title text-primary mt-4">{{ $t('about.expertises.label4') }}</h4>
+            <span class="text-justify expertise-text">{{ $t('about.expertises.text4') }}</span>
           </div>
         </div>
       </div>
@@ -120,8 +111,8 @@
       <div class="row align-items-center">
         <div class="col-md-12 mt-5 mb-4">
           <div class="why-header">
-            <div class="gold-eyebrow">Nos engagements</div>
-            <h2 class="why-title">Pourquoi choisir Trois Puissances ?</h2>
+            <div class="gold-eyebrow">{{ $t('about.engagements') }}</div>
+            <h2 class="why-title">{{ $t('about.whyTitle') }}</h2>
             <div class="why-title-line"></div>
           </div>
         </div>
@@ -142,8 +133,8 @@
                 <i class="fa fa-chart-line"></i>
               </div>
               <div class="why-feature-text">
-                <h5>Lecture fine des marchés africains</h5>
-                <p>Une connaissance approfondie des attentes d'un marché en pleine montée en gamme, guidée par une veille permanente et une présence terrain inégalée.</p>
+                <h5>{{ $t('about.feature1Title') }}</h5>
+                <p>{{ $t('about.feature1Text') }}</p>
               </div>
             </div>
 
@@ -152,8 +143,8 @@
                 <i class="fa fa-handshake"></i>
               </div>
               <div class="why-feature-text">
-                <h5>Accès à des réseaux d'importateurs exigeants</h5>
-                <p>Un accès direct à des importateurs fidèles et qualifiés, sélectionnés pour leur engagement envers l'excellence et leur ancrage local.</p>
+                <h5>{{ $t('about.feature2Title') }}</h5>
+                <p>{{ $t('about.feature2Text') }}</p>
               </div>
             </div>
 
@@ -162,8 +153,8 @@
                 <i class="fa fa-compass"></i>
               </div>
               <div class="why-feature-text">
-                <h5>Accompagnement discret et structuré</h5>
-                <p>Une démarche discrète, rigoureusement structurée et orientée vers des résultats mesurables — sans compromis sur l'image de votre maison.</p>
+                <h5>{{ $t('about.feature3Title') }}</h5>
+                <p>{{ $t('about.feature3Text') }}</p>
               </div>
             </div>
 
@@ -172,8 +163,8 @@
                 <i class="fa fa-award"></i>
               </div>
               <div class="why-feature-text">
-                <h5>Honorer le savoir-faire des producteurs</h5>
-                <p>Une démarche qui respecte profondément le savoir-faire des producteurs et les attentes des connaisseurs africains les plus exigeants.</p>
+                <h5>{{ $t('about.feature4Title') }}</h5>
+                <p>{{ $t('about.feature4Text') }}</p>
               </div>
             </div>
 
@@ -182,8 +173,8 @@
                 <i class="fa fa-globe-africa"></i>
               </div>
               <div class="why-feature-text">
-                <h5>Rayonner dans un écosystème en évolution</h5>
-                <p>Une vraie capacité à faire briller une marque dans un environnement africain en constante évolution, porté par une nouvelle génération de passionnés.</p>
+                <h5>{{ $t('about.feature5Title') }}</h5>
+                <p>{{ $t('about.feature5Text') }}</p>
               </div>
             </div>
 
@@ -192,14 +183,8 @@
                 <i class="fa fa-star"></i>
               </div>
               <div class="why-feature-text">
-                <h5>Un accompagnement sur mesure, sans compromis</h5>
-                <p>
-                  Avec Trois Puissances, chaque producteur bénéficie d'un accompagnement
-                  taillé sur mesure, pensé pour valoriser l'authenticité des terroirs,
-                  la précision des assemblages et l'émotion que procure un grand vin.
-                  Nous créons des ponts solides entre les domaines de caractère et les
-                  marchés africains les plus dynamiques.
-                </p>
+                <h5>{{ $t('about.feature6Title') }}</h5>
+                <p>{{ $t('about.feature6Text') }}</p>
               </div>
             </div>
 
@@ -214,11 +199,11 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6">
-          <div class="gold-eyebrow">Notre philosophie événementielle</div>
-          <h2 class="fw-bold mb-4 about-section-title">L'Art des Instants d'Exception</h2>
-          <p class="about-p">Chez Trois Puissances, chaque événement est conçu comme une œuvre éphémère : une rencontre rare entre grands vins, haute gastronomie et lieux d'exception.</p>
-          <p class="about-p">Nos Master Classes ne se contentent pas de présenter des cuvées ; elles en révèlent la profondeur, la personnalité, l'histoire.</p>
-          <p class="about-p">Un moment suspendu, pensé pour un public averti et exigeant.</p>
+          <div class="gold-eyebrow">{{ $t('about.philoLabel') }}</div>
+          <h2 class="fw-bold mb-4 about-section-title">{{ $t('about.philoTitle') }}</h2>
+          <p class="about-p">{{ $t('about.philoText1') }}</p>
+          <p class="about-p">{{ $t('about.philoText2') }}</p>
+          <p class="about-p">{{ $t('about.philoText3') }}</p>
         </div>
         <div class="col-md-6">
           <img alt="" :src="imgArt" class="img-fluid about-right-img" data-aos="tp-reveal" data-aos-delay="200">
@@ -232,15 +217,15 @@
     <div class="container">
       <div class="row g-5 mt-4">
         <div class="col-md-12 mb-2">
-          <div class="gold-eyebrow">Notre catalogue</div>
-          <h2 class="fw-bold about-section-title">Nos Signatures</h2>
+          <div class="gold-eyebrow">{{ $t('about.catalogLabel') }}</div>
+          <h2 class="fw-bold about-section-title">{{ $t('about.signaturesTitle') }}</h2>
         </div>
         <div class="col-md-4" data-aos="tp-rise" data-aos-delay="0">
           <div class="sig-card">
             <img alt="" :src="imgCuvees" class="sig-img img-fluid">
             <div class="sig-body">
               <div class="sig-num">01</div>
-              <h5 class="sig-title">Cuvées d'exception, sélectionnées avec exigence</h5>
+              <h5 class="sig-title">{{ $t('about.sig1') }}</h5>
             </div>
           </div>
         </div>
@@ -249,7 +234,7 @@
             <img alt="" :src="imgExperts" class="sig-img img-fluid">
             <div class="sig-body">
               <div class="sig-num">02</div>
-              <h5 class="sig-title">Experts du vin dédiés à votre événement</h5>
+              <h5 class="sig-title">{{ $t('about.sig2') }}</h5>
             </div>
           </div>
         </div>
@@ -258,7 +243,7 @@
             <img alt="" :src="imgDegus" class="sig-img img-fluid">
             <div class="sig-body">
               <div class="sig-num">03</div>
-              <h5 class="sig-title">Dégustations privées, élégantes et immersives</h5>
+              <h5 class="sig-title">{{ $t('about.sig3') }}</h5>
             </div>
           </div>
         </div>
@@ -267,7 +252,7 @@
             <img alt="" :src="imgAccords" class="sig-img img-fluid">
             <div class="sig-body">
               <div class="sig-num">04</div>
-              <h5 class="sig-title">Accords mets-vins sur mesure, inspirés par de grands chefs</h5>
+              <h5 class="sig-title">{{ $t('about.sig4') }}</h5>
             </div>
           </div>
         </div>
@@ -276,7 +261,7 @@
             <img alt="" :src="imgLieux" class="sig-img img-fluid">
             <div class="sig-body">
               <div class="sig-num">05</div>
-              <h5 class="sig-title">Lieux de prestige, soigneusement choisis pour sublimer l'expérience</h5>
+              <h5 class="sig-title">{{ $t('about.sig5') }}</h5>
             </div>
           </div>
         </div>
@@ -292,21 +277,11 @@
           <img alt="" :src="imgChaque" class="img-fluid about-fin-img">
         </div>
         <div class="col-md-6 ps-5">
-          <p class="about-p">
-            Chaque rendez-vous associe la précision d'une sélection œnologique à la créativité
-            culinaire, pour donner naissance à une expérience où chaque détail a son importance :
-            la lumière, le rythme, les arômes, l'histoire du vin, la délicatesse du service.
-          </p>
-          <p class="about-p">
-            De dîners confidentiels à de grandes rencontres œnologiques, nos événements offrent
-            aux maisons et producteurs une scène parfaitement maîtrisée pour dialoguer avec un
-            public privilégié, sensible à l'excellence et à la distinction.
-          </p>
+          <p class="about-p">{{ $t('about.finalText1') }}</p>
+          <p class="about-p">{{ $t('about.finalText2') }}</p>
           <div class="about-signature">
             <div class="about-sig-line"></div>
-            <h3 class="text-primary fw-bold about-sig-text">
-              Une signature Trois Puissances :<br>élégance, discrétion, profondeur.
-            </h3>
+            <h3 class="text-primary fw-bold about-sig-text">{{ $t('about.signature') }}</h3>
           </div>
         </div>
       </div>
@@ -317,13 +292,13 @@
 
 <script setup lang="ts">
 import imgWhy from "@/assets/images/1/Pourquoi choisir Trois Puissance.jpg.jpeg"
-import imgArt from "@/assets/images/1/L’Art des Instants d’Exception.jpg.jpeg"
-import imgCuvees from "@/assets/images/1/Cuvées d’exception, sélectionnées avec exigences.jpg.jpeg"
+import imgArt from "@/assets/images/1/LArt des Instants dException.jpg.jpeg"
+import imgCuvees from "@/assets/images/1/Cuvées dexception, sélectionnées avec exigences.jpg.jpeg"
 import imgExperts from "@/assets/images/1/Experts du vin dédiés à votre événement.jpg.jpeg"
 import imgDegus from "@/assets/images/1/Dégustations privées, élégantes et immersives.jpg.jpeg"
 import imgAccords from "@/assets/images/1/Accords mets-vins sur mesure, inspirés par de grands chefs.jpg.jpeg"
-import imgLieux from "@/assets/images/1/Lieux de prestige, soigneusement choisis pour sublimer l’expérience.jpg.jpeg"
-import imgChaque from "@/assets/images/1/Chaque rendez-vous associe la précision d’une sélection œnologique à la créativité culinaire.jpg.jpeg"
+import imgLieux from "@/assets/images/1/Lieux de prestige, soigneusement choisis pour sublimer lexpérience.jpg.jpeg"
+import imgChaque from "@/assets/images/1/Chaque rendez-vous associe la précision dune sélection œnologique à la créativité culinaire.jpg.jpeg"
 import imgDistribution from "@/assets/images/Distribution & importation.png"
 </script>
 

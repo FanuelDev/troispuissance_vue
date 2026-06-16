@@ -1,42 +1,36 @@
 <template>
   <div class="banner1 notes-banner">
     <div class="notes-banner-overlay">
-      <div class="notes-tagline">— Expertise & Distinction —</div>
-      <h1 class="notes-banner-title">Recherche de Produits</h1>
-      <p class="notes-banner-sub">Trouvez le produit d'exception qui vous correspond</p>
+      <div class="notes-tagline">{{ $t('notes.bannerTagline') }}</div>
+      <h1 class="notes-banner-title">{{ $t('notes.bannerTitle') }}</h1>
+      <p class="notes-banner-sub">{{ $t('notes.bannerSub') }}</p>
     </div>
   </div>
 
   <section class="notes-intro container" data-aos="fade-up">
     <div class="notes-intro-inner">
-      <div class="gold-eyebrow">Notre Philosophie</div>
-      <h2 class="notes-intro-title">L'Art de Choisir le Bon Produit</h2>
+      <div class="gold-eyebrow">{{ $t('notes.philoLabel') }}</div>
+      <h2 class="notes-intro-title">{{ $t('notes.philoTitle') }}</h2>
       <div class="gold-divider mx-auto"></div>
-      <p class="notes-intro-body">
-        Déguster un vin, c'est s'immerger dans un monde de sensations. Chaque bouteille raconte
-        une histoire — une alchimie de terroir, de cépages et de savoir-faire. Pour apprécier
-        pleinement cette expérience, il est essentiel de se familiariser avec les notes de
-        dégustation. Elles sont votre boussole, vous guidant à travers les nuances et les
-        subtilités de chaque produit, afin que vous puissiez faire des choix éclairés.
-      </p>
+      <p class="notes-intro-body">{{ $t('notes.philoText') }}</p>
     </div>
   </section>
 
   <!-- SÉLECTION PAR TYPE DE PRODUIT -->
   <section class="product-type-section" data-aos="fade-up">
     <div class="container">
-      <div class="section-label">Faites votre choix</div>
-      <h3 class="section-heading">Par Type de Produit</h3>
+      <div class="section-label">{{ $t('notes.choiceLabel') }}</div>
+      <h3 class="section-heading">{{ $t('notes.byType') }}</h3>
       <div class="product-type-grid">
         <button class="type-card" :class="{ active: activeType === 'vins' }" @click="activeType = 'vins'">
           <div class="type-icon"><i class="fa fa-wine-bottle"></i></div>
-          <div class="type-name">Vins</div>
-          <div class="type-desc">Rouges, Blancs, Rosés, Effervescents</div>
+          <div class="type-name">{{ $t('notes.wines') }}</div>
+          <div class="type-desc">{{ $t('notes.winesDesc') }}</div>
         </button>
         <button class="type-card" :class="{ active: activeType === 'spiritueux' }" @click="activeType = 'spiritueux'">
           <div class="type-icon"><i class="fa fa-glass-martini-alt"></i></div>
-          <div class="type-name">Spiritueux</div>
-          <div class="type-desc">Cognac, Whisky, Rhum, Armagnac</div>
+          <div class="type-name">{{ $t('notes.spirits') }}</div>
+          <div class="type-desc">{{ $t('notes.spiritsDesc') }}</div>
         </button>
       </div>
     </div>
@@ -45,15 +39,15 @@
   <!-- BARRE DE RECHERCHE -->
   <section class="search-section" data-aos="fade-up">
     <div class="container">
-      <div class="search-label">Rechercher un produit</div>
+      <div class="search-label">{{ $t('notes.searchLabel') }}</div>
       <div class="search-bar-wrap">
         <i class="fa fa-search search-icon"></i>
         <input
           type="search"
-          placeholder="Nom du produit, millésime, appellation, pays..."
+          :placeholder="$t('notes.searchPlaceholder')"
           class="luxury-search"
         />
-        <button class="search-btn">Rechercher</button>
+        <button class="search-btn">{{ $t('notes.searchBtn') }}</button>
       </div>
     </div>
   </section>
@@ -63,33 +57,30 @@
     <div class="container">
       <div class="guide-inner">
         <div class="guide-text">
-          <div class="gold-eyebrow">Conseil Personnalisé</div>
-          <h3 class="guide-title">Laissez-vous Guider<br/>vers le Produit Idéal</h3>
-          <p class="guide-body">
-            Dites-nous qui vous êtes, et nous vous révélerons le produit qui vous correspond.
-            Notre équipe d'experts façonne votre expérience avec précision et raffinement.
-          </p>
-          <button class="guide-btn">Découvrir ma sélection</button>
+          <div class="gold-eyebrow">{{ $t('notes.guideLabel') }}</div>
+          <h3 class="guide-title">{{ $t('notes.guideTitle') }}</h3>
+          <p class="guide-body">{{ $t('notes.guideText') }}</p>
+          <button class="guide-btn">{{ $t('notes.guideBtn') }}</button>
         </div>
         <div class="guide-form-wrap">
           <form class="guide-form" action="#">
             <div class="gf-field">
-              <label>Je recherche un produit</label>
-              <input type="text" class="gf-input" placeholder="Ex: un grand rouge tannique..."/>
+              <label>{{ $t('notes.gfField1') }}</label>
+              <input type="text" class="gf-input" :placeholder="$t('notes.gfField1Ph')"/>
             </div>
             <div class="gf-field">
-              <label>Millésime souhaité</label>
-              <input type="text" class="gf-input" placeholder="Ex: 2018, 2020..."/>
+              <label>{{ $t('notes.gfField2') }}</label>
+              <input type="text" class="gf-input" :placeholder="$t('notes.gfField2Ph')"/>
             </div>
             <div class="gf-field">
-              <label>Origine / Région</label>
-              <input type="text" class="gf-input" placeholder="Ex: Bordeaux, Toscane..."/>
+              <label>{{ $t('notes.gfField3') }}</label>
+              <input type="text" class="gf-input" :placeholder="$t('notes.gfField3Ph')"/>
             </div>
             <div class="gf-field">
-              <label>Budget estimé</label>
-              <input type="text" class="gf-input" placeholder="Ex: 50–150 €"/>
+              <label>{{ $t('notes.gfField4') }}</label>
+              <input type="text" class="gf-input" :placeholder="$t('notes.gfField4Ph')"/>
             </div>
-            <button type="submit" class="gf-submit">Trouver mon produit →</button>
+            <button type="submit" class="gf-submit">{{ $t('notes.gfSubmit') }}</button>
           </form>
         </div>
       </div>
@@ -106,17 +97,11 @@
           <img src="/src/assets/images/bronze.png" class="redir-medal" alt="Bronze"/>
         </div>
         <div class="redirect-text">
-          <div class="gold-eyebrow">Nouvellement intégré</div>
-          <h3 class="redirect-title">
-            Les distinctions & médailles sont<br/>désormais dans <em>Top Afrique</em>
-          </h3>
-          <p class="redirect-body">
-            Notre système complet de récompenses — Médaille d'Or, d'Argent et de Bronze —
-            a été transféré vers la section <strong>Top Afrique</strong>, pour une meilleure
-            valorisation des meilleures références du continent.
-          </p>
+          <div class="gold-eyebrow">{{ $t('notes.newLabel') }}</div>
+          <h3 class="redirect-title">{{ $t('notes.redirectTitle') }}</h3>
+          <p class="redirect-body">{{ $t('notes.redirectText') }}</p>
           <a href="/topafrique" class="redirect-btn">
-            Découvrir le Top Afrique <span>→</span>
+            {{ $t('notes.redirectBtn') }}
           </a>
         </div>
       </div>

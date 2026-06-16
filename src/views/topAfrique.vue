@@ -1,9 +1,9 @@
 <template>
   <div class="banner1 ta-banner">
     <div class="ta-banner-overlay">
-      <div class="ta-tagline">— Sélection Continentale —</div>
-      <h1 class="ta-banner-title">Top Afrique</h1>
-      <p class="ta-banner-sub">Les meilleurs produits du continent, distingués par nos experts</p>
+      <div class="ta-tagline">{{ $t('topAfrique.bannerTagline') }}</div>
+      <h1 class="ta-banner-title">{{ $t('topAfrique.bannerTitle') }}</h1>
+      <p class="ta-banner-sub">{{ $t('topAfrique.bannerSub') }}</p>
     </div>
   </div>
 
@@ -11,12 +11,10 @@
   <section class="medals-section" data-aos="fade-up">
     <div class="container">
       <div class="medals-header">
-        <div class="gold-eyebrow">Explorer par distinction</div>
-        <h2 class="medals-title">Les Distinctions Officielles</h2>
+        <div class="gold-eyebrow">{{ $t('topAfrique.byDistinction') }}</div>
+        <h2 class="medals-title">{{ $t('topAfrique.distinctionsTitle') }}</h2>
         <div class="gold-divider mx-auto"></div>
-        <p class="medals-desc">
-          Sélectionnez une médaille pour découvrir les produits récompensés par notre jury d'experts internationaux.
-        </p>
+        <p class="medals-desc">{{ $t('topAfrique.distinctionsDesc') }}</p>
       </div>
       <div class="medals-grid">
         <!-- OR -->
@@ -24,12 +22,12 @@
           <div class="medal-bg"></div>
           <div class="medal-content">
             <img src="/src/assets/images/or.png" class="medal-img" alt="Médaille d'Or"/>
-            <h3 class="medal-name">Médaille d'Or</h3>
-            <span class="medal-desc">Découvrez l'excellence absolue</span>
+            <h3 class="medal-name">{{ $t('topAfrique.or') }}</h3>
+            <span class="medal-desc">{{ $t('topAfrique.orDesc') }}</span>
             <div class="medal-badge-line">
-              <span class="medal-count">{{ wines.filter(w => getMedal(w.note) === 'or').length }} produit(s)</span>
+              <span class="medal-count">{{ wines.filter(w => getMedal(w.note) === 'or').length }} {{ $t('topAfrique.products') }}</span>
             </div>
-            <button class="medal-btn medal-btn-or">Voir les produits primés</button>
+            <button class="medal-btn medal-btn-or">{{ $t('topAfrique.viewPrized') }}</button>
           </div>
         </div>
         <!-- ARGENT -->
@@ -37,12 +35,12 @@
           <div class="medal-bg"></div>
           <div class="medal-content">
             <img src="/src/assets/images/argent.png" class="medal-img" alt="Médaille d'Argent"/>
-            <h3 class="medal-name">Médaille d'Argent</h3>
-            <span class="medal-desc">Explorez les grandes distinctions</span>
+            <h3 class="medal-name">{{ $t('topAfrique.argent') }}</h3>
+            <span class="medal-desc">{{ $t('topAfrique.argentDesc') }}</span>
             <div class="medal-badge-line">
-              <span class="medal-count">{{ wines.filter(w => getMedal(w.note) === 'argent').length }} produit(s)</span>
+              <span class="medal-count">{{ wines.filter(w => getMedal(w.note) === 'argent').length }} {{ $t('topAfrique.products') }}</span>
             </div>
-            <button class="medal-btn medal-btn-ag">Voir les produits primés</button>
+            <button class="medal-btn medal-btn-ag">{{ $t('topAfrique.viewPrized') }}</button>
           </div>
         </div>
         <!-- BRONZE -->
@@ -50,12 +48,12 @@
           <div class="medal-bg"></div>
           <div class="medal-content">
             <img src="/src/assets/images/bronze.png" class="medal-img" alt="Médaille de Bronze"/>
-            <h3 class="medal-name">Médaille de Bronze</h3>
-            <span class="medal-desc">Découvrez les vins distingués</span>
+            <h3 class="medal-name">{{ $t('topAfrique.bronze') }}</h3>
+            <span class="medal-desc">{{ $t('topAfrique.bronzeDesc') }}</span>
             <div class="medal-badge-line">
-              <span class="medal-count">{{ wines.filter(w => getMedal(w.note) === 'bronze').length }} produit(s)</span>
+              <span class="medal-count">{{ wines.filter(w => getMedal(w.note) === 'bronze').length }} {{ $t('topAfrique.products') }}</span>
             </div>
-            <button class="medal-btn medal-btn-bz">Voir les produits primés</button>
+            <button class="medal-btn medal-btn-bz">{{ $t('topAfrique.viewPrized') }}</button>
           </div>
         </div>
       </div>
@@ -66,13 +64,11 @@
   <section class="results-banner" data-aos="fade-up">
     <div class="container results-banner-inner">
       <div>
-        <div class="gold-eyebrow">Palmarès 2024</div>
-        <h3 class="results-title">Résultats Officiels de la Sélection Top Afrique</h3>
-        <p class="results-desc">
-          Accédez à la liste complète des produits récompensés par notre jury d'experts internationaux.
-        </p>
+        <div class="gold-eyebrow">{{ $t('topAfrique.palmares') }}</div>
+        <h3 class="results-title">{{ $t('topAfrique.resultsTitle') }}</h3>
+        <p class="results-desc">{{ $t('topAfrique.resultsDesc') }}</p>
       </div>
-      <button class="results-btn">Voir tous les résultats 2024</button>
+      <button class="results-btn">{{ $t('topAfrique.resultsBtn') }}</button>
     </div>
   </section>
 
@@ -81,10 +77,10 @@
     <div class="container">
       <!-- En-tête catalogue -->
       <div class="catalog-top" data-aos="fade-up">
-        <h2 class="catalog-title">TROIS PUISSANCES — TOP AFRIQUE</h2>
+        <h2 class="catalog-title">{{ $t('topAfrique.catalogTitle') }}</h2>
         <div class="input-group search-group">
           <span class="search-prefix"><i class="fa fa-search"></i></span>
-          <input type="search" placeholder="Rechercher un produit, un producteur, un pays..." class="catalog-search" @input="searchWine"/>
+          <input type="search" :placeholder="$t('topAfrique.searchPlaceholder')" class="catalog-search" @input="searchWine"/>
         </div>
       </div>
 
@@ -92,13 +88,13 @@
         <!-- FILTRES LATÉRAUX -->
         <aside class="filters-sidebar" data-aos="fade-right" data-aos-duration="1200">
           <div class="filter-group">
-            <h4 class="filter-title">Producteur</h4>
+            <h4 class="filter-title">{{ $t('topAfrique.filterProducteur') }}</h4>
             <div class="filter-search-wrap">
               <input type="search" placeholder="Recherche dans 1739 producteurs" class="filter-input"/>
             </div>
           </div>
           <div class="filter-group">
-            <h4 class="filter-title">Pays</h4>
+            <h4 class="filter-title">{{ $t('topAfrique.filterPays') }}</h4>
             <div class="filter-search-wrap">
               <input type="search" placeholder="Recherche dans 32 pays" class="filter-input"/>
             </div>
@@ -110,19 +106,19 @@
             </div>
           </div>
           <div class="filter-group">
-            <h4 class="filter-title">Région</h4>
+            <h4 class="filter-title">{{ $t('topAfrique.filterRegion') }}</h4>
             <div class="filter-search-wrap">
               <input type="search" placeholder="Recherche dans les régions" class="filter-input"/>
             </div>
           </div>
           <div class="filter-group">
-            <h4 class="filter-title">Appellation</h4>
+            <h4 class="filter-title">{{ $t('topAfrique.filterAppellation') }}</h4>
             <div class="filter-search-wrap">
               <input type="search" placeholder="Recherche..." class="filter-input"/>
             </div>
           </div>
           <div class="filter-group">
-            <h4 class="filter-title">Cépage</h4>
+            <h4 class="filter-title">{{ $t('topAfrique.filterCepage') }}</h4>
             <div class="filter-search-wrap">
               <input type="search" placeholder="Recherche..." class="filter-input"/>
             </div>
@@ -134,7 +130,7 @@
             </div>
           </div>
           <div class="filter-group">
-            <h4 class="filter-title">Couleur</h4>
+            <h4 class="filter-title">{{ $t('topAfrique.filterCouleur') }}</h4>
             <div class="filter-chips">
               <div v-for="color in colors" :key="color" class="filter-chip">
                 <span class="chip-dot"></span>
@@ -143,29 +139,29 @@
             </div>
           </div>
           <div class="filter-group">
-            <h4 class="filter-title">Distinction</h4>
+            <h4 class="filter-title">{{ $t('topAfrique.filterDistinction') }}</h4>
             <div class="filter-chips">
               <div class="filter-chip" @click="activeMedal = activeMedal === 'or' ? null : 'or'" :class="{ selected: activeMedal === 'or' }">
-                <span class="chip-medal chip-or">●</span><span>Médaille d'Or</span>
+                <span class="chip-medal chip-or">●</span><span>{{ $t('topAfrique.or') }}</span>
               </div>
               <div class="filter-chip" @click="activeMedal = activeMedal === 'argent' ? null : 'argent'" :class="{ selected: activeMedal === 'argent' }">
-                <span class="chip-medal chip-ag">●</span><span>Médaille d'Argent</span>
+                <span class="chip-medal chip-ag">●</span><span>{{ $t('topAfrique.argent') }}</span>
               </div>
               <div class="filter-chip" @click="activeMedal = activeMedal === 'bronze' ? null : 'bronze'" :class="{ selected: activeMedal === 'bronze' }">
-                <span class="chip-medal chip-bz">●</span><span>Médaille de Bronze</span>
+                <span class="chip-medal chip-bz">●</span><span>{{ $t('topAfrique.bronze') }}</span>
               </div>
             </div>
           </div>
           <button class="reset-btn">
-            <i class="fa fa-redo"></i> Réinitialiser les filtres
+            <i class="fa fa-redo"></i> {{ $t('topAfrique.resetFilters') }}
           </button>
         </aside>
 
         <!-- LISTE DES PRODUITS -->
         <main class="products-list" data-aos="fade-up" data-aos-duration="1500">
           <div class="products-list-header">
-            <h2 class="list-title">Top Afrique</h2>
-            <p class="list-count">Affichage de <strong>{{ filteredWines.length }}</strong> résultat(s)</p>
+            <h2 class="list-title">{{ $t('topAfrique.listTitle') }}</h2>
+            <p class="list-count">{{ $t('topAfrique.showing') }} <strong>{{ filteredWines.length }}</strong> {{ $t('topAfrique.results') }}</p>
           </div>
 
           <div v-for="(wine, idx) in filteredWines" :key="idx" class="wine-card" data-aos="fade-up" :data-aos-delay="idx * 60">
@@ -206,10 +202,7 @@
                   {{ getMedalLabel(wine.note) }}
                 </div>
                 <h3 class="wine-name">{{ wine.name }}</h3>
-                <p class="wine-desc">
-                  Un vin d'exception issu des terres africaines les plus prometteuses,
-                  sélectionné avec rigueur par notre jury d'experts internationaux.
-                </p>
+                <p class="wine-desc">{{ $t('topAfrique.wineDesc') }}</p>
               </div>
 
               <!-- Détails & actions -->
@@ -218,7 +211,7 @@
                   <span class="wine-price">{{ wine.price }} <sup>€</sup></span>
                   <div class="wine-avail" :class="wine.isAvailable ? 'avail-yes' : 'avail-no'">
                     <i :class="wine.isAvailable ? 'fa fa-check-circle' : 'fa fa-times-circle'"></i>
-                    {{ wine.isAvailable ? 'Disponible' : 'Indisponible' }}
+                    {{ wine.isAvailable ? $t('topAfrique.available') : $t('topAfrique.unavailable') }}
                   </div>
                 </div>
                 <div class="wine-meta">
@@ -239,7 +232,7 @@
           <!-- État vide -->
           <div v-if="filteredWines.length === 0" class="empty-state">
             <i class="fa fa-wine-glass-alt empty-icon"></i>
-            <p>Aucun produit trouvé pour ces critères.</p>
+            <p>{{ $t('topAfrique.empty') }}</p>
           </div>
         </main>
       </div>
@@ -251,7 +244,10 @@
 
 <script lang="ts" setup>
 import { onMounted, ref, computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import wineService from '@/services/wineService'
+
+const { t } = useI18n()
 
 const wines = ref<any[]>([])
 const colors = ref<any[]>([])
@@ -269,9 +265,9 @@ function getMedal(note: number): string {
 
 function getMedalLabel(note: number): string {
   const m = getMedal(note)
-  if (m === 'or') return 'Médaille d\'Or'
-  if (m === 'argent') return 'Médaille d\'Argent'
-  return 'Médaille de Bronze'
+  if (m === 'or') return t('topAfrique.or')
+  if (m === 'argent') return t('topAfrique.argent')
+  return t('topAfrique.bronze')
 }
 
 const filteredWines = computed(() => {

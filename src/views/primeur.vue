@@ -1,9 +1,9 @@
 <template>
   <div class="banner1 primeur-banner">
     <div class="banner-overlay">
-      <div class="banner-tagline">— Collection Exclusive —</div>
-      <h1 class="banner-heading">Les Primeurs</h1>
-      <p class="banner-sub">Des millésimes d'exception, avant leur mise en vente</p>
+      <div class="banner-tagline">{{ $t('primeur.bannerTagline') }}</div>
+      <h1 class="banner-heading">{{ $t('primeur.bannerTitle') }}</h1>
+      <p class="banner-sub">{{ $t('primeur.bannerSub') }}</p>
     </div>
   </div>
 
@@ -15,26 +15,16 @@
     <section class="description-hero">
       <div class="description-hero-inner container">
         <div class="description-text" data-aos="tp-left" data-aos-delay="100">
-          <div class="gold-eyebrow" data-aos="tp-rise" data-aos-delay="150">L'univers des Primeurs</div>
-          <h2 class="description-title" data-aos="tp-rise" data-aos-delay="250">Un voyage sensoriel<br/>au cœur des vignes</h2>
+          <div class="gold-eyebrow" data-aos="tp-rise" data-aos-delay="150">{{ $t('primeur.universeLabel') }}</div>
+          <h2 class="description-title" data-aos="tp-rise" data-aos-delay="250">{{ $t('primeur.universeTitle') }}</h2>
           <div class="gold-divider" data-aos="tp-line" data-aos-delay="400"></div>
-          <p class="description-body">
-            Bienvenue dans l'univers des primeurs, un voyage sensoriel qui ravira les passionnés
-            de vin. Ici, chaque bouteille raconte une histoire, chaque gorgée vous transporte au
-            cœur des vignes. Réservés exclusivement à nos membres, ces crus d'exception vous
-            ouvrent les portes de la découverte — vous permettant d'accéder à des millésimes
-            soigneusement sélectionnés bien avant leur mise en vente sur les marchés africains.
-          </p>
-          <p class="description-body">
-            Opter pour les vins en primeur, c'est faire le choix d'une expérience authentique
-            et privilégiée. Une occasion unique d'anticiper l'évolution de grands crus et
-            d'enrichir votre cave de trésors rares et précieux.
-          </p>
+          <p class="description-body">{{ $t('primeur.universeText1') }}</p>
+          <p class="description-body">{{ $t('primeur.universeText2') }}</p>
         </div>
         <div class="description-image" data-aos="tp-right" data-aos-delay="200">
           <div class="image-frame">
             <img :src="imgPrimeur" alt="Vins Primeurs" class="desc-img"/>
-            <div class="image-caption">Millésimes sélectionnés avec exigence</div>
+            <div class="image-caption">{{ $t('primeur.imgCaption') }}</div>
           </div>
         </div>
       </div>
@@ -46,15 +36,12 @@
     <section v-if="!accessGranted" class="access-gate" data-aos="tp-rise" data-aos-delay="100">
       <div class="gate-container container">
         <div class="gate-ornament">✦</div>
-        <h2 class="gate-title">Accès Réservé aux Membres</h2>
-        <p class="gate-desc">
-          Notre sélection de vins Primeur est réservée aux amateurs éclairés et membres qualifiés.
-          Veuillez renseigner vos informations pour accéder à ces crus d'exception.
-        </p>
+        <h2 class="gate-title">{{ $t('primeur.gateTitle') }}</h2>
+        <p class="gate-desc">{{ $t('primeur.gateDesc') }}</p>
         <form class="gate-form" @submit.prevent="submitAccess">
           <div class="gate-grid">
             <div class="gate-field">
-              <label class="gate-label">Prénom & Nom <span class="req">*</span></label>
+              <label class="gate-label">{{ $t('primeur.fieldName') }} <span class="req">*</span></label>
               <input
                 v-model="gateForm.name"
                 type="text"
@@ -64,7 +51,7 @@
               />
             </div>
             <div class="gate-field">
-              <label class="gate-label">Adresse Email <span class="req">*</span></label>
+              <label class="gate-label">{{ $t('primeur.fieldEmail') }} <span class="req">*</span></label>
               <input
                 v-model="gateForm.email"
                 type="email"
@@ -74,7 +61,7 @@
               />
             </div>
             <div class="gate-field">
-              <label class="gate-label">Profession / Activité <span class="req">*</span></label>
+              <label class="gate-label">{{ $t('primeur.fieldProfession') }} <span class="req">*</span></label>
               <input
                 v-model="gateForm.profession"
                 type="text"
@@ -84,7 +71,7 @@
               />
             </div>
             <div class="gate-field">
-              <label class="gate-label">Pays de résidence <span class="req">*</span></label>
+              <label class="gate-label">{{ $t('primeur.fieldCountry') }} <span class="req">*</span></label>
               <input
                 v-model="gateForm.country"
                 type="text"
@@ -95,24 +82,24 @@
             </div>
           </div>
           <div class="gate-field gate-field-full">
-            <label class="gate-label">Votre intérêt pour les Primeurs <span class="req">*</span></label>
+            <label class="gate-label">{{ $t('primeur.fieldInterest') }} <span class="req">*</span></label>
             <select v-model="gateForm.interest" class="gate-select" required>
-              <option value="">Sélectionnez votre intention...</option>
-              <option>Investissement et conservation</option>
-              <option>Consommation personnelle</option>
-              <option>Distribution & Commerce</option>
-              <option>Offre et cadeau d'exception</option>
-              <option>Curiosité et découverte</option>
+              <option value="">{{ $t('primeur.selectDefault') }}</option>
+              <option>{{ $t('primeur.opt1') }}</option>
+              <option>{{ $t('primeur.opt2') }}</option>
+              <option>{{ $t('primeur.opt3') }}</option>
+              <option>{{ $t('primeur.opt4') }}</option>
+              <option>{{ $t('primeur.opt5') }}</option>
             </select>
           </div>
           <div class="gate-submit-wrap">
             <button type="submit" class="gate-btn">
-              Accéder à la Sélection Primeur
+              {{ $t('primeur.accessBtn') }}
               <span class="gate-arrow">→</span>
             </button>
             <p class="gate-privacy">
               <i class="fa fa-lock"></i>
-              Vos informations restent strictement confidentielles.
+              {{ $t('primeur.privacy') }}
             </p>
           </div>
         </form>
@@ -127,7 +114,7 @@
       <!-- Message de bienvenue -->
       <div class="welcome-strip container">
         <i class="fa fa-check-circle"></i>
-        Bienvenue, <strong>{{ gateForm.name }}</strong> — Votre accès Primeur est activé.
+        {{ $t('primeur.welcome') }} <strong>{{ gateForm.name }}</strong> {{ $t('primeur.accessActive') }}
       </div>
 
       <!-- TOOLBAR -->
@@ -146,11 +133,11 @@
             <span class="toolbar-count">{{ products.length }} référence(s) sélectionnée(s)</span>
           </div>
           <div class="toolbar-sort">
-            Trier par :
+            {{ $t('primeur.sortBy') }}
             <select class="sort-select">
-              <option>Pertinence</option>
-              <option>Note décroissante</option>
-              <option>Note croissante</option>
+              <option>{{ $t('primeur.sortRelevance') }}</option>
+              <option>{{ $t('primeur.sortDesc') }}</option>
+              <option>{{ $t('primeur.sortAsc') }}</option>
             </select>
           </div>
         </div>
@@ -192,14 +179,14 @@
               </div>
               <div class="product-footer">
                 <div class="qty-row">
-                  <span class="qty-label">Qté :</span>
+                  <span class="qty-label">{{ $t('primeur.qty') }}</span>
                   <div class="qty-control">
                     <button class="btn-qty" @click="decrement(index)">−</button>
                     <span class="qty-val">{{ product.qty }}</span>
                     <button class="btn-qty" @click="increment(index)">+</button>
                   </div>
                 </div>
-                <button class="btn-reserve">Réserver</button>
+                <button class="btn-reserve">{{ $t('primeur.reserve') }}</button>
               </div>
             </article>
           </div>
@@ -210,7 +197,7 @@
       <div class="lifestyle-wrap my-5">
         <img :src="imgPartenaire" class="lifestyle-img" alt="Dégustation Primeur"/>
         <div class="lifestyle-caption">
-          <span>Chaque bouteille, une histoire. Chaque millésime, un voyage.</span>
+          <span>{{ $t('primeur.lifestyleCaption') }}</span>
         </div>
       </div>
 
@@ -219,42 +206,27 @@
         <div class="editorial-block" data-aos="tp-rise" data-aos-delay="0">
           <div class="editorial-number">01</div>
           <div class="editorial-content">
-            <h3 class="editorial-title">Pourquoi Choisir les Primeurs ?</h3>
-            <h4 class="editorial-subtitle">Un privilège pour les amateurs éclairés</h4>
-            <p>
-              Opter pour l'achat de vins en primeur, c'est faire le choix d'une expérience
-              authentique et privilégiée. C'est une occasion unique de découvrir des vins à leur
-              stade le plus prometteur, d'anticiper leur évolution et d'enrichir votre cave
-              de trésors rares et précieux avant qu'ils ne soient accessibles au grand public.
-            </p>
+            <h3 class="editorial-title">{{ $t('primeur.edit1Title') }}</h3>
+            <h4 class="editorial-subtitle">{{ $t('primeur.edit1Sub') }}</h4>
+            <p>{{ $t('primeur.edit1Text') }}</p>
           </div>
         </div>
         <div class="editorial-divider"></div>
         <div class="editorial-block" data-aos="tp-rise" data-aos-delay="80">
           <div class="editorial-number">02</div>
           <div class="editorial-content">
-            <h3 class="editorial-title">Un Partenaire de Confiance</h3>
-            <h4 class="editorial-subtitle">Main dans la main avec les vignerons</h4>
-            <p>
-              Nous avons tissé des relations solides avec les vignerons et artisans du vin qui
-              partagent notre passion pour l'excellence. Ce partenariat direct nous permet de
-              vous offrir des vins d'une qualité exceptionnelle, issus de méthodes de
-              vinification respectueuses de l'environnement et de traditions séculaires.
-            </p>
+            <h3 class="editorial-title">{{ $t('primeur.edit2Title') }}</h3>
+            <h4 class="editorial-subtitle">{{ $t('primeur.edit2Sub') }}</h4>
+            <p>{{ $t('primeur.edit2Text') }}</p>
           </div>
         </div>
         <div class="editorial-divider"></div>
         <div class="editorial-block" data-aos="tp-rise" data-aos-delay="160">
           <div class="editorial-number">03</div>
           <div class="editorial-content">
-            <h3 class="editorial-title">Un Service Exclusif pour Nos Membres</h3>
-            <h4 class="editorial-subtitle">Une communauté de passionnés</h4>
-            <p>
-              Pour préserver cette expérience unique, l'accès aux primeurs est réservé à nos
-              membres. En rejoignant notre communauté, vous bénéficiez d'un accès anticipé à
-              des crus rares, de conseils personnalisés et d'une expérience sur mesure.
-              Rejoignez-nous et vivez l'exception des Primeurs.
-            </p>
+            <h3 class="editorial-title">{{ $t('primeur.edit3Title') }}</h3>
+            <h4 class="editorial-subtitle">{{ $t('primeur.edit3Sub') }}</h4>
+            <p>{{ $t('primeur.edit3Text') }}</p>
           </div>
         </div>
       </section>
