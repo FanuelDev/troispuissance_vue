@@ -21,24 +21,13 @@
       </div>
       <div class="featured-text">
         <div class="article-meta">
-          <span class="meta-date"><i class="fa fa-calendar-alt"></i> 12 Mai 2025</span>
-          <span class="meta-read"><i class="fa fa-clock"></i> 8 min de lecture</span>
+          <span class="meta-date"><i class="fa fa-calendar-alt"></i> {{ $t('actualite.featuredDate') }}</span>
+          <span class="meta-read"><i class="fa fa-clock"></i> {{ $t('actualite.featuredDuration') }}</span>
         </div>
         <h2 class="featured-title">{{ $t('actualite.featuredTitle') }}</h2>
         <div class="featured-lead-line"></div>
-        <p class="featured-lead">
-          Depuis quelques années, le continent africain s'impose comme l'une des destinations
-          les plus fascinantes pour les amateurs de grands vins. De Johannesburg à Lagos, de
-          Nairobi à Abidjan, une nouvelle génération de connaisseurs redéfinit les codes de
-          la dégustation et de la culture œnologique.
-        </p>
-        <p class="featured-body">
-          Ce mouvement ne se contente pas de reproduire les modèles occidentaux — il les
-          transcende, en y insufflant une sensibilité africaine unique, une curiosité
-          insatiable et une exigence croissante pour l'authenticité des terroirs.
-          Trois Puissances accompagne cette évolution au plus près, en créant des ponts
-          durables entre les domaines d'exception et ces marchés en pleine effervescence.
-        </p>
+        <p class="featured-lead">{{ $t('actualite.featuredLead') }}</p>
+        <p class="featured-body">{{ $t('actualite.featuredBody') }}</p>
         <a href="#" class="read-more-btn">{{ $t('actualite.readFull') }} <span>→</span></a>
       </div>
     </div>
@@ -63,21 +52,14 @@
       <article class="article-card" data-aos="fade-up" data-aos-delay="0">
         <div class="article-img-wrap">
           <img src="/src/assets/images/use/2.jpg" class="article-img" alt=""/>
-          <div class="article-cat">Terroirs</div>
+          <div class="article-cat">{{ $t('actualite.cat1') }}</div>
         </div>
         <div class="article-body">
           <div class="article-meta-small">
-            <span>18 Avril 2025</span><span class="dot">·</span><span>5 min</span>
+            <span>{{ $t('actualite.art1Date') }}</span><span class="dot">·</span><span>{{ $t('actualite.art1Duration') }}</span>
           </div>
-          <h3 class="article-title">
-            Les Terroirs d'Afrique du Sud : Quand le Cap Rivale Bordeaux
-          </h3>
-          <p class="article-excerpt">
-            La Vallée de Stellenbosch s'impose désormais sur la scène mondiale.
-            Ses Cabernet Sauvignon et Chenin Blanc conjuguent minéralité et richesse
-            aromatique avec une élégance que les plus grandes maisons bordelaises
-            ne peuvent ignorer.
-          </p>
+          <h3 class="article-title">{{ $t('actualite.art1Title') }}</h3>
+          <p class="article-excerpt">{{ $t('actualite.art1Excerpt') }}</p>
           <a href="#" class="article-link">{{ $t('actualite.readMore') }} <i class="fa fa-arrow-right"></i></a>
         </div>
       </article>
@@ -86,20 +68,14 @@
       <article class="article-card" data-aos="fade-up" data-aos-delay="80">
         <div class="article-img-wrap">
           <img src="/src/assets/images/use/6.jpg" class="article-img" alt=""/>
-          <div class="article-cat">Millésimes</div>
+          <div class="article-cat">{{ $t('actualite.cat2') }}</div>
         </div>
         <div class="article-body">
           <div class="article-meta-small">
-            <span>3 Avril 2025</span><span class="dot">·</span><span>6 min</span>
+            <span>{{ $t('actualite.art2Date') }}</span><span class="dot">·</span><span>{{ $t('actualite.art2Duration') }}</span>
           </div>
-          <h3 class="article-title">
-            Millésime 2023 : Une Année d'Exception pour les Vins du Continent
-          </h3>
-          <p class="article-excerpt">
-            Les conditions climatiques particulièrement favorables ont produit des vins
-            d'une concentration exceptionnelle. Notre sélection des cuvées les plus
-            prometteuses du millésime 2023 sur le continent africain.
-          </p>
+          <h3 class="article-title">{{ $t('actualite.art2Title') }}</h3>
+          <p class="article-excerpt">{{ $t('actualite.art2Excerpt') }}</p>
           <a href="#" class="article-link">{{ $t('actualite.readMore') }} <i class="fa fa-arrow-right"></i></a>
         </div>
       </article>
@@ -108,20 +84,14 @@
       <article class="article-card" data-aos="fade-up" data-aos-delay="160">
         <div class="article-img-wrap">
           <img src="/src/assets/images/use/7.jpg" class="article-img" alt=""/>
-          <div class="article-cat">Gastronomie</div>
+          <div class="article-cat">{{ $t('actualite.cat3') }}</div>
         </div>
         <div class="article-body">
           <div class="article-meta-small">
-            <span>22 Mars 2025</span><span class="dot">·</span><span>4 min</span>
+            <span>{{ $t('actualite.art3Date') }}</span><span class="dot">·</span><span>{{ $t('actualite.art3Duration') }}</span>
           </div>
-          <h3 class="article-title">
-            Accords Mets-Vins : Les Épices Africaines Révèlent les Grands Crus
-          </h3>
-          <p class="article-excerpt">
-            Le cumin, le poivre long, le gingembre — les épices africaines ouvrent
-            de nouveaux horizons dans l'art des accords mets-vins. Une rencontre
-            inattendue entre traditions millénaires et œnologie de prestige.
-          </p>
+          <h3 class="article-title">{{ $t('actualite.art3Title') }}</h3>
+          <p class="article-excerpt">{{ $t('actualite.art3Excerpt') }}</p>
           <a href="#" class="article-link">{{ $t('actualite.readMore') }} <i class="fa fa-arrow-right"></i></a>
         </div>
       </article>
@@ -137,7 +107,7 @@
       <img src="/src/assets/images/use/18.jpg" class="gallery-img gallery-img-tall" alt=""/>
     </div>
     <div class="gallery-caption">
-      <em>"Le vin est la poésie de la terre"</em>
+      <em>{{ $t('actualite.galleryQuote') }}</em>
     </div>
   </section>
 
@@ -145,30 +115,14 @@
   <section class="split-article container" data-aos="fade-up">
     <div class="split-article-inner">
       <div class="split-text">
-        <div class="gold-eyebrow">Dossier exclusif</div>
-        <h2 class="split-title">
-          La Culture du Vin en Afrique Subsaharienne :
-          Entre Héritage et Modernité
-        </h2>
+        <div class="gold-eyebrow">{{ $t('actualite.dossierLabel') }}</div>
+        <h2 class="split-title">{{ $t('actualite.dossierTitle') }}</h2>
         <div class="split-divider"></div>
-        <p>
-          Longtemps perçue comme un marché émergent, l'Afrique subsaharienne s'affirme
-          aujourd'hui comme l'un des foyers les plus dynamiques de la culture œnologique
-          mondiale. Des clubs de dégustation privés de Lagos aux caves à vins sophistiquées
-          d'Abidjan, une élite africaine réinvente son rapport au grand vin.
-        </p>
-        <p>
-          Cette révolution culturelle s'accompagne d'une exigence accrue pour la qualité,
-          la provenance et l'histoire derrière chaque bouteille. Les consommateurs africains
-          premium ne cherchent plus simplement un vin — ils cherchent une expérience,
-          un récit, une connexion authentique avec le terroir.
-        </p>
+        <p>{{ $t('actualite.dossierText1') }}</p>
+        <p>{{ $t('actualite.dossierText2') }}</p>
         <div class="split-quote">
-          <blockquote>
-            "Chaque grand vin porte en lui la mémoire d'un lieu,
-            d'une saison, d'un homme qui a su lire la terre."
-          </blockquote>
-          <cite>— L'équipe Trois Puissances</cite>
+          <blockquote>{{ $t('actualite.dossierQuote') }}</blockquote>
+          <cite>{{ $t('actualite.dossierQuoteCite') }}</cite>
         </div>
       </div>
       <div class="split-images">
@@ -182,77 +136,65 @@
     <div class="sidebar-layout">
       <!-- MINI ARTICLES EN BREF -->
       <div class="news-brief">
-        <div class="gold-eyebrow">En bref</div>
-        <h3 class="news-brief-title">Les Dernières Nouvelles</h3>
+        <div class="gold-eyebrow">{{ $t('actualite.briefLabel') }}</div>
+        <h3 class="news-brief-title">{{ $t('actualite.briefTitle') }}</h3>
         <div class="brief-list">
           <div class="brief-item">
-            <div class="brief-date">Mai 2025</div>
-            <div class="brief-text">
-              <strong>Bordeaux Primeurs 2024</strong> — Des notes exceptionnelles pour les
-              châteaux du Médoc. La demande africaine bat un record historique.
-            </div>
+            <div class="brief-date">{{ $t('actualite.brief1Date') }}</div>
+            <div class="brief-text"><strong>{{ $t('actualite.brief1Title') }}</strong> — {{ $t('actualite.brief1Text') }}</div>
           </div>
           <div class="brief-item">
-            <div class="brief-date">Avr. 2025</div>
-            <div class="brief-text">
-              <strong>Trois Puissances à Vinexpo</strong> — Notre équipe représente les
-              meilleurs producteurs africains au salon mondial à Paris.
-            </div>
+            <div class="brief-date">{{ $t('actualite.brief2Date') }}</div>
+            <div class="brief-text"><strong>{{ $t('actualite.brief2Title') }}</strong> — {{ $t('actualite.brief2Text') }}</div>
           </div>
           <div class="brief-item">
-            <div class="brief-date">Mars 2025</div>
-            <div class="brief-text">
-              <strong>Nouveau partenariat</strong> — Signature d'un accord exclusif avec
-              cinq domaines viticoles d'Afrique du Sud pour le marché ivoirien.
-            </div>
+            <div class="brief-date">{{ $t('actualite.brief3Date') }}</div>
+            <div class="brief-text"><strong>{{ $t('actualite.brief3Title') }}</strong> — {{ $t('actualite.brief3Text') }}</div>
           </div>
           <div class="brief-item">
-            <div class="brief-date">Fév. 2025</div>
-            <div class="brief-text">
-              <strong>Master Class Lagos</strong> — 180 connaisseurs réunis pour une
-              dégustation verticale de Grands Crus Classés de Bordeaux.
-            </div>
+            <div class="brief-date">{{ $t('actualite.brief4Date') }}</div>
+            <div class="brief-text"><strong>{{ $t('actualite.brief4Title') }}</strong> — {{ $t('actualite.brief4Text') }}</div>
           </div>
         </div>
       </div>
 
       <!-- ÉVÉNEMENTS À VENIR -->
       <div class="events-widget">
-        <div class="gold-eyebrow">Agenda</div>
-        <h3 class="events-title">Prochains Événements</h3>
+        <div class="gold-eyebrow">{{ $t('actualite.agendaLabel') }}</div>
+        <h3 class="events-title">{{ $t('actualite.eventsTitle') }}</h3>
         <div class="event-list">
           <div class="event-item">
             <div class="event-date-box">
-              <span class="event-day">14</span>
-              <span class="event-month">Juin</span>
+              <span class="event-day">{{ $t('actualite.event1Day') }}</span>
+              <span class="event-month">{{ $t('actualite.event1Month') }}</span>
             </div>
             <div class="event-info">
-              <h5>Master Class — Grands Crus de Bourgogne</h5>
-              <p><i class="fa fa-map-marker-alt"></i> Abidjan, Côte d'Ivoire</p>
+              <h5>{{ $t('actualite.event1Title') }}</h5>
+              <p><i class="fa fa-map-marker-alt"></i> {{ $t('actualite.event1Place') }}</p>
             </div>
           </div>
           <div class="event-item">
             <div class="event-date-box">
-              <span class="event-day">28</span>
-              <span class="event-month">Juin</span>
+              <span class="event-day">{{ $t('actualite.event2Day') }}</span>
+              <span class="event-month">{{ $t('actualite.event2Month') }}</span>
             </div>
             <div class="event-info">
-              <h5>Soirée Primeurs — Sélection Top Afrique 2024</h5>
-              <p><i class="fa fa-map-marker-alt"></i> Lagos, Nigeria</p>
+              <h5>{{ $t('actualite.event2Title') }}</h5>
+              <p><i class="fa fa-map-marker-alt"></i> {{ $t('actualite.event2Place') }}</p>
             </div>
           </div>
           <div class="event-item">
             <div class="event-date-box">
-              <span class="event-day">10</span>
-              <span class="event-month">Juil</span>
+              <span class="event-day">{{ $t('actualite.event3Day') }}</span>
+              <span class="event-month">{{ $t('actualite.event3Month') }}</span>
             </div>
             <div class="event-info">
-              <h5>Dîner Œnologique — Accords Mets & Vins Africains</h5>
-              <p><i class="fa fa-map-marker-alt"></i> Dakar, Sénégal</p>
+              <h5>{{ $t('actualite.event3Title') }}</h5>
+              <p><i class="fa fa-map-marker-alt"></i> {{ $t('actualite.event3Place') }}</p>
             </div>
           </div>
         </div>
-        <a href="#" class="events-cta">Voir tout l'agenda <span>→</span></a>
+        <a href="#" class="events-cta">{{ $t('actualite.seeAgenda') }} <span>→</span></a>
       </div>
     </div>
   </section>
@@ -261,14 +203,11 @@
   <section class="newsletter-section" data-aos="fade-up">
     <div class="newsletter-inner container">
       <div class="nl-icon">✦</div>
-      <h2 class="nl-title">Rejoignez Notre Cercle Privé</h2>
-      <p class="nl-desc">
-        Recevez en avant-première nos sélections, chroniques de dégustation
-        et invitations à nos événements exclusifs.
-      </p>
+      <h2 class="nl-title">{{ $t('actualite.nlTitle') }}</h2>
+      <p class="nl-desc">{{ $t('actualite.nlDesc') }}</p>
       <form class="nl-form" @submit.prevent>
-        <input type="email" class="nl-input" placeholder="Votre adresse email..."/>
-        <button type="submit" class="nl-btn">S'inscrire</button>
+        <input type="email" class="nl-input" :placeholder="$t('actualite.nlPlaceholder')"/>
+        <button type="submit" class="nl-btn">{{ $t('actualite.nlBtn') }}</button>
       </form>
     </div>
   </section>
