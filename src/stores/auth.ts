@@ -7,7 +7,7 @@ interface User {
     id: number;
     name: string;
     email: string;
-    // Tu peux ajouter les champs de l’utilisateur ici
+    // Tu peux ajouter les champs de l'utilisateur ici
 }
 
 export const useAuthStore = defineStore('auth', () => {
