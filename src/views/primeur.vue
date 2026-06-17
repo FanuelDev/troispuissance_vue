@@ -31,6 +31,56 @@
     </section>
 
     <!-- ══════════════════════════════════════
+         SECTIONS ÉDITORIALES PUBLIQUES
+    ══════════════════════════════════════ -->
+    <section class="why-primeur-section">
+      <div class="why-block" data-aos="fade-up">
+        <div class="why-block-inner container">
+          <div class="why-text">
+            <div class="gold-eyebrow">01</div>
+            <h2 class="why-title">{{ $t('primeur.edit1Title') }}</h2>
+            <p class="why-sub">{{ $t('primeur.edit1Sub') }}</p>
+            <div class="gold-divider"></div>
+            <p class="why-body">{{ $t('primeur.edit1Text') }}</p>
+          </div>
+          <div class="why-img-wrap">
+            <img :src="imgEdit1" alt="" class="why-img"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="why-block why-block-reverse" data-aos="fade-up">
+        <div class="why-block-inner container">
+          <div class="why-img-wrap">
+            <img :src="imgEdit2" alt="" class="why-img"/>
+          </div>
+          <div class="why-text">
+            <div class="gold-eyebrow">02</div>
+            <h2 class="why-title">{{ $t('primeur.edit2Title') }}</h2>
+            <p class="why-sub">{{ $t('primeur.edit2Sub') }}</p>
+            <div class="gold-divider"></div>
+            <p class="why-body">{{ $t('primeur.edit2Text') }}</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="why-block" data-aos="fade-up">
+        <div class="why-block-inner container">
+          <div class="why-text">
+            <div class="gold-eyebrow">03</div>
+            <h2 class="why-title">{{ $t('primeur.edit3Title') }}</h2>
+            <p class="why-sub">{{ $t('primeur.edit3Sub') }}</p>
+            <div class="gold-divider"></div>
+            <p class="why-body">{{ $t('primeur.edit3Text') }}</p>
+          </div>
+          <div class="why-img-wrap">
+            <img :src="imgEdit3" alt="" class="why-img"/>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
          FORMULAIRE D'ACCÈS OBLIGATOIRE
     ══════════════════════════════════════ -->
     <section v-if="!accessGranted" class="access-gate" data-aos="tp-rise" data-aos-delay="100">
@@ -176,6 +226,7 @@
                 <div class="product-name">{{ product.name }}</div>
                 <div class="product-vintage">{{ product.vintage }}</div>
                 <div class="product-format">{{ product.format }}</div>
+                <div class="product-price">{{ product.price }} <sup>HT</sup></div>
               </div>
               <div class="product-footer">
                 <div class="qty-row">
@@ -201,36 +252,6 @@
         </div>
       </div>
 
-      <!-- SECTIONS ÉDITORIALES -->
-      <section class="editorial-section container">
-        <div class="editorial-block" data-aos="tp-rise" data-aos-delay="0">
-          <div class="editorial-number">01</div>
-          <div class="editorial-content">
-            <h3 class="editorial-title">{{ $t('primeur.edit1Title') }}</h3>
-            <h4 class="editorial-subtitle">{{ $t('primeur.edit1Sub') }}</h4>
-            <p>{{ $t('primeur.edit1Text') }}</p>
-          </div>
-        </div>
-        <div class="editorial-divider"></div>
-        <div class="editorial-block" data-aos="tp-rise" data-aos-delay="80">
-          <div class="editorial-number">02</div>
-          <div class="editorial-content">
-            <h3 class="editorial-title">{{ $t('primeur.edit2Title') }}</h3>
-            <h4 class="editorial-subtitle">{{ $t('primeur.edit2Sub') }}</h4>
-            <p>{{ $t('primeur.edit2Text') }}</p>
-          </div>
-        </div>
-        <div class="editorial-divider"></div>
-        <div class="editorial-block" data-aos="tp-rise" data-aos-delay="160">
-          <div class="editorial-number">03</div>
-          <div class="editorial-content">
-            <h3 class="editorial-title">{{ $t('primeur.edit3Title') }}</h3>
-            <h4 class="editorial-subtitle">{{ $t('primeur.edit3Sub') }}</h4>
-            <p>{{ $t('primeur.edit3Text') }}</p>
-          </div>
-        </div>
-      </section>
-
     </template>
   </div>
 </template>
@@ -240,6 +261,9 @@ import { ref } from 'vue'
 import imgPrimeur from '@/assets/images/use/p1.jpg'
 import imgPartenaire from '@/assets/images/use/p2.jpg'
 import imgProduct from '@/assets/images/product/3.png'
+import imgEdit1 from '@/assets/images/use/3.jpg'
+import imgEdit2 from '@/assets/images/use/p2.jpg'
+import imgEdit3 from '@/assets/images/use/8.jpg'
 
 const activeView = ref(0)
 const accessGranted = ref(false)
@@ -252,15 +276,15 @@ const gateForm = ref({
   interest: '',
 })
 
-const filters = ['FORMAT', 'COULEUR', 'NOTATION', 'FILTRES SUPPLÉMENTAIRES']
+const filters = ['FORMAT', 'COULEUR', 'NOTATION', 'PRIX UNITAIRE', 'FILTRES SUPPLÉMENTAIRES']
 
 const products = ref([
-  { note: 95, name: 'RAWSON RETREAT', vintage: 'SHIRAZ CABERNET 2024', format: 'La Bouteille par 6 bouteilles', qty: 0 },
-  { note: 96, name: 'BROADLEAF', vintage: 'CABERNET SAUVIGNON 2024', format: 'La Bouteille par 6 bouteilles', qty: 0 },
-  { note: 97, name: 'DI MONTEFALCO', vintage: 'Lungarotti 2024', format: 'La Bouteille par 5 bouteilles', qty: 0 },
-  { note: 95, name: 'RAWSON RETREAT', vintage: 'SHIRAZ CABERNET 2024', format: 'La Bouteille par 6 bouteilles', qty: 0 },
-  { note: 96, name: 'BROADLEAF', vintage: 'CABERNET SAUVIGNON 2024', format: 'La Bouteille par 6 bouteilles', qty: 0 },
-  { note: 97, name: 'DI MONTEFALCO', vintage: 'Lungarotti 2024', format: 'La Bouteille par 5 bouteilles', qty: 0 },
+  { note: 95, name: 'RAWSON RETREAT', vintage: 'SHIRAZ CABERNET 2024', format: 'La Bouteille par 6 bouteilles', price: '20,30 €', qty: 0 },
+  { note: 96, name: 'BROADLEAF', vintage: 'CABERNET SAUVIGNON 2024', format: 'La Bouteille par 6 bouteilles', price: '25,30 €', qty: 0 },
+  { note: 97, name: 'DI MONTEFALCO', vintage: 'Lungarotti 2024', format: 'La Bouteille par 5 bouteilles', price: '30,30 €', qty: 0 },
+  { note: 95, name: 'RAWSON RETREAT', vintage: 'SHIRAZ CABERNET 2024', format: 'La Bouteille par 6 bouteilles', price: '20,30 €', qty: 0 },
+  { note: 96, name: 'BROADLEAF', vintage: 'CABERNET SAUVIGNON 2024', format: 'La Bouteille par 6 bouteilles', price: '25,30 €', qty: 0 },
+  { note: 97, name: 'DI MONTEFALCO', vintage: 'Lungarotti 2024', format: 'La Bouteille par 5 bouteilles', price: '30,30 €', qty: 0 },
 ])
 
 function submitAccess() {
@@ -652,7 +676,14 @@ function decrement(i: number) { if (products.value[i].qty > 0) products.value[i]
   font-style: italic;
   margin-bottom: 4px;
 }
-.product-format { font-size: 12px; color: #aaa; padding-bottom: 12px; }
+.product-format { font-size: 12px; color: #aaa; padding-bottom: 6px; }
+.product-price {
+  font-size: 20px;
+  font-weight: 700;
+  color: #6B1A27;
+  padding-bottom: 12px;
+}
+.product-price sup { font-size: 9px; font-weight: 400; color: #888; }
 .product-footer {
   margin-top: auto;
   padding-top: 12px;
@@ -733,49 +764,73 @@ function decrement(i: number) { if (products.value[i].qty > 0) products.value[i]
 }
 
 /* ════════════════════════════════════
-   ÉDITORIAL
+   SECTIONS ÉDITORIALES PUBLIQUES
 ════════════════════════════════════ */
-.editorial-section {
-  padding: 80px 0 100px;
+.why-primeur-section {
+  background: #fff;
 }
-.editorial-block {
+.why-block {
+  padding: 80px 0;
+  border-bottom: 1px solid #f0e8e4;
+}
+.why-block:last-child { border-bottom: none; }
+.why-block-inner {
   display: grid;
-  grid-template-columns: 80px 1fr;
-  gap: 32px;
-  align-items: start;
-  padding: 40px 0;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
 }
-.editorial-number {
+.why-block-reverse .why-block-inner {
+  background: #F8F4EF;
+  max-width: 100%;
+  padding: 60px 5%;
+}
+.why-block-reverse {
+  background: #F8F4EF;
+  padding: 80px 0;
+}
+.why-text .gold-eyebrow {
   font-family: 'Playfair Display', serif;
-  font-size: 52px;
+  font-size: 44px;
   color: #e8ddd5;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin-bottom: 12px;
   line-height: 1;
-  font-weight: 700;
 }
-.editorial-content p {
-  font-size: 15px;
-  color: #555;
-  line-height: 1.85;
-  margin-top: 8px;
-}
-
-.editorial-title {
+.why-title {
   font-family: 'Playfair Display', serif;
-  font-size: 22px;
+  font-size: clamp(22px, 2.5vw, 32px);
   color: #1C1C1C;
-  font-weight: 700;
-  margin-bottom: 4px;
-}
-.editorial-subtitle {
-  font-size: 13px;
-  color: #C9A84C;
   font-weight: 400;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-bottom: 0;
+  margin-bottom: 6px;
+  line-height: 1.25;
 }
-.editorial-divider {
-  height: 1px;
-  background: linear-gradient(to right, #e8ddd5, transparent);
+.why-sub {
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #C9A84C;
+  margin-bottom: 20px;
+  font-family: 'Lato', sans-serif;
+}
+.why-body {
+  font-size: 15.5px;
+  color: #555;
+  line-height: 1.9;
+  margin: 0;
+}
+.why-img-wrap {
+  overflow: hidden;
+}
+.why-img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+.why-img-wrap:hover .why-img {
+  transform: scale(1.03);
 }
 </style>
