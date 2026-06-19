@@ -4,13 +4,15 @@
   ══════════════════════════════════════ -->
   <div class="banner home-banner">
     <div class="home-banner-overlay">
-      <div class="home-tagline" data-aos="fade-up">{{ $t('home.heroTagline') }}</div>
-      <h1 class="home-banner-title" data-aos="fade-up" data-aos-delay="120">{{ $t('home.hero') }}</h1>
-      <p class="home-banner-sub" data-aos="fade-up" data-aos-delay="240">{{ $t('home.heroSub') }}</p>
-      <div class="home-banner-actions" data-aos="fade-up" data-aos-delay="360">
-        <button class="home-banner-btn">
-          {{ $t('home.readMore') }} <span class="home-btn-arrow">→</span>
-        </button>
+      <div class="home-banner-content">
+        <div class="home-tagline" data-aos="fade-up">{{ $t('home.heroTagline') }}</div>
+        <h1 class="home-banner-title" data-aos="fade-up" data-aos-delay="120">{{ $t('home.hero') }}</h1>
+        <p class="home-banner-sub" data-aos="fade-up" data-aos-delay="240">{{ $t('home.heroSub') }}</p>
+        <div class="home-banner-actions" data-aos="fade-up" data-aos-delay="360">
+          <button class="home-banner-btn">
+            {{ $t('home.readMore') }} <span class="home-btn-arrow">→</span>
+          </button>
+        </div>
       </div>
       <div class="home-scroll-hint" data-aos="fade-up" data-aos-delay="500">
         <span class="scroll-line"></span>
@@ -252,12 +254,17 @@ export default defineComponent({
 /* ════════════════════════════════════
    HERO BANNER
 ════════════════════════════════════ */
-.home-banner { position: relative; }
+.home-banner { position: relative; overflow: hidden; }
 .home-banner-overlay {
   position: absolute; inset: 0;
   background: linear-gradient(160deg, rgba(15,5,8,0.55) 0%, rgba(40,8,15,0.80) 100%);
   display: flex; flex-direction: column; align-items: center; justify-content: center;
-  text-align: center; padding: 20px;
+  text-align: center; padding: 20px; box-sizing: border-box;
+}
+.home-banner-content {
+  width: 100%; max-width: 860px; padding: 0 24px;
+  display: flex; flex-direction: column; align-items: center; text-align: center;
+  box-sizing: border-box;
 }
 .home-tagline {
   font-size: 11px; letter-spacing: 6px; color: #C9A84C;
@@ -265,15 +272,16 @@ export default defineComponent({
 }
 .home-banner-title {
   font-family: 'Playfair Display', serif;
-  font-size: clamp(44px, 6.5vw, 86px);
+  font-size: clamp(32px, 5vw, 80px);
   color: #fff; font-weight: 400; letter-spacing: 2px;
   margin: 0 0 18px; line-height: 1.12;
+  width: 100%; word-break: break-word;
 }
 .home-banner-sub {
   color: rgba(255,255,255,0.72); font-size: 17px; font-style: italic;
   margin: 0 0 40px; max-width: 540px;
 }
-.home-banner-actions { display: flex; gap: 16px; align-items: center; }
+.home-banner-actions { display: flex; gap: 16px; align-items: center; justify-content: center; }
 .home-banner-btn {
   display: inline-flex; align-items: center; gap: 10px;
   background: transparent; border: 1px solid rgba(201,168,76,0.75);
@@ -408,13 +416,15 @@ export default defineComponent({
 /* ════════════════════════════════════
    CAROUSEL
 ════════════════════════════════════ */
-.carousel-section { background: #F8F4EF; padding: 80px 0 100px; }
+.carousel-section { background: #F8F4EF; padding: 80px 0 100px; overflow: hidden; }
 .carousel-section-head { margin-bottom: 48px; }
 .carousel-section-title {
   font-family: 'Playfair Display', serif; font-size: clamp(24px,3vw,36px);
   color: #1C1C1C; font-weight: 400; margin-top: 8px;
 }
-.carousel-wrap { position: relative; padding: 0 40px; }
+.carousel-wrap { position: relative; padding: 0 40px; overflow: hidden; }
+.my-carousel { overflow: hidden !important; }
+.my-carousel .carousel__viewport { overflow: hidden !important; }
 .slide-card { padding: 0 16px; width: 100%; }
 .slide-img-wrap { overflow: hidden; height: 300px; }
 .slide-img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s; }
@@ -447,8 +457,8 @@ export default defineComponent({
 /* ════════════════════════════════════
    BOUTIQUE SPLIT
 ════════════════════════════════════ */
-.boutique-section { background: #fff; }
-.boutique-inner { display: grid; grid-template-columns: 1fr 1fr; min-height: 560px; }
+.boutique-section { background: #fff; overflow: hidden; }
+.boutique-inner { display: grid; grid-template-columns: 1fr 1fr; min-height: 560px; width: 100%; }
 .boutique-img-side { position: relative; overflow: hidden; }
 .boutique-img { width: 100%; height: 100%; object-fit: cover; display: block; min-height: 480px; transition: transform 0.5s; }
 .boutique-img-side:hover .boutique-img { transform: scale(1.04); }
@@ -457,8 +467,9 @@ export default defineComponent({
   border: 1px solid rgba(201,168,76,0.3); pointer-events: none;
 }
 .boutique-text-side {
-  background: #F8F4EF; padding: 80px 70px;
+  background: #F8F4EF; padding: 80px 60px;
   display: flex; flex-direction: column; justify-content: center;
+  box-sizing: border-box; overflow: hidden;
 }
 .boutique-title {
   font-family: 'Playfair Display', serif; font-size: clamp(22px,2.5vw,36px);
