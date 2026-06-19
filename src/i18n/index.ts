@@ -18,7 +18,9 @@ export const i18n = createI18n({
         club: 'Club VIP',
       },
       home: {
+        heroTagline: '— Trois Puissances —',
         hero: "Explorez l'univers infini du vin",
+        heroSub: "L'art de valoriser les grands vins sur les marchés africains",
         readMore: 'Lire plus',
         welcome: 'BIENVENUE CHEZ TROIS PUISSANCES',
         welcomeText: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque eum accusamus aliquid voluptates? Sint ab deserunt autem omnis, tenetur accusantium animi labore, enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, obcaecati?",
@@ -327,7 +329,9 @@ export const i18n = createI18n({
         club: 'VIP Club',
       },
       home: {
+        heroTagline: '— Trois Puissances —',
         hero: 'Explore the infinite world of wine',
+        heroSub: 'The art of showcasing great wines on African markets',
         readMore: 'Read more',
         welcome: 'WELCOME TO TROIS PUISSANCES',
         welcomeText: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque eum accusamus aliquid voluptates? Sint ab deserunt autem omnis, tenetur accusantium animi labore, enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, obcaecati?",

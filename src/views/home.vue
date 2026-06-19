@@ -1,11 +1,12 @@
 <template>
-  <div class="banner">
-    <div class="text-center">
-      <h3 class="title fw-900 head text-white text-center" data-aos="fade-up">
-        {{ $t('home.hero') }}
-      </h3>
-      <button class="btn btn-primary btn-lg mt-4" data-aos="fade-up" data-aos-duration="1500">
+  <div class="banner home-banner">
+    <div class="home-banner-overlay">
+      <div class="home-tagline" data-aos="fade-up">{{ $t('home.heroTagline') }}</div>
+      <h1 class="home-banner-title" data-aos="fade-up" data-aos-delay="100">{{ $t('home.hero') }}</h1>
+      <p class="home-banner-sub" data-aos="fade-up" data-aos-delay="200">{{ $t('home.heroSub') }}</p>
+      <button class="home-banner-btn" data-aos="fade-up" data-aos-delay="300">
         {{ $t('home.readMore') }}
+        <span class="home-btn-arrow">→</span>
       </button>
     </div>
   </div>
@@ -317,6 +318,70 @@ export default defineComponent({
 </script>
 
 <style lang="css">
+/* ═══ HOME BANNER OVERLAY ═══ */
+.home-banner {
+  position: relative;
+}
+.home-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(15,5,8,0.45) 0%, rgba(40,8,15,0.72) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+.home-tagline {
+  font-size: 12px;
+  letter-spacing: 6px;
+  color: #C9A84C;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  font-family: 'Lato', sans-serif;
+}
+.home-banner-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(42px, 6vw, 80px);
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin: 0 0 16px;
+  line-height: 1.15;
+}
+.home-banner-sub {
+  color: rgba(255,255,255,0.75);
+  font-size: 17px;
+  font-style: italic;
+  letter-spacing: 0.5px;
+  margin: 0 0 36px;
+  max-width: 560px;
+}
+.home-banner-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  border: 1px solid rgba(201,168,76,0.7);
+  color: #C9A84C;
+  padding: 14px 36px;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
+}
+.home-banner-btn:hover {
+  background: #C9A84C;
+  color: #fff;
+  border-color: #C9A84C;
+}
+.home-btn-arrow { font-size: 15px; transition: transform 0.2s; }
+.home-banner-btn:hover .home-btn-arrow { transform: translateX(4px); }
+
 .carousel__icon {
   display: none;
 }
